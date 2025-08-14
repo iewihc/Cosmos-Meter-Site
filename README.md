@@ -2,39 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/64db3f91-1b1a-4ce5-ac7d-db4dec6fd739/deploy-status)](https://app.netlify.com/projects/cosmos-meter/deploys)
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🌐 **線上網址**: [https://cosmos-meter.netlify.app/](https://cosmos-meter.netlify.app/)
 
-## Getting Started
+## 專案介紹
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Cosmos Meter 是一個基於 Next.js 開發的現代化網頁應用程式，提供直觀的用戶介面和流暢的使用體驗。本專案採用最新的 React 技術棧，支援響應式設計，並透過 Netlify 進行持續部署。

@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# 主要頁面
+Allow: /
+Allow: /privacy
+
+# 廣告相關文件
+Allow: /app-ads.txt
+
+# 禁止爬取的目錄
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Sitemap位置
+Sitemap: https://cosmos-meter.com/sitemap.xml
+
+# 特別針對搜索引擎的設定
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# 爬取頻率設定
+Crawl-delay: 1

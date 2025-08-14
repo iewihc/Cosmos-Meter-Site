@@ -399,43 +399,22 @@ export default function Home() {
             <div style={{ 
               width: '280px', 
               height: '500px', 
-              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', 
               borderRadius: 24, 
-              display: 'flex', 
-              alignItems: 'center', 
-              justifyContent: 'center', 
-              color: '#fff', 
-              fontSize: 18, 
-              fontWeight: 600, 
-              textAlign: 'center',
+              overflow: 'hidden',
               boxShadow: '0 12px 40px rgba(102, 126, 234, 0.4)',
-              position: 'relative',
-              overflow: 'hidden'
+              position: 'relative'
             }}>
-              {/* 模擬手機狀態欄 */}
-              <div style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                right: 0,
-                height: '30px',
-                background: 'rgba(0,0,0,0.1)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                padding: '0 16px',
-                fontSize: '12px'
-              }}>
-                <span>9:41</span>
-                <span>100%</span>
-              </div>
-              <div style={{ marginTop: '20px' }}>
-                <div style={{ fontSize: '32px', marginBottom: '12px' }}>📊</div>
-                <div style={{ fontSize: '20px', marginBottom: '8px' }}>Cosmos Meter</div>
-                <div style={{ fontSize: '14px', opacity: 0.8 }}>
-                  計費界面截圖
-                </div>
-              </div>
+              <Image 
+                src="/mob_02.jpg" 
+                alt="Cosmos Meter 計費界面截圖" 
+                width={280} 
+                height={500} 
+                style={{ 
+                  width: '100%', 
+                  height: '100%', 
+                  objectFit: 'cover' 
+                }} 
+              />
             </div>
           </div>
         </div>
@@ -447,43 +426,22 @@ export default function Home() {
             <div style={{ 
               width: '280px', 
               height: '500px', 
-              background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', 
               borderRadius: 24, 
-              display: 'flex', 
-              alignItems: 'center', 
-              justifyContent: 'center', 
-              color: '#fff', 
-              fontSize: 18, 
-              fontWeight: 600, 
-              textAlign: 'center',
+              overflow: 'hidden',
               boxShadow: '0 12px 40px rgba(240, 147, 251, 0.4)',
-              position: 'relative',
-              overflow: 'hidden'
+              position: 'relative'
             }}>
-              {/* 模擬手機狀態欄 */}
-              <div style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                right: 0,
-                height: '30px',
-                background: 'rgba(0,0,0,0.1)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                padding: '0 16px',
-                fontSize: '12px'
-              }}>
-                <span>9:41</span>
-                <span>100%</span>
-              </div>
-              <div style={{ marginTop: '20px' }}>
-                <div style={{ fontSize: '32px', marginBottom: '12px' }}>🎯</div>
-                <div style={{ fontSize: '20px', marginBottom: '8px' }}>操作界面</div>
-                <div style={{ fontSize: '14px', opacity: 0.8 }}>
-                  UI 設計截圖
-                </div>
-              </div>
+              <Image 
+                src="/mob_03.jpg" 
+                alt="Cosmos Meter 操作界面 UI 設計截圖" 
+                width={280} 
+                height={500} 
+                style={{ 
+                  width: '100%', 
+                  height: '100%', 
+                  objectFit: 'cover' 
+                }} 
+              />
             </div>
           </div>
           
@@ -512,7 +470,10 @@ export default function Home() {
 
       {/* 底部聯絡資訊 */}
       <footer style={{ width: '100%', background: '#0f172a', color: '#cbd5e1', textAlign: 'center', fontSize: 16, borderTop: '1px solid #334155', padding: '32px 0', marginTop: 0 }}>
-        聯絡我們：service@cosmosmeter.com ｜ Cosmos Meter 官方 LINE ｜ Facebook 粉專
+        <div>聯絡我們：mr.chi.service@gmail.com ｜ Cosmos Meter 官方 LINE</div>
+        <div style={{ marginTop: '16px' }}>
+          <Link href="/privacy" style={{ color: '#0EA5E9', textDecoration: 'underline', fontSize: 14 }}>隱私權政策</Link>
+        </div>
       </footer>
 
       <style jsx global>{`

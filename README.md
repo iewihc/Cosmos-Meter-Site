@@ -1,3 +1,7 @@
+# Cosmos Meter
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/64db3f91-1b1a-4ce5-ac7d-db4dec6fd739/deploy-status)](https://app.netlify.com/projects/cosmos-meter/deploys)
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

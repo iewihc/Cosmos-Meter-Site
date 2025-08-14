@@ -16,7 +16,6 @@ export default function Home() {
         </div>
         <div style={{ display: 'flex', gap: 12 }}>
           <Link href="/" style={{ color: '#0EA5E9', background: '#fff', borderRadius: 24, padding: '10px 28px', fontWeight: 700, fontSize: 18, letterSpacing: 1, boxShadow: '0 2px 8px #0ea5e93a', textDecoration: 'none', border: '2px solid #0EA5E9' }}>Cosmos Meter</Link>
-          <Link href="/driver" style={{ color: '#fff', background: 'transparent', borderRadius: 24, padding: '10px 28px', fontWeight: 700, fontSize: 18, letterSpacing: 1, border: '2px solid #fff', textDecoration: 'none', opacity: 0.7 }}>Cosmos Driver</Link>
         </div>
       </nav>
       
@@ -200,8 +199,7 @@ export default function Home() {
           <h1 style={{ color: '#fff', fontSize: 54, fontWeight: 900, margin: '0 0 18px 0', letterSpacing: 2, textShadow: '0 2px 12px #0ea5e980', textAlign: 'center' }}>跳錶新革命</h1>
           <h1 style={{ color: '#fff', fontSize: 45, fontWeight: 900, margin: '0 0 18px 0', letterSpacing: 2, textShadow: '0 2px 12px #0ea5e980', textAlign: 'center' }}>Cosmos Meter - 藍錶</h1>
           <div style={{ color: '#fff', fontSize: 26, marginBottom: 24, fontWeight: 500, textShadow: '0 2px 8px #0ea5e950', textAlign: 'center' }}>精準里程 • 安心收費</div>
-          <div style={{ background: '#fff', color: '#0EA5E9', fontWeight: 800, fontSize: 20, borderRadius: 32, padding: '10px 32px', marginBottom: 24, boxShadow: '0 2px 12px #0ea5e93a', letterSpacing: 1, textAlign: 'center' }}>8月底前填表單可享三個月免費試用</div>
-          <a href="https://forms.gle/XFTX938K7KgR9Z8RA" target="_blank" rel="noopener noreferrer" style={{ background: 'linear-gradient(90deg, #0EA5E9 60%, #38bdf8 100%)', color: '#fff', fontWeight: 700, borderRadius: 32, padding: '20px 56px', textDecoration: 'none', fontSize: 22, letterSpacing: 1, boxShadow: '0 4px 16px #0ea5e93a', margin: '18px 0 0 0', transition: 'background 0.2s', display: 'inline-block' }}>申請試用帳號</a>
+          <a href="https://forms.gle/XFTX938K7KgR9Z8RA" target="_blank" rel="noopener noreferrer" style={{ background: 'linear-gradient(90deg, #0EA5E9 60%, #38bdf8 100%)', color: '#fff', fontWeight: 700, borderRadius: 32, padding: '20px 56px', textDecoration: 'none', fontSize: 22, letterSpacing: 1, boxShadow: '0 4px 16px #0ea5e93a', margin: '18px 0 0 0', transition: 'background 0.2s', display: 'inline-block' }}>開啟你的旅程</a>
         </div>
       </section>
 
@@ -370,14 +368,15 @@ export default function Home() {
       <section style={{ width: '100%', background: '#111827', padding: '48px 0', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <div style={{ color: '#fff', fontWeight: 700, fontSize: 24, marginBottom: 24 }}>下載連結</div>
         <div className="download-btn-row">
-          <a href="#" target="_blank" rel="noopener noreferrer" className="download-btn">
-            <img src={googlePlaySvg} alt="Google Play 下載" style={{ height: 56, width: 'auto', display: 'block' }} />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" className="download-btn">
+          <div className="download-btn" style={{ background: '#6b7280', cursor: 'not-allowed', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <img src={googlePlaySvg} alt="Google Play 下載" style={{ height: 56, width: 'auto', display: 'block', filter: 'grayscale(100%)', opacity: 0.6 }} />
+            <div style={{ position: 'absolute', background: 'rgba(0,0,0,0.8)', color: '#fff', padding: '4px 12px', borderRadius: 12, fontSize: 14, fontWeight: 600 }}>敬請期待</div>
+          </div>
+          <a href="https://apps.apple.com/tw/app/cosmos-meter/id6748606630" target="_blank" rel="noopener noreferrer" className="download-btn">
             <img src={appStoreSvg} alt="App Store 下載" style={{ height: 56, width: 'auto', display: 'block' }} />
           </a>
         </div>
-        <div style={{ color: '#38bdf8', fontSize: 16, marginTop: 12 }}>Android、iOS 皆可下載</div>
+        <div style={{ color: '#38bdf8', fontSize: 16, marginTop: 12 }}>iOS免費試用</div>
       </section>
 
       {/* 產品特色區 */}

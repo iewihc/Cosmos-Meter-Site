@@ -181,10 +181,10 @@ export default function Home() {
                     if (fallback) fallback.style.display = "none";
                   }}
                 >
-                  <source src="/demo-video.mp4" type="video/mp4" />
+                  <source src="/demo-video.MP4" type="video/MP4" />
                 </video>
 
-                {/* 影片載入失敗時的備用內容 */}
+                {/* 影片載入失敗時的備用圖片 */}
                 <div
                   id="video-fallback"
                   style={{
@@ -193,31 +193,23 @@ export default function Home() {
                     left: 0,
                     width: "100%",
                     height: "100%",
-                    background: "#00ff00",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    flexDirection: "column",
-                    color: "#000",
-                    fontSize: "14px",
-                    fontWeight: "600",
-                    textAlign: "center",
-                    padding: "20px",
                     zIndex: 0,
                     borderRadius: "35px",
+                    overflow: "hidden",
                   }}
                 >
-                  <div style={{ marginBottom: "10px" }}>📱</div>
-                  <div>Cosmos Meter</div>
-                  <div
+                  <Image
+                    src="/Backup-for-video.png"
+                    alt="Cosmos Meter 備用圖片"
+                    fill
                     style={{
-                      fontSize: "12px",
-                      opacity: 0.7,
-                      marginTop: "10px",
+                      objectFit: "cover",
+                      borderRadius: "35px",
                     }}
-                  >
-                    影片播放區域
-                  </div>
+                  />
                 </div>
               </div>
             </div>
@@ -466,10 +458,10 @@ export default function Home() {
                     if (fallback) fallback.style.display = "none";
                   }}
                 >
-                  <source src="/demo-video.mp4" type="video/mp4" />
+                  <source src="/demo-video.MP4" type="video/MP4" />
                 </video>
 
-                {/* 影片載入失敗時的備用內容 */}
+                {/* 影片載入失敗時的備用圖片 */}
                 <div
                   className="mobile-video-fallback"
                   style={{
@@ -478,27 +470,23 @@ export default function Home() {
                     left: 0,
                     width: "100%",
                     height: "100%",
-                    background: "#00ff00",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    flexDirection: "column",
-                    color: "#000",
-                    fontSize: "12px",
-                    fontWeight: "600",
-                    textAlign: "center",
-                    padding: "15px",
                     zIndex: 0,
                     borderRadius: "24px",
+                    overflow: "hidden",
                   }}
                 >
-                  <div style={{ marginBottom: "8px" }}>📱</div>
-                  <div>Cosmos Meter</div>
-                  <div
-                    style={{ fontSize: "10px", opacity: 0.7, marginTop: "8px" }}
-                  >
-                    影片播放區域
-                  </div>
+                  <Image
+                    src="/Backup-for-video.png"
+                    alt="Cosmos Meter 備用圖片"
+                    fill
+                    style={{
+                      objectFit: "cover",
+                      borderRadius: "24px",
+                    }}
+                  />
                 </div>
               </div>
             </div>

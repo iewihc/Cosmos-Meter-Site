@@ -834,7 +834,7 @@ export default function Home() {
           marginTop: 0,
         }}
       >
-        <div>聯絡我們：mr.chi.service@gmail.com ｜ Cosmos Meter 官方 LINE</div>
+        <div>聯絡我們：mr.chi.service@gmail.com ｜ <a href="https://line.me/R/ti/p/@478umgog" target="_blank" rel="noopener noreferrer" style={{ color: "#0EA5E9", textDecoration: "underline" }}>Cosmos Meter 官方 LINE</a></div>
         <div style={{ marginTop: "16px" }}>
           <Link
             href="/privacy"
@@ -851,6 +851,49 @@ export default function Home() {
           © 2025 季先生科技@版權所有 All Rights Reserved
         </div>
       </footer>
+
+      {/* 浮動 Line 聯絡按鈕 */}
+      <a
+        href="https://line.me/R/ti/p/@478umgog"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          position: "fixed",
+          bottom: "24px",
+          right: "24px",
+          width: "64px",
+          height: "64px",
+          borderRadius: "50%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          boxShadow: "0 4px 20px rgba(6, 199, 86, 0.59)",
+          zIndex: 1000,
+          transition: "all 0.3s ease",
+          cursor: "pointer",
+          border: "none",
+          overflow: "hidden",
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.transform = "scale(1.1)";
+          e.currentTarget.style.boxShadow = "0 6px 25px rgba(6, 199, 85, 0.6)";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.transform = "scale(1)";
+          e.currentTarget.style.boxShadow = "0 4px 20px rgba(6, 199, 85, 0.4)";
+        }}
+      >
+        <Image
+          src="/line.png"
+          alt="Line 聯絡我們"
+          width={64}
+          height={64}
+          style={{
+            display: "block",
+            borderRadius: "50%",
+          }}
+        />
+      </a>
 
       <style jsx global>{`
         * {
@@ -1092,6 +1135,24 @@ export default function Home() {
             padding: 24px 4vw !important;
             line-height: 1.6 !important;
           }
+
+          /* 浮動 Line 按鈕手機版調整 */
+          a[href*="line.me"] {
+            bottom: 16px !important;
+            right: 16px !important;
+            width: 40px !important;
+            height: 40px !important;
+            box-shadow: 0 3px 12px rgba(6, 199, 86, 0.59) !important;
+          }
+
+          a[href*="line.me"]:hover {
+            box-shadow: 0 4px 16px rgba(6, 199, 85, 0.6) !important;
+          }
+
+          a[href*="line.me"] img {
+            width: 40px !important;
+            height: 40px !important;
+          }
         }
 
         /* 小型手機 (480px 以下) */
@@ -1169,6 +1230,24 @@ export default function Home() {
 
           .feature-item {
             margin-bottom: 32px !important;
+          }
+
+          /* 小型手機版浮動按鈕調整 */
+          a[href*="line.me"] {
+            bottom: 12px !important;
+            right: 12px !important;
+            width: 40px !important;
+            height: 40px !important;
+            box-shadow: 0 2px 10px rgba(6, 199, 86, 0.59) !important;
+          }
+
+          a[href*="line.me"]:hover {
+            box-shadow: 0 3px 14px rgba(6, 199, 85, 0.6) !important;
+          }
+
+          a[href*="line.me"] img {
+            width: 40px !important;
+            height: 40px !important;
           }
         }
 

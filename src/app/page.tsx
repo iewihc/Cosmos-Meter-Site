@@ -299,9 +299,10 @@ export default function Home() {
             Cosmos Meter - 藍錶
           </h1>
           <div
+            className="hero-subtitle"
             style={{
               color: "#fff",
-              fontSize: 26,
+              fontSize: 30,
               marginBottom: 24,
               fontWeight: 500,
               textShadow: "0 2px 8px #0ea5e950",
@@ -884,9 +885,9 @@ export default function Home() {
           .hero-section {
             flex-direction: column !important;
             height: auto !important;
-            min-height: 90vh !important;
+            min-height: 50vh !important;
             gap: 2rem !important;
-            padding: 2rem 4vw !important;
+            padding: 1rem 4vw !important;
           }
 
           .phone-container {
@@ -912,19 +913,19 @@ export default function Home() {
           }
 
           .hero-content-area h1:first-of-type {
-            font-size: 28px !important;
+            font-size: 32px !important;
             margin-bottom: 12px !important;
             line-height: 1.2 !important;
           }
 
           .hero-content-area h1:nth-of-type(2) {
-            font-size: 24px !important;
+            font-size: 28px !important;
             margin-bottom: 16px !important;
             line-height: 1.2 !important;
           }
 
-          .hero-content-area div:nth-of-type(3) {
-            font-size: 18px !important;
+          .hero-subtitle {
+            font-size: 20px !important;
             margin-bottom: 20px !important;
           }
 
@@ -1116,7 +1117,7 @@ export default function Home() {
           }
 
           .hero-section {
-            padding: 1rem 2vw !important;
+            padding: 0.5rem 2vw !important;
             gap: 1.5rem !important;
           }
 
@@ -1137,15 +1138,15 @@ export default function Home() {
           }
 
           .hero-content-area h1:first-of-type {
-            font-size: 20px !important;
+            font-size: 24px !important;
           }
 
           .hero-content-area h1:nth-of-type(2) {
-            font-size: 18px !important;
+            font-size: 22px !important;
           }
 
-          .hero-content-area div:nth-of-type(3) {
-            font-size: 16px !important;
+          .hero-subtitle {
+            font-size: 15px !important;
           }
 
           .hero-content-area div:nth-of-type(4) {
@@ -1210,15 +1211,15 @@ export default function Home() {
           }
 
           .hero-content-area h1:first-of-type {
-            font-size: 18px !important;
+            font-size: 22px !important;
           }
 
           .hero-content-area h1:nth-of-type(2) {
-            font-size: 16px !important;
+            font-size: 20px !important;
           }
 
-          .hero-content-area div:nth-of-type(3) {
-            font-size: 14px !important;
+          .hero-subtitle {
+            font-size: 12px !important;
           }
         }
       `}</style>

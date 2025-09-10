@@ -50,25 +50,7 @@ export default function Home() {
             Cosmos Meter
           </span>
         </div>
-        <div style={{ display: "flex", gap: 12 }}>
-          <Link
-            href="/"
-            style={{
-              color: "#0EA5E9",
-              background: "#fff",
-              borderRadius: 24,
-              padding: "10px 28px",
-              fontWeight: 700,
-              fontSize: 18,
-              letterSpacing: 1,
-              boxShadow: "0 2px 8px #0ea5e93a",
-              textDecoration: "none",
-              border: "2px solid #0EA5E9",
-            }}
-          >
-            Cosmos Meter
-          </Link>
-        </div>
+       
       </nav>
 
       {/* Hero 區塊 */}
@@ -680,7 +662,7 @@ export default function Home() {
             <div
               style={{
                 width: "280px",
-                height: "500px",
+                height: "600px",
                 borderRadius: 24,
                 overflow: "hidden",
                 boxShadow: "0 12px 40px rgba(102, 126, 234, 0.4)",
@@ -688,7 +670,7 @@ export default function Home() {
               }}
             >
               <Image
-                src="/mob_02.jpg"
+                src="/pic01.jpg"
                 alt="Cosmos Meter 計費界面截圖"
                 width={280}
                 height={500}
@@ -718,7 +700,7 @@ export default function Home() {
             <div
               style={{
                 width: "280px",
-                height: "500px",
+                height: "600px",
                 borderRadius: 24,
                 overflow: "hidden",
                 boxShadow: "0 12px 40px rgba(240, 147, 251, 0.4)",
@@ -726,7 +708,7 @@ export default function Home() {
               }}
             >
               <Image
-                src="/mob_03.jpg"
+                src="/pic02.jpg"
                 alt="Cosmos Meter 操作界面 UI 設計截圖"
                 width={280}
                 height={500}
@@ -734,6 +716,7 @@ export default function Home() {
                   width: "100%",
                   height: "100%",
                   objectFit: "cover",
+                  borderRadius: "12px",
                 }}
               />
             </div>
@@ -778,48 +761,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ 區 */}
-      <section
-        style={{ width: "100%", background: "#1e293b", padding: "48px 0" }}
-      >
-        <div
-          style={{
-            color: "#0EA5E9",
-            fontWeight: 800,
-            fontSize: 26,
-            marginBottom: 18,
-            textAlign: "center",
-          }}
-        >
-          常見問題
-        </div>
-        <ul
-          style={{
-            color: "#fff",
-            fontSize: 18,
-            lineHeight: 2,
-            paddingLeft: 32,
-            maxWidth: 900,
-            margin: "0 auto",
-          }}
-        >
-          <li>
-            Q: 如何申請免費試用？
-            <br />
-            A: 點擊上方「申請試用帳號」按鈕，填寫表單即可。
-          </li>
-          <li>
-            Q: 支援哪些車型？
-            <br />
-            A: 支援多種計程車車型與計費方式。
-          </li>
-          <li>
-            Q: 有客服支援嗎？
-            <br />
-            A: 有，請見下方聯絡資訊。
-          </li>
-        </ul>
-      </section>
 
       {/* 底部聯絡資訊 */}
       <footer
@@ -1076,7 +1017,7 @@ export default function Home() {
 
           .feature-image > div {
             width: 200px !important;
-            height: 360px !important;
+            height: 460px !important;
             border-radius: 20px !important;
             font-size: 16px !important;
             box-shadow: 0 8px 32px rgba(102, 126, 234, 0.4) !important;
@@ -1142,11 +1083,11 @@ export default function Home() {
             right: 16px !important;
             width: 40px !important;
             height: 40px !important;
-            box-shadow: 0 3px 12px rgba(6, 199, 86, 0.59) !important;
+            box-shadow: none !important;
           }
 
           a[href*="line.me"]:hover {
-            box-shadow: 0 4px 16px rgba(6, 199, 85, 0.6) !important;
+            box-shadow: none !important;
           }
 
           a[href*="line.me"] img {
@@ -1238,11 +1179,11 @@ export default function Home() {
             right: 12px !important;
             width: 40px !important;
             height: 40px !important;
-            box-shadow: 0 2px 10px rgba(6, 199, 86, 0.59) !important;
+            box-shadow: none !important;
           }
 
           a[href*="line.me"]:hover {
-            box-shadow: 0 3px 14px rgba(6, 199, 85, 0.6) !important;
+            box-shadow: none !important;
           }
 
           a[href*="line.me"] img {

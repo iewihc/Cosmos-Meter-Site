@@ -311,27 +311,38 @@ export default function Home() {
           >
             精準里程 • 安心收費
           </div>
-          <a
-            href="https://forms.gle/XFTX938K7KgR9Z8RA"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => {
+              document.getElementById('pricing-section')?.scrollIntoView({ 
+                behavior: 'smooth' 
+              });
+            }}
             style={{
               background: "linear-gradient(90deg, #0EA5E9 60%, #38bdf8 100%)",
               color: "#fff",
               fontWeight: 700,
               borderRadius: 32,
               padding: "20px 56px",
-              textDecoration: "none",
+              border: "none",
               fontSize: 22,
               letterSpacing: 1,
               boxShadow: "0 4px 16px #0ea5e93a",
               margin: "18px 0 0 0",
-              transition: "background 0.2s",
+              transition: "all 0.3s ease",
               display: "inline-block",
+              cursor: "pointer",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-2px)";
+              e.currentTarget.style.boxShadow = "0 8px 24px #0ea5e9aa";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow = "0 4px 16px #0ea5e93a";
             }}
           >
             開啟你的旅程
-          </a>
+          </button>
         </div>
       </section>
 
@@ -600,8 +611,544 @@ export default function Home() {
             />
           </a>
         </div>
-        <div style={{ color: "#38bdf8", fontSize: 16, marginTop: 12 }}>
-          iOS免費試用
+        
+      </section>
+
+      {/* 購買區 */}
+      <section
+        id="pricing-section"
+        style={{
+          width: "100%",
+          background: "linear-gradient(135deg, #1e293b 0%, #0f172a 100%)",
+          padding: "80px 5vw",
+          position: "relative",
+          overflow: "hidden",
+        }}
+      >
+        {/* 背景裝飾 */}
+        <div
+          style={{
+            position: "absolute",
+            top: "-50%",
+            left: "-50%",
+            width: "200%",
+            height: "200%",
+            background: "radial-gradient(circle, rgba(14, 165, 233, 0.1) 0%, transparent 70%)",
+            pointerEvents: "none",
+          }}
+        ></div>
+
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            position: "relative",
+            zIndex: 2,
+          }}
+        >
+          {/* 標題 */}
+          <div
+            style={{
+              textAlign: "center",
+              marginBottom: "60px",
+            }}
+          >
+            <h2
+              style={{
+                color: "#fff",
+                fontSize: 48,
+                fontWeight: 900,
+                marginBottom: 16,
+                letterSpacing: 1,
+                textShadow: "0 2px 12px rgba(14, 165, 233, 0.3)",
+              }}
+            >
+              選擇您的方案
+            </h2>
+            <p
+              style={{
+                color: "#cbd5e1",
+                fontSize: 20,
+                lineHeight: 1.6,
+                maxWidth: "600px",
+                margin: "0 auto",
+              }}
+            >
+              所有方案均包含完整功能，支援多種計費模式，享受精準跳錶服務。
+            </p>
+          </div>
+
+          {/* 價格卡片區域 */}
+          <div
+            className="pricing-container"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "60px",
+              maxWidth: "1200px",
+              margin: "0 auto",
+            }}
+          >
+            {/* 付費好處說明 */}
+            <div
+              className="benefits-section"
+              style={{
+                flex: "0 0 auto",
+                maxWidth: "300px",
+                marginRight: "20px",
+              }}
+            >
+              <h3
+                style={{
+                  color: "#fff",
+                  fontSize: 30,
+                  fontWeight: 700,
+                  marginBottom: 24,
+                  letterSpacing: 0.5,
+                }}
+              >
+                付費可享有:
+              </h3>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "5px",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    padding: "12px 0",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "8px",
+                      height: "8px",
+                      background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                      borderRadius: "50%",
+                      flexShrink: 0,
+                    }}
+                  ></div>
+                  <span
+                    style={{
+                      color: "#cbd5e1",
+                      fontSize: 20,
+                      lineHeight: 1.5,
+                    }}
+                  >
+                    無插頁式廣告
+                  </span>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    padding: "12px 0",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "8px",
+                      height: "8px",
+                      background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                      borderRadius: "50%",
+                      flexShrink: 0,
+                    }}
+                  ></div>
+                  <span
+                    style={{
+                      color: "#cbd5e1",
+                      fontSize: 20,
+                      lineHeight: 1.5,
+                    }}
+                  >
+                    歷史行程記錄永久保存
+                  </span>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    padding: "12px 0",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "8px",
+                      height: "8px",
+                      background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                      borderRadius: "50%",
+                      flexShrink: 0,
+                    }}
+                  ></div>
+                  <span
+                    style={{
+                      color: "#cbd5e1",
+                      fontSize: 20,
+                      lineHeight: 1.5,
+                    }}
+                  >
+                    擁有實時顯示的子母小地圖
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* 官網優惠方案 */}
+            <div
+              className="pricing-card"
+              style={{
+                background: "linear-gradient(145deg, rgba(14, 165, 233, 0.2), rgba(14, 165, 233, 0.1))",
+                border: "2px solid rgba(14, 165, 233, 0.3)",
+                borderRadius: 24,
+                padding: "40px 32px",
+                width: "450px",
+                maxWidth: "90vw",
+                position: "relative",
+                backdropFilter: "blur(10px)",
+                boxShadow: "0 8px 32px rgba(14, 165, 233, 0.2)",
+                flex: "0 0 auto",
+              }}
+            >
+              {/* 推薦標籤 */}
+              <div
+                style={{
+                  position: "absolute",
+                  top: "-12px",
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                  background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                  color: "#fff",
+                  padding: "8px 24px",
+                  borderRadius: 20,
+                  fontSize: 14,
+                  fontWeight: 700,
+                  letterSpacing: 0.5,
+                  boxShadow: "0 4px 16px rgba(14, 165, 233, 0.3)",
+                }}
+              >
+                官網限定優惠
+              </div>
+
+              <div
+                style={{
+                  textAlign: "center",
+                  marginBottom: "32px",
+                  marginTop: "12px",
+                }}
+              >
+                <h3
+                  style={{
+                    color: "#fff",
+                    fontSize: 24,
+                    fontWeight: 700,
+                    marginBottom: 12,
+                    letterSpacing: 0.5,
+                  }}
+                >
+                  官網價 9折
+                </h3>
+                <div
+                  style={{
+                    color: "#7dd3fc",
+                    fontSize: 16,
+                    marginBottom: 24,
+                    fontWeight: 600,
+                  }}
+                >
+                  享受最優惠價格
+                </div>
+              </div>
+
+              {/* 月費方案 */}
+              <div
+                style={{
+                  background: "rgba(14, 165, 233, 0.1)",
+                  borderRadius: 16,
+                  padding: "24px",
+                  marginBottom: "20px",
+                  border: "1px solid rgba(14, 165, 233, 0.2)",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "baseline",
+                    justifyContent: "space-between",
+                    marginBottom: 8,
+                    position: "relative",
+                  }}
+                >
+                  {/* 左邊：原價 */}
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "baseline",
+                    }}
+                  >
+                    <span
+                      style={{
+                        color: "#ef4444",
+                        fontSize: 14,
+                        marginRight: 8,
+                        marginTop: 25,
+                        fontWeight: 500,
+                      }}
+                    >
+                      原價
+                    </span>
+                    <span
+                      style={{
+                        color: "#94a3b8",
+                        fontSize: 24,
+                        fontWeight: 700,
+                        opacity: 0.8,
+                        position: "relative",
+                        display: "inline-block",
+                      }}
+                    >
+                      280
+                      <span
+                        style={{
+                          position: "absolute",
+                          top: "50%",
+                          left: "50%",
+                          width: "120%",
+                          height: "3px",
+                          background: "#ef4444",
+                          opacity: 0.7,
+                          transform: "translate(-50%, -50%) rotate(15deg)",
+                          borderRadius: "2px",
+                        }}
+                      ></span>
+                    </span>
+                  </div>
+
+                  {/* 中間：優惠價格 (絕對置中) */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      left: "50%",
+                      transform: "translateX(-50%)",
+                      display: "flex",
+                      alignItems: "baseline",
+                    }}
+                  >
+                    <span
+                      style={{
+                        color: "#fff",
+                        fontSize: 36,
+                        fontWeight: 900,
+                      }}
+                    >
+                      252
+                    </span>
+                    <span
+                      style={{
+                        color: "#cbd5e1",
+                        fontSize: 18,
+                        marginLeft: 4,
+                      }}
+                    >
+                      /月
+                    </span>
+                  </div>
+
+                  {/* 右邊：空白區域保持平衡 */}
+                  <div style={{ width: "100px" }}></div>
+                </div>
+                <div
+                  style={{
+                    color: "#7dd3fc",
+                    fontSize: 14,
+                    textAlign: "center",
+                    marginTop: 20,
+                  }}
+                >
+                  月繳方案
+                </div>
+              </div>
+
+              {/* 年費方案 */}
+              <div
+                style={{
+                  background: "rgba(14, 165, 233, 0.1)",
+                  borderRadius: 16,
+                  padding: "24px",
+                  marginBottom: "32px",
+                  border: "1px solid rgba(14, 165, 233, 0.2)",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "baseline",
+                    justifyContent: "space-between",
+                    marginBottom: 8,
+                    position: "relative",
+                  }}
+                >
+                  {/* 左邊：原價 */}
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "baseline",
+                    }}
+                  >
+                    <span
+                      style={{
+                        color: "#ef4444",
+                        fontSize: 14,
+                        marginRight: 8,
+                        marginTop: 25,
+                        fontWeight: 500,
+                      }}
+                    >
+                      原價
+                    </span>
+                    <span
+                      style={{
+                        color: "#94a3b8",
+                        fontSize: 24,
+                        fontWeight: 700,
+                        opacity: 0.8,
+                        position: "relative",
+                        display: "inline-block",
+                      }}
+                    >
+                      2400
+                      <span
+                        style={{
+                          position: "absolute",
+                          top: "50%",
+                          left: "50%",
+                          width: "120%",
+                          height: "3px",
+                          background: "#ef4444",
+                          opacity: 0.7,
+                          transform: "translate(-50%, -50%) rotate(15deg)",
+                          borderRadius: "2px",
+                        }}
+                      ></span>
+                    </span>
+                  </div>
+
+                  {/* 中間：優惠價格 (絕對置中) */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      left: "50%",
+                      transform: "translateX(-50%)",
+                      display: "flex",
+                      alignItems: "baseline",
+                    }}
+                  >
+                    <span
+                      style={{
+                        color: "#fff",
+                        fontSize: 36,
+                        fontWeight: 900,
+                      }}
+                    >
+                      2160
+                    </span>
+                    <span
+                      style={{
+                        color: "#cbd5e1",
+                        fontSize: 18,
+                        marginLeft: 4,
+                      }}
+                    >
+                      /年
+                    </span>
+                  </div>
+
+                  {/* 右邊：空白區域保持平衡 */}
+                  <div style={{ width: "100px" }}></div>
+                </div>
+                <div
+                  style={{
+                    color: "#7dd3fc",
+                    fontSize: 14,
+                    textAlign: "center",
+                    marginTop: 20,
+                    marginBottom: 8,
+                  }}
+                >
+                  年繳方案
+                </div>
+                <div
+                  style={{
+                    color: "#10b981",
+                    fontSize: 14,
+                    textAlign: "center",
+                    fontWeight: 600,
+                  }}
+                >
+                  平均 180/月
+                </div>
+              </div>
+
+              <button
+                onClick={() => {
+                  document.getElementById('pricing-section')?.scrollIntoView({ 
+                    behavior: 'smooth' 
+                  });
+                }}
+                style={{
+                  width: "100%",
+                  background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                  color: "#fff",
+                  border: "none",
+                  borderRadius: 16,
+                  padding: "16px 24px",
+                  fontSize: 18,
+                  fontWeight: 700,
+                  cursor: "pointer",
+                  transition: "all 0.3s ease",
+                  letterSpacing: 0.5,
+                  boxShadow: "0 4px 16px rgba(14, 165, 233, 0.3)",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-2px)";
+                  e.currentTarget.style.boxShadow = "0 8px 24px rgba(14, 165, 233, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow = "0 4px 16px rgba(14, 165, 233, 0.3)";
+                }}
+              >
+                立即訂閱優惠
+              </button>
+            </div>
+          </div>
+
+          {/* 底部說明文字 */}
+          <div
+            style={{
+              textAlign: "center",
+              marginTop: "48px",
+            }}
+          >
+            <p
+              style={{
+                color: "#94a3b8",
+                fontSize: 16,
+                lineHeight: 1.6,
+                maxWidth: "800px",
+                margin: "0 auto",
+              }}
+            >
+              有任何問題請洽Cosmos Meter官方LINE，我們將竭誠為您服務。
+            </p>
+          </div>
         </div>
       </section>
 
@@ -1078,6 +1625,154 @@ export default function Home() {
             line-height: 1.6 !important;
           }
 
+          /* 購買區手機版調整 */
+          section:nth-of-type(4) {
+            padding: 48px 4vw !important;
+          }
+
+          section:nth-of-type(4) h2 {
+            font-size: 32px !important;
+            margin-bottom: 12px !important;
+          }
+
+          section:nth-of-type(4) p {
+            font-size: 16px !important;
+            margin-bottom: 32px !important;
+          }
+
+          .pricing-container {
+            flex-direction: column !important;
+            justify-content: center !important;
+            align-items: center !important;
+            gap: 48px !important;
+          }
+
+          .benefits-section {
+            max-width: 100% !important;
+            margin-right: 0 !important;
+            text-align: center !important;
+          }
+
+          .benefits-section h3 {
+            font-size: 24px !important;
+            margin-bottom: 20px !important;
+          }
+
+          .benefits-section > div {
+            gap: 4px !important;
+          }
+
+          .benefits-section > div > div {
+            justify-content: flex-start !important;
+            text-align: left !important;
+            padding: 8px 0 !important;
+          }
+
+          .benefits-section span {
+            font-size: 16px !important;
+          }
+
+          .pricing-card {
+            width: 320px !important;
+            max-width: 90vw !important;
+            padding: 32px 24px !important;
+          }
+
+          .pricing-card h3 {
+            font-size: 20px !important;
+          }
+
+          /* 手機版更好的解決方案 - 保持HTML結構，精確控制CSS */
+          .pricing-card > div:nth-child(3),
+          .pricing-card > div:nth-child(4) {
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: flex-start !important;
+            align-items: stretch !important;
+            background: rgba(14, 165, 233, 0.1) !important;
+            border-radius: 16px !important;
+            margin-bottom: 16px !important;
+            padding: 20px 16px !important;
+            min-height: 140px !important;
+            gap: 0 !important;
+            position: relative !important;
+          }
+
+          /* 手機版原價區域 - 保持原始位置不變 */
+          .pricing-card > div:nth-child(3) > div:first-child,
+          .pricing-card > div:nth-child(4) > div:first-child {
+            order: 1 !important;
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            position: relative !important;
+            transform: none !important;
+            left: auto !important;
+            gap: 8px !important;
+            margin-bottom: 16px !important;
+          }
+
+          /* 手機版優惠價區域 - 置中並移到原價下方，放大字體 */
+          .pricing-card > div:nth-child(3) > div:nth-child(2),
+          .pricing-card > div:nth-child(4) > div:nth-child(2) {
+            order: 2 !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            position: static !important;
+            transform: none !important;
+            left: auto !important;
+          }
+
+          /* 手機版優惠價字體放大 */
+          .pricing-card > div:nth-child(3) > div:nth-child(2) span[style*="font-size: 36px"],
+          .pricing-card > div:nth-child(4) > div:nth-child(2) span[style*="font-size: 36px"] {
+            font-size: 32px !important;
+          }
+
+          /* 隱藏第三個空白div */
+          .pricing-card > div:nth-child(3) > div:nth-child(3),
+          .pricing-card > div:nth-child(4) > div:nth-child(3) {
+            display: none !important;
+          }
+
+          /* 手機版原價文字大小調整，避免與優惠價重疊 */
+          .pricing-card > div:nth-child(3) > div:first-child span,
+          .pricing-card > div:nth-child(4) > div:first-child span {
+            font-size: 16px !important;
+            line-height: 1.2 !important;
+          }
+
+          /* 手機版優惠價文字間距調整 */
+          .pricing-card > div:nth-child(3) > div:nth-child(2) span,
+          .pricing-card > div:nth-child(4) > div:nth-child(2) span {
+            line-height: 1.2 !important;
+          }
+
+          /* 手機版一般字體大小調整（會被更具體的規則覆蓋） */
+          .pricing-card span[style*="font-size: 36px"] {
+            font-size: 28px !important;
+          }
+
+          .pricing-card span[style*="font-size: 14px"] {
+            font-size: 12px !important;
+          }
+
+          .pricing-card span[style*="font-size: 24px"] {
+            font-size: 20px !important;
+          }
+
+          .pricing-card button {
+            font-size: 16px !important;
+            padding: 14px 20px !important;
+          }
+
           /* 浮動 Line 按鈕手機版調整 */
           a[href*="line.me"] {
             bottom: 16px !important;
@@ -1163,6 +1858,83 @@ export default function Home() {
           section:nth-of-type(5),
           section:nth-of-type(6) {
             padding: 20px 2vw !important;
+          }
+
+          /* 購買區小型手機版調整 */
+          section:nth-of-type(4) h2 {
+            font-size: 28px !important;
+          }
+
+          section:nth-of-type(4) p {
+            font-size: 14px !important;
+          }
+
+          .pricing-container {
+            gap: 40px !important;
+          }
+
+          .benefits-section h3 {
+            font-size: 20px !important;
+            margin-bottom: 16px !important;
+          }
+
+          .benefits-section > div {
+            gap: 3px !important;
+          }
+
+          .benefits-section span {
+            font-size: 14px !important;
+          }
+
+          .pricing-card {
+            width: 300px !important;
+            max-width: 90vw !important;
+            padding: 24px 20px !important;
+          }
+
+          .pricing-card h3 {
+            font-size: 18px !important;
+          }
+
+          /* 小型手機版價格區域調整 */
+          .pricing-card > div:nth-child(3),
+          .pricing-card > div:nth-child(4) {
+            min-height: 120px !important;
+            padding: 18px 12px !important;
+            gap: 0 !important;
+            margin-bottom: 12px !important;
+          }
+
+          /* 小型手機版原價區域保持原樣 */
+          .pricing-card > div:nth-child(3) > div:first-child,
+          .pricing-card > div:nth-child(4) > div:first-child {
+            margin-bottom: 14px !important;
+          }
+
+          /* 小型手機版優惠價置中並放大字體 */
+          .pricing-card > div:nth-child(3) > div:nth-child(2),
+          .pricing-card > div:nth-child(4) > div:nth-child(2) {
+            margin: 0 !important;
+            justify-content: center !important;
+          }
+
+          /* 小型手機版優惠價字體調整 */
+          .pricing-card > div:nth-child(3) > div:nth-child(2) span[style*="font-size: 36px"],
+          .pricing-card > div:nth-child(4) > div:nth-child(2) span[style*="font-size: 36px"] {
+            font-size: 26px !important;
+          }
+
+          /* 小型手機版通用字體調整（優惠價會被更具體的規則覆蓋） */
+          .pricing-card span[style*="font-size: 36px"] {
+            font-size: 24px !important;
+          }
+
+          .pricing-card span[style*="font-size: 14px"] {
+            font-size: 11px !important;
+          }
+
+          .pricing-card span[style*="font-size: 24px"] {
+            font-size: 18px !important;
           }
 
           .download-btn-row {

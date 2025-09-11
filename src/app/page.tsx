@@ -50,25 +50,7 @@ export default function Home() {
             Cosmos Meter
           </span>
         </div>
-        <div style={{ display: "flex", gap: 12 }}>
-          <Link
-            href="/"
-            style={{
-              color: "#0EA5E9",
-              background: "#fff",
-              borderRadius: 24,
-              padding: "10px 28px",
-              fontWeight: 700,
-              fontSize: 18,
-              letterSpacing: 1,
-              boxShadow: "0 2px 8px #0ea5e93a",
-              textDecoration: "none",
-              border: "2px solid #0EA5E9",
-            }}
-          >
-            Cosmos Meter
-          </Link>
-        </div>
+       
       </nav>
 
       {/* Hero 區塊 */}
@@ -181,10 +163,10 @@ export default function Home() {
                     if (fallback) fallback.style.display = "none";
                   }}
                 >
-                  <source src="/demo-video.mp4" type="video/mp4" />
+                  <source src="/demo-video.MP4" type="video/MP4" />
                 </video>
 
-                {/* 影片載入失敗時的備用內容 */}
+                {/* 影片載入失敗時的備用圖片 */}
                 <div
                   id="video-fallback"
                   style={{
@@ -193,31 +175,23 @@ export default function Home() {
                     left: 0,
                     width: "100%",
                     height: "100%",
-                    background: "#00ff00",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    flexDirection: "column",
-                    color: "#000",
-                    fontSize: "14px",
-                    fontWeight: "600",
-                    textAlign: "center",
-                    padding: "20px",
                     zIndex: 0,
                     borderRadius: "35px",
+                    overflow: "hidden",
                   }}
                 >
-                  <div style={{ marginBottom: "10px" }}>📱</div>
-                  <div>Cosmos Meter</div>
-                  <div
+                  <Image
+                    src="/Backup-for-video.png"
+                    alt="Cosmos Meter 備用圖片"
+                    fill
                     style={{
-                      fontSize: "12px",
-                      opacity: 0.7,
-                      marginTop: "10px",
+                      objectFit: "cover",
+                      borderRadius: "35px",
                     }}
-                  >
-                    影片播放區域
-                  </div>
+                  />
                 </div>
               </div>
             </div>
@@ -325,9 +299,10 @@ export default function Home() {
             Cosmos Meter - 藍錶
           </h1>
           <div
+            className="hero-subtitle"
             style={{
               color: "#fff",
-              fontSize: 26,
+              fontSize: 30,
               marginBottom: 24,
               fontWeight: 500,
               textShadow: "0 2px 8px #0ea5e950",
@@ -336,27 +311,38 @@ export default function Home() {
           >
             精準里程 • 安心收費
           </div>
-          <a
-            href="https://forms.gle/XFTX938K7KgR9Z8RA"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => {
+              document.getElementById('pricing-section')?.scrollIntoView({ 
+                behavior: 'smooth' 
+              });
+            }}
             style={{
               background: "linear-gradient(90deg, #0EA5E9 60%, #38bdf8 100%)",
               color: "#fff",
               fontWeight: 700,
               borderRadius: 32,
               padding: "20px 56px",
-              textDecoration: "none",
+              border: "none",
               fontSize: 22,
               letterSpacing: 1,
               boxShadow: "0 4px 16px #0ea5e93a",
               margin: "18px 0 0 0",
-              transition: "background 0.2s",
+              transition: "all 0.3s ease",
               display: "inline-block",
+              cursor: "pointer",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-2px)";
+              e.currentTarget.style.boxShadow = "0 8px 24px #0ea5e9aa";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow = "0 4px 16px #0ea5e93a";
             }}
           >
             開啟你的旅程
-          </a>
+          </button>
         </div>
       </section>
 
@@ -466,7 +452,7 @@ export default function Home() {
                     if (fallback) fallback.style.display = "none";
                   }}
                 >
-                  <source src="/demo-video.mp4" type="video/mp4" />
+                  <source src="/demo-video.MP4" type="video/MP4" />
                 </video>
 
                 {/* 影片載入失敗時的備用內容 */}
@@ -478,7 +464,7 @@ export default function Home() {
                     left: 0,
                     width: "100%",
                     height: "100%",
-                    background: "#00ff00",
+                    
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -492,13 +478,7 @@ export default function Home() {
                     borderRadius: "24px",
                   }}
                 >
-                  <div style={{ marginBottom: "8px" }}>📱</div>
-                  <div>Cosmos Meter</div>
-                  <div
-                    style={{ fontSize: "10px", opacity: 0.7, marginTop: "8px" }}
-                  >
-                    影片播放區域
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -508,7 +488,7 @@ export default function Home() {
               style={{
                 position: "absolute",
                 left: "-3px",
-                top: "90px",
+                top: "60px",
                 width: "3px",
                 height: "28px",
                 background: "#333",
@@ -520,7 +500,7 @@ export default function Home() {
               style={{
                 position: "absolute",
                 left: "-3px",
-                top: "125px",
+                top: "95px",
                 width: "3px",
                 height: "20px",
                 background: "#333",
@@ -531,7 +511,7 @@ export default function Home() {
               style={{
                 position: "absolute",
                 left: "-3px",
-                top: "150px",
+                top: "120px",
                 width: "3px",
                 height: "20px",
                 background: "#333",
@@ -543,13 +523,69 @@ export default function Home() {
               style={{
                 position: "absolute",
                 right: "-3px",
-                top: "110px",
+                top: "80px",
                 width: "3px",
                 height: "45px",
                 background: "#333",
                 borderRadius: "0 6px 6px 0",
               }}
             ></div>
+          </div>
+        </div>
+
+        {/* 手機版下載區 */}
+        <div className="mobile-download-section">
+          <div className="mobile-download-title">
+            下載連結
+          </div>
+          <div className="mobile-download-btn-row">
+            <div
+              className="mobile-download-btn"
+              style={{
+                background: "#6b7280",
+                cursor: "not-allowed",
+                position: "relative",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                src={googlePlaySvg}
+                alt="Google Play 下載"
+                style={{
+                  height: 48,
+                  width: "auto",
+                  display: "block",
+                  filter: "grayscale(80%)",
+                  opacity: 0.6,
+                }}
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  background: "rgb(255, 255, 255)",
+                  color: "#0ea5e9",
+                  padding: "2px 8px",
+                  borderRadius: 15,
+                  fontSize: 12,
+                  fontWeight: 600,
+                }}
+              >
+                聯繫Line客服
+              </div>
+            </div>
+            <a
+              href="https://apps.apple.com/tw/app/cosmos-meter/id6748606630"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mobile-download-btn"
+            >
+              <img
+                src={appStoreSvg}
+                alt="App Store 下載"
+              />
+            </a>
           </div>
         </div>
       </section>
@@ -594,22 +630,22 @@ export default function Home() {
                 height: 56,
                 width: "auto",
                 display: "block",
-                filter: "grayscale(100%)",
+                filter: "grayscale(80%)",
                 opacity: 0.6,
               }}
             />
             <div
               style={{
                 position: "absolute",
-                background: "rgba(0,0,0,0.8)",
-                color: "#fff",
+                background: "rgb(255, 255, 255)",
+                color: "#0ea5e9",
                 padding: "4px 12px",
                 borderRadius: 12,
-                fontSize: 14,
+                fontSize: 12,
                 fontWeight: 600,
               }}
             >
-              敬請期待
+              聯繫Line客服
             </div>
           </div>
           <a
@@ -625,8 +661,544 @@ export default function Home() {
             />
           </a>
         </div>
-        <div style={{ color: "#38bdf8", fontSize: 16, marginTop: 12 }}>
-          iOS免費試用
+        
+      </section>
+
+      {/* 購買區 */}
+      <section
+        id="pricing-section"
+        style={{
+          width: "100%",
+          background: "linear-gradient(135deg, #1e293b 0%, #0f172a 100%)",
+          padding: "80px 5vw",
+          position: "relative",
+          overflow: "hidden",
+        }}
+      >
+        {/* 背景裝飾 */}
+        <div
+          style={{
+            position: "absolute",
+            top: "-50%",
+            left: "-50%",
+            width: "200%",
+            height: "200%",
+            background: "radial-gradient(circle, rgba(14, 165, 233, 0.1) 0%, transparent 70%)",
+            pointerEvents: "none",
+          }}
+        ></div>
+
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            position: "relative",
+            zIndex: 2,
+          }}
+        >
+          {/* 標題 */}
+          <div
+            style={{
+              textAlign: "center",
+              marginBottom: "60px",
+            }}
+          >
+            <h2
+              style={{
+                color: "#fff",
+                fontSize: 48,
+                fontWeight: 900,
+                marginBottom: 16,
+                letterSpacing: 1,
+                textShadow: "0 2px 12px rgba(14, 165, 233, 0.3)",
+              }}
+            >
+              選擇您的方案
+            </h2>
+            <p
+              style={{
+                color: "#cbd5e1",
+                fontSize: 20,
+                lineHeight: 1.6,
+                maxWidth: "600px",
+                margin: "0 auto",
+              }}
+            >
+              所有方案均包含完整功能，支援多種計費模式，享受精準跳錶服務。
+            </p>
+          </div>
+
+          {/* 價格卡片區域 */}
+          <div
+            className="pricing-container"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "60px",
+              maxWidth: "1200px",
+              margin: "0 auto",
+            }}
+          >
+            {/* 付費好處說明 */}
+            <div
+              className="benefits-section"
+              style={{
+                flex: "0 0 auto",
+                maxWidth: "300px",
+                marginRight: "20px",
+              }}
+            >
+              <h3
+                style={{
+                  color: "#fff",
+                  fontSize: 30,
+                  fontWeight: 700,
+                  marginBottom: 24,
+                  letterSpacing: 0.5,
+                }}
+              >
+                付費可享有:
+              </h3>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "5px",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    padding: "12px 0",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "8px",
+                      height: "8px",
+                      background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                      borderRadius: "50%",
+                      flexShrink: 0,
+                    }}
+                  ></div>
+                  <span
+                    style={{
+                      color: "#cbd5e1",
+                      fontSize: 20,
+                      lineHeight: 1.5,
+                    }}
+                  >
+                    無插頁式廣告
+                  </span>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    padding: "12px 0",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "8px",
+                      height: "8px",
+                      background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                      borderRadius: "50%",
+                      flexShrink: 0,
+                    }}
+                  ></div>
+                  <span
+                    style={{
+                      color: "#cbd5e1",
+                      fontSize: 20,
+                      lineHeight: 1.5,
+                    }}
+                  >
+                    歷史行程記錄永久保存
+                  </span>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    padding: "12px 0",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "8px",
+                      height: "8px",
+                      background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                      borderRadius: "50%",
+                      flexShrink: 0,
+                    }}
+                  ></div>
+                  <span
+                    style={{
+                      color: "#cbd5e1",
+                      fontSize: 20,
+                      lineHeight: 1.5,
+                    }}
+                  >
+                    擁有實時顯示的子母小地圖
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* 官網優惠方案 */}
+            <div
+              className="pricing-card"
+              style={{
+                background: "linear-gradient(145deg, rgba(14, 165, 233, 0.2), rgba(14, 165, 233, 0.1))",
+                border: "2px solid rgba(14, 165, 233, 0.3)",
+                borderRadius: 24,
+                padding: "40px 32px",
+                width: "450px",
+                maxWidth: "90vw",
+                position: "relative",
+                backdropFilter: "blur(10px)",
+                boxShadow: "0 8px 32px rgba(14, 165, 233, 0.2)",
+                flex: "0 0 auto",
+              }}
+            >
+              {/* 推薦標籤 */}
+              <div
+                style={{
+                  position: "absolute",
+                  top: "-12px",
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                  background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                  color: "#fff",
+                  padding: "8px 24px",
+                  borderRadius: 20,
+                  fontSize: 14,
+                  fontWeight: 700,
+                  letterSpacing: 0.5,
+                  boxShadow: "0 4px 16px rgba(14, 165, 233, 0.3)",
+                }}
+              >
+                官網限定優惠
+              </div>
+
+              <div
+                style={{
+                  textAlign: "center",
+                  marginBottom: "32px",
+                  marginTop: "12px",
+                }}
+              >
+                <h3
+                  style={{
+                    color: "#fff",
+                    fontSize: 24,
+                    fontWeight: 700,
+                    marginBottom: 12,
+                    letterSpacing: 0.5,
+                  }}
+                >
+                  官網價 9折
+                </h3>
+                <div
+                  style={{
+                    color: "#7dd3fc",
+                    fontSize: 16,
+                    marginBottom: 24,
+                    fontWeight: 600,
+                  }}
+                >
+                  享受最優惠價格
+                </div>
+              </div>
+
+              {/* 月費方案 */}
+              <div
+                style={{
+                  background: "rgba(14, 165, 233, 0.1)",
+                  borderRadius: 16,
+                  padding: "24px",
+                  marginBottom: "20px",
+                  border: "1px solid rgba(14, 165, 233, 0.2)",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "baseline",
+                    justifyContent: "space-between",
+                    marginBottom: 8,
+                    position: "relative",
+                  }}
+                >
+                  {/* 左邊：原價 */}
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "baseline",
+                    }}
+                  >
+                    <span
+                      style={{
+                        color: "#ef4444",
+                        fontSize: 14,
+                        marginRight: 8,
+                        marginTop: 25,
+                        fontWeight: 500,
+                      }}
+                    >
+                      原價
+                    </span>
+                    <span
+                      style={{
+                        color: "#94a3b8",
+                        fontSize: 24,
+                        fontWeight: 700,
+                        opacity: 0.8,
+                        position: "relative",
+                        display: "inline-block",
+                      }}
+                    >
+                      280
+                      <span
+                        style={{
+                          position: "absolute",
+                          top: "50%",
+                          left: "50%",
+                          width: "120%",
+                          height: "3px",
+                          background: "#ef4444",
+                          opacity: 0.7,
+                          transform: "translate(-50%, -50%) rotate(15deg)",
+                          borderRadius: "2px",
+                        }}
+                      ></span>
+                    </span>
+                  </div>
+
+                  {/* 中間：優惠價格 (絕對置中) */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      left: "50%",
+                      transform: "translateX(-50%)",
+                      display: "flex",
+                      alignItems: "baseline",
+                    }}
+                  >
+                    <span
+                      style={{
+                        color: "#fff",
+                        fontSize: 36,
+                        fontWeight: 900,
+                      }}
+                    >
+                      252
+                    </span>
+                    <span
+                      style={{
+                        color: "#cbd5e1",
+                        fontSize: 18,
+                        marginLeft: 4,
+                      }}
+                    >
+                      /月
+                    </span>
+                  </div>
+
+                  {/* 右邊：空白區域保持平衡 */}
+                  <div style={{ width: "100px" }}></div>
+                </div>
+                <div
+                  style={{
+                    color: "#7dd3fc",
+                    fontSize: 14,
+                    textAlign: "center",
+                    marginTop: 20,
+                  }}
+                >
+                  月繳方案
+                </div>
+              </div>
+
+              {/* 年費方案 */}
+              <div
+                style={{
+                  background: "rgba(14, 165, 233, 0.1)",
+                  borderRadius: 16,
+                  padding: "24px",
+                  marginBottom: "32px",
+                  border: "1px solid rgba(14, 165, 233, 0.2)",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "baseline",
+                    justifyContent: "space-between",
+                    marginBottom: 8,
+                    position: "relative",
+                  }}
+                >
+                  {/* 左邊：原價 */}
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "baseline",
+                    }}
+                  >
+                    <span
+                      style={{
+                        color: "#ef4444",
+                        fontSize: 14,
+                        marginRight: 8,
+                        marginTop: 25,
+                        fontWeight: 500,
+                      }}
+                    >
+                      原價
+                    </span>
+                    <span
+                      style={{
+                        color: "#94a3b8",
+                        fontSize: 24,
+                        fontWeight: 700,
+                        opacity: 0.8,
+                        position: "relative",
+                        display: "inline-block",
+                      }}
+                    >
+                      2400
+                      <span
+                        style={{
+                          position: "absolute",
+                          top: "50%",
+                          left: "50%",
+                          width: "120%",
+                          height: "3px",
+                          background: "#ef4444",
+                          opacity: 0.7,
+                          transform: "translate(-50%, -50%) rotate(15deg)",
+                          borderRadius: "2px",
+                        }}
+                      ></span>
+                    </span>
+                  </div>
+
+                  {/* 中間：優惠價格 (絕對置中) */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      left: "50%",
+                      transform: "translateX(-50%)",
+                      display: "flex",
+                      alignItems: "baseline",
+                    }}
+                  >
+                    <span
+                      style={{
+                        color: "#fff",
+                        fontSize: 36,
+                        fontWeight: 900,
+                      }}
+                    >
+                      2160
+                    </span>
+                    <span
+                      style={{
+                        color: "#cbd5e1",
+                        fontSize: 18,
+                        marginLeft: 4,
+                      }}
+                    >
+                      /年
+                    </span>
+                  </div>
+
+                  {/* 右邊：空白區域保持平衡 */}
+                  <div style={{ width: "100px" }}></div>
+                </div>
+                <div
+                  style={{
+                    color: "#7dd3fc",
+                    fontSize: 14,
+                    textAlign: "center",
+                    marginTop: 20,
+                    marginBottom: 8,
+                  }}
+                >
+                  年繳方案
+                </div>
+                <div
+                  style={{
+                    color: "#10b981",
+                    fontSize: 14,
+                    textAlign: "center",
+                    fontWeight: 600,
+                  }}
+                >
+                  平均 180/月
+                </div>
+              </div>
+
+              <button
+                onClick={() => {
+                  document.getElementById('pricing-section')?.scrollIntoView({ 
+                    behavior: 'smooth' 
+                  });
+                }}
+                style={{
+                  width: "100%",
+                  background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                  color: "#fff",
+                  border: "none",
+                  borderRadius: 16,
+                  padding: "16px 24px",
+                  fontSize: 18,
+                  fontWeight: 700,
+                  cursor: "pointer",
+                  transition: "all 0.3s ease",
+                  letterSpacing: 0.5,
+                  boxShadow: "0 4px 16px rgba(14, 165, 233, 0.3)",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-2px)";
+                  e.currentTarget.style.boxShadow = "0 8px 24px rgba(14, 165, 233, 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow = "0 4px 16px rgba(14, 165, 233, 0.3)";
+                }}
+              >
+                立即訂閱優惠
+              </button>
+            </div>
+          </div>
+
+          {/* 底部說明文字 */}
+          <div
+            style={{
+              textAlign: "center",
+              marginTop: "48px",
+            }}
+          >
+            <p
+              style={{
+                color: "#94a3b8",
+                fontSize: 16,
+                lineHeight: 1.6,
+                maxWidth: "800px",
+                margin: "0 auto",
+              }}
+            >
+              有任何問題請洽Cosmos Meter官方LINE，我們將竭誠為您服務。
+            </p>
+          </div>
         </div>
       </section>
 
@@ -688,7 +1260,7 @@ export default function Home() {
             <div
               style={{
                 width: "280px",
-                height: "500px",
+                height: "600px",
                 borderRadius: 24,
                 overflow: "hidden",
                 boxShadow: "0 12px 40px rgba(102, 126, 234, 0.4)",
@@ -696,7 +1268,7 @@ export default function Home() {
               }}
             >
               <Image
-                src="/mob_02.jpg"
+                src="/pic01.jpg"
                 alt="Cosmos Meter 計費界面截圖"
                 width={280}
                 height={500}
@@ -726,7 +1298,7 @@ export default function Home() {
             <div
               style={{
                 width: "280px",
-                height: "500px",
+                height: "600px",
                 borderRadius: 24,
                 overflow: "hidden",
                 boxShadow: "0 12px 40px rgba(240, 147, 251, 0.4)",
@@ -734,7 +1306,7 @@ export default function Home() {
               }}
             >
               <Image
-                src="/mob_03.jpg"
+                src="/pic02.jpg"
                 alt="Cosmos Meter 操作界面 UI 設計截圖"
                 width={280}
                 height={500}
@@ -742,6 +1314,7 @@ export default function Home() {
                   width: "100%",
                   height: "100%",
                   objectFit: "cover",
+                  borderRadius: "12px",
                 }}
               />
             </div>
@@ -786,48 +1359,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ 區 */}
-      <section
-        style={{ width: "100%", background: "#1e293b", padding: "48px 0" }}
-      >
-        <div
-          style={{
-            color: "#0EA5E9",
-            fontWeight: 800,
-            fontSize: 26,
-            marginBottom: 18,
-            textAlign: "center",
-          }}
-        >
-          常見問題
-        </div>
-        <ul
-          style={{
-            color: "#fff",
-            fontSize: 18,
-            lineHeight: 2,
-            paddingLeft: 32,
-            maxWidth: 900,
-            margin: "0 auto",
-          }}
-        >
-          <li>
-            Q: 如何申請免費試用？
-            <br />
-            A: 點擊上方「申請試用帳號」按鈕，填寫表單即可。
-          </li>
-          <li>
-            Q: 支援哪些車型？
-            <br />
-            A: 支援多種計程車車型與計費方式。
-          </li>
-          <li>
-            Q: 有客服支援嗎？
-            <br />
-            A: 有，請見下方聯絡資訊。
-          </li>
-        </ul>
-      </section>
 
       {/* 底部聯絡資訊 */}
       <footer
@@ -842,7 +1373,7 @@ export default function Home() {
           marginTop: 0,
         }}
       >
-        <div>聯絡我們：mr.chi.service@gmail.com ｜ Cosmos Meter 官方 LINE</div>
+        <div>聯絡我們：mr.chi.service@gmail.com ｜ <a href="https://line.me/R/ti/p/@478umgog" target="_blank" rel="noopener noreferrer" style={{ color: "#0EA5E9", textDecoration: "underline" }}>Cosmos Meter 官方 LINE</a></div>
         <div style={{ marginTop: "16px" }}>
           <Link
             href="/privacy"
@@ -859,6 +1390,49 @@ export default function Home() {
           © 2025 季先生科技@版權所有 All Rights Reserved
         </div>
       </footer>
+
+      {/* 浮動 Line 聯絡按鈕 */}
+      <a
+        href="https://line.me/R/ti/p/@478umgog"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          position: "fixed",
+          bottom: "24px",
+          right: "24px",
+          width: "64px",
+          height: "64px",
+          borderRadius: "50%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          boxShadow: "0 4px 20px rgba(6, 199, 86, 0.59)",
+          zIndex: 1000,
+          transition: "all 0.3s ease",
+          cursor: "pointer",
+          border: "none",
+          overflow: "hidden",
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.transform = "scale(1.1)";
+          e.currentTarget.style.boxShadow = "0 6px 25px rgba(6, 199, 85, 0.6)";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.transform = "scale(1)";
+          e.currentTarget.style.boxShadow = "0 4px 20px rgba(6, 199, 85, 0.4)";
+        }}
+      >
+        <Image
+          src="/line.png"
+          alt="Line 聯絡我們"
+          width={64}
+          height={64}
+          style={{
+            display: "block",
+            borderRadius: "50%",
+          }}
+        />
+      </a>
 
       <style jsx global>{`
         * {
@@ -887,38 +1461,58 @@ export default function Home() {
         /* 手機版 (768px 以下) */
         @media (max-width: 768px) {
           nav {
-            padding: 16px 4vw !important;
+            padding: 18px 4vw !important;
           }
 
           nav span {
-            font-size: 16px !important;
+            font-size: 18px !important;
+            letter-spacing: 0.5px !important;
+          }
+
+          nav div:first-child img {
+            width: 44px !important;
+            height: 44px !important;
           }
 
           nav div:last-child {
-            gap: 8px !important;
+            gap: 10px !important;
           }
 
           nav a {
-            padding: 6px 16px !important;
-            font-size: 12px !important;
-            border-radius: 16px !important;
+            padding: 8px 18px !important;
+            font-size: 14px !important;
+            border-radius: 18px !important;
             border-width: 1px !important;
+            font-weight: 600 !important;
           }
 
           .hero-section {
             flex-direction: column !important;
             height: auto !important;
-            min-height: 90vh !important;
+            min-height: 50vh !important;
             gap: 2rem !important;
-            padding: 2rem 4vw !important;
+            padding: 2rem 4vw 1rem 4vw !important;
           }
 
           .phone-container {
             display: none !important;
           }
 
+          /* 手機版影片區塊和下載區並排容器 */
           .mobile-video-section {
             display: flex !important;
+            flex-direction: row !important;
+            align-items: flex-start !important;
+            justify-content: center !important;
+            gap: 2rem !important;
+            padding: 2.5rem 4vw !important;
+            background: #111827 !important;
+            margin-top: 2rem !important;
+          }
+
+          /* 影片區塊保持原本大小 */
+          .mobile-phone-container {
+            flex: 0 0 auto !important;
           }
 
           .hero-content-area {
@@ -926,6 +1520,7 @@ export default function Home() {
             max-width: 500px !important;
             text-align: center !important;
             margin-left: 0 !important;
+            margin-top: 2rem !important;
           }
 
           .hero-content-area img {
@@ -936,68 +1531,147 @@ export default function Home() {
           }
 
           .hero-content-area h1:first-of-type {
-            font-size: 28px !important;
-            margin-bottom: 12px !important;
+            font-size: 36px !important;
+            margin-bottom: 14px !important;
             line-height: 1.2 !important;
           }
 
           .hero-content-area h1:nth-of-type(2) {
-            font-size: 24px !important;
-            margin-bottom: 16px !important;
+            font-size: 32px !important;
+            margin-bottom: 18px !important;
             line-height: 1.2 !important;
           }
 
-          .hero-content-area div:nth-of-type(3) {
-            font-size: 18px !important;
-            margin-bottom: 20px !important;
+          .hero-subtitle {
+            font-size: 22px !important;
+            margin-bottom: 24px !important;
           }
 
           .hero-content-area div:nth-of-type(4) {
-            font-size: 14px !important;
-            padding: 8px 20px !important;
-            margin-bottom: 20px !important;
-            letter-spacing: 0.5px !important;
-            line-height: 1.3 !important;
-          }
-
-          .hero-content-area a {
             font-size: 16px !important;
-            padding: 14px 32px !important;
-            border-radius: 24px !important;
+            padding: 10px 24px !important;
+            margin-bottom: 24px !important;
             letter-spacing: 0.5px !important;
-            margin-top: 12px !important;
+            line-height: 1.4 !important;
           }
 
-          section:nth-of-type(4) {
-            padding: 32px 4vw !important;
+          .hero-content-area button {
+            font-size: 18px !important;
+            padding: 16px 40px !important;
+            border-radius: 28px !important;
+            letter-spacing: 0.5px !important;
+            margin-top: 16px !important;
           }
 
-          section:nth-of-type(4) > div:first-child {
-            font-size: 20px !important;
-            margin-bottom: 20px !important;
+          /* 手機版下載區調整 - 並排在影片旁邊 */
+          section:nth-of-type(3) {
+            display: none !important; /* 隱藏原本的下載區 */
+          }
+
+          /* 在手機版影片區塊中添加下載區 */
+          .mobile-download-section {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex: 1 !important;
+            min-width: 0 !important;
+            max-width: 280px !important;
+            text-align: center !important;
+            height: 100% !important;
+            min-height: 400px !important;
+          }
+
+          .mobile-download-title {
+            color: #fff !important;
+            font-weight: 700 !important;
+            font-size: 18px !important;
+            margin-bottom: 34px !important;
+          }
+
+          .mobile-download-btn-row {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 30px !important;
+            align-items: center !important;
+          }
+
+          .mobile-download-btn {
+            border-radius: 6px !important;
+            overflow: hidden !important;
+            box-shadow: 0 4px 16px #0ea5e966 !important;
+            background: #111 !important;
+            transition: all 0.3s ease !important;
+            position: relative !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+          }
+
+          .mobile-download-btn:hover {
+            transform: translateY(-2px) scale(1.02) !important;
+            box-shadow: 0 6px 24px #0ea5e9aa !important;
+          }
+
+          .mobile-download-btn img {
+            height: 48px !important;
+            width: auto !important;
+          }
+
+          .mobile-download-btn.disabled {
+            background: #6b7280 !important;
+            cursor: not-allowed !important;
+          }
+
+          .mobile-download-btn.disabled img {
+            filter: grayscale(100%) !important;
+            opacity: 0.6 !important;
+          }
+
+          .mobile-download-btn .overlay-text {
+            position: absolute !important;
+            background: rgb(255, 255, 255) !important;
+            color: #0ea5e9 !important;
+            padding: 2px 8px !important;
+            border-radius: 15px !important;
+            font-size: 12px !important;
+            font-weight: 600 !important;
+          }
+
+          section:nth-of-type(3) > div:first-child {
+            font-size: 24px !important;
+            margin-bottom: 28px !important;
+            font-weight: 700 !important;
           }
 
           .download-btn-row {
-            gap: 16px !important;
+            gap: 20px !important;
             flex-wrap: wrap !important;
+            justify-content: center !important;
+          }
+
+          .download-btn {
+            transition: all 0.3s ease !important;
           }
 
           .download-btn img {
-            height: 48px !important;
+            height: 52px !important;
           }
 
-          section:nth-of-type(4) > div:last-child {
-            font-size: 14px !important;
+          section:nth-of-type(3) > div:last-child {
+            font-size: 16px !important;
+            margin-top: 24px !important;
+            line-height: 1.5 !important;
           }
 
           section:nth-of-type(5) {
-            padding: 48px 4vw !important;
+            padding: 64px 4vw !important;
           }
 
           .feature-item {
             flex-direction: column !important;
-            gap: 24px !important;
-            margin-bottom: 48px !important;
+            gap: 32px !important;
+            margin-bottom: 64px !important;
             max-width: 500px !important;
           }
 
@@ -1017,34 +1691,40 @@ export default function Home() {
           .feature-text {
             text-align: center !important;
             min-width: auto !important;
+            padding: 0 16px !important;
           }
 
           .feature-text h3 {
-            font-size: 24px !important;
-            margin-bottom: 16px !important;
+            font-size: 28px !important;
+            margin-bottom: 20px !important;
             letter-spacing: 0.5px !important;
+            line-height: 1.3 !important;
           }
 
           .feature-text p {
-            font-size: 16px !important;
+            font-size: 18px !important;
             line-height: 1.6 !important;
-            margin-bottom: 16px !important;
+            margin-bottom: 20px !important;
           }
 
           .feature-text ul {
-            font-size: 14px !important;
-            line-height: 1.6 !important;
-            padding-left: 16px !important;
+            font-size: 16px !important;
+            line-height: 1.7 !important;
+            padding-left: 20px !important;
             text-align: left !important;
             display: inline-block !important;
           }
 
+          .feature-text ul li {
+            margin-bottom: 8px !important;
+          }
+
           .feature-image > div {
-            width: 200px !important;
-            height: 360px !important;
-            border-radius: 20px !important;
+            width: 240px !important;
+            height: 500px !important;
+            border-radius: 24px !important;
             font-size: 16px !important;
-            box-shadow: 0 8px 32px rgba(102, 126, 234, 0.4) !important;
+            box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4) !important;
           }
 
           .feature-image > div > div:first-child {
@@ -1096,9 +1776,194 @@ export default function Home() {
           }
 
           footer {
+            font-size: 14px !important;
+            padding: 32px 4vw !important;
+            line-height: 1.7 !important;
+          }
+
+          footer > div:first-child {
+            margin-bottom: 20px !important;
+          }
+
+          footer > div:nth-child(2) {
+            margin-top: 20px !important;
+          }
+
+          footer > div:last-child {
+            margin-top: 20px !important;
+            font-size: 13px !important;
+          }
+
+          /* 購買區手機版調整 */
+          #pricing-section {
+            padding: 60px 4vw !important;
+          }
+
+          #pricing-section h2 {
+            font-size: 38px !important;
+            margin-bottom: 16px !important;
+          }
+
+          #pricing-section p {
+            font-size: 18px !important;
+            margin-bottom: 40px !important;
+          }
+
+          .pricing-container {
+            flex-direction: column !important;
+            justify-content: center !important;
+            align-items: center !important;
+            gap: 40px !important;
+          }
+
+          .benefits-section {
+            max-width: 100% !important;
+            margin-right: 0 !important;
+            text-align: left !important;
+            padding: 0 20px !important;
+          }
+
+          .benefits-section h3 {
+            font-size: 28px !important;
+            margin-bottom: 24px !important;
+            text-align: center !important;
+          }
+
+          .benefits-section > div {
+            gap: 8px !important;
+          }
+
+          .benefits-section > div > div {
+            justify-content: flex-start !important;
+            text-align: left !important;
+            padding: 12px 0 !important;
+            margin-bottom: 8px !important;
+          }
+
+          .benefits-section span {
+            font-size: 18px !important;
+          }
+
+          .pricing-card {
+            width: 360px !important;
+            max-width: 90vw !important;
+            padding: 36px 28px !important;
+          }
+
+          .pricing-card h3 {
+            font-size: 22px !important;
+          }
+
+          /* 手機版價格卡片佈局優化 */
+          .pricing-card > div:nth-child(3),
+          .pricing-card > div:nth-child(4) {
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: flex-start !important;
+            align-items: stretch !important;
+            background: rgba(14, 165, 233, 0.12) !important;
+            border-radius: 18px !important;
+            margin-bottom: 20px !important;
+            padding: 24px 20px !important;
+            min-height: 150px !important;
+            gap: 0 !important;
+            position: relative !important;
+          }
+
+          /* 手機版原價區域調整 */
+          .pricing-card > div:nth-child(3) > div:first-child,
+          .pricing-card > div:nth-child(4) > div:first-child {
+            order: 1 !important;
+            display: flex !important;
+            justify-content: flex-start !important;
+            align-items: center !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            position: relative !important;
+            transform: none !important;
+            left: auto !important;
+            gap: 12px !important;
+            margin-bottom: 18px !important;
+          }
+
+          /* 手機版優惠價區域 - 置中並突出顯示 */
+          .pricing-card > div:nth-child(3) > div:nth-child(2),
+          .pricing-card > div:nth-child(4) > div:nth-child(2) {
+            order: 2 !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 12px 0 !important;
+            position: static !important;
+            transform: none !important;
+            left: auto !important;
+            background: rgba(14, 165, 233, 0.1) !important;
+            border-radius: 12px !important;
+          }
+
+          /* 手機版優惠價字體放大 */
+          .pricing-card > div:nth-child(3) > div:nth-child(2) span[style*="font-size: 36px"],
+          .pricing-card > div:nth-child(4) > div:nth-child(2) span[style*="font-size: 36px"] {
+            font-size: 34px !important;
+            font-weight: 900 !important;
+          }
+
+          /* 隱藏第三個空白div */
+          .pricing-card > div:nth-child(3) > div:nth-child(3),
+          .pricing-card > div:nth-child(4) > div:nth-child(3) {
+            display: none !important;
+          }
+
+          /* 手機版原價文字調整 */
+          .pricing-card > div:nth-child(3) > div:first-child span,
+          .pricing-card > div:nth-child(4) > div:first-child span {
+            font-size: 18px !important;
+            line-height: 1.2 !important;
+          }
+
+          /* 手機版優惠價文字間距調整 */
+          .pricing-card > div:nth-child(3) > div:nth-child(2) span,
+          .pricing-card > div:nth-child(4) > div:nth-child(2) span {
+            line-height: 1.2 !important;
+          }
+
+          /* 手機版一般字體大小調整（會被更具體的規則覆蓋） */
+          .pricing-card span[style*="font-size: 36px"] {
+            font-size: 28px !important;
+          }
+
+          .pricing-card span[style*="font-size: 14px"] {
             font-size: 12px !important;
-            padding: 24px 4vw !important;
-            line-height: 1.6 !important;
+          }
+
+          .pricing-card span[style*="font-size: 24px"] {
+            font-size: 20px !important;
+          }
+
+          .pricing-card button {
+            font-size: 16px !important;
+            padding: 14px 20px !important;
+          }
+
+          /* 浮動 Line 按鈕手機版調整 */
+          a[href*="line.me"] {
+            bottom: 16px !important;
+            right: 16px !important;
+            width: 40px !important;
+            height: 40px !important;
+            box-shadow: none !important;
+          }
+
+          a[href*="line.me"]:hover {
+            box-shadow: none !important;
+          }
+
+          a[href*="line.me"] img {
+            width: 40px !important;
+            height: 40px !important;
           }
         }
 
@@ -1122,8 +1987,15 @@ export default function Home() {
           }
 
           .hero-section {
-            padding: 1rem 2vw !important;
+            padding: 1.5rem 2vw 0.5rem 2vw !important;
             gap: 1.5rem !important;
+          }
+
+          /* 小型手機版影片區塊和下載區並排 */
+          .mobile-video-section {
+            flex-direction: row !important;
+            gap: 1rem !important;
+            padding: 2rem 2vw !important;
           }
 
           .mobile-phone-container {
@@ -1134,6 +2006,19 @@ export default function Home() {
           .mobile-iphone-frame {
             width: 140px !important;
             height: 280px !important;
+            border-radius: 20px !important;
+          }
+
+          .mobile-phone-screen {
+            border-radius: 16px !important;
+          }
+
+          .mobile-video-section video {
+            border-radius: 16px !important;
+          }
+
+          .mobile-video-fallback {
+            border-radius: 16px !important;
           }
 
           .mobile-dynamic-island {
@@ -1142,32 +2027,138 @@ export default function Home() {
             border-radius: 6px !important;
           }
 
+          /* 小型手機版下載區調整 */
+          .mobile-download-section {
+            max-width: 200px !important;
+            align-items: center !important;
+            flex: 1 !important;
+          }
+
+          .mobile-download-title {
+            font-size: 16px !important;
+            margin-bottom: 20px !important;
+          }
+
+          .mobile-download-btn-row {
+            flex-direction: column !important;
+            gap: 26px !important;
+          }
+
+          .mobile-download-btn img {
+            height: 42px !important;
+          }
+
+          .mobile-download-btn .overlay-text {
+            font-size: 10px !important;
+            padding: 2px 6px !important;
+            background: rgb(255, 255, 255) !important;
+            color: #0ea5e9 !important;
+            border-radius: 12px !important;
+          }
+
           .hero-content-area h1:first-of-type {
-            font-size: 20px !important;
+            font-size: 28px !important;
           }
 
           .hero-content-area h1:nth-of-type(2) {
+            font-size: 26px !important;
+          }
+
+          .hero-subtitle {
             font-size: 18px !important;
           }
 
-          .hero-content-area div:nth-of-type(3) {
-            font-size: 16px !important;
-          }
-
           .hero-content-area div:nth-of-type(4) {
-            font-size: 12px !important;
-            padding: 6px 16px !important;
+            font-size: 14px !important;
+            padding: 8px 20px !important;
           }
 
-          .hero-content-area a {
-            font-size: 14px !important;
-            padding: 12px 24px !important;
+          .hero-content-area button {
+            font-size: 16px !important;
+            padding: 14px 28px !important;
           }
 
           section:nth-of-type(4),
           section:nth-of-type(5),
           section:nth-of-type(6) {
             padding: 20px 2vw !important;
+          }
+
+          /* 購買區小型手機版調整 */
+          #pricing-section h2 {
+            font-size: 32px !important;
+          }
+
+          #pricing-section p {
+            font-size: 16px !important;
+          }
+
+          .pricing-container {
+            gap: 40px !important;
+          }
+
+          .benefits-section h3 {
+            font-size: 20px !important;
+            margin-bottom: 16px !important;
+          }
+
+          .benefits-section > div {
+            gap: 3px !important;
+          }
+
+          .benefits-section span {
+            font-size: 14px !important;
+          }
+
+          .pricing-card {
+            width: 300px !important;
+            max-width: 90vw !important;
+            padding: 24px 20px !important;
+          }
+
+          .pricing-card h3 {
+            font-size: 18px !important;
+          }
+
+          /* 小型手機版價格區域調整 */
+          .pricing-card > div:nth-child(3),
+          .pricing-card > div:nth-child(4) {
+            min-height: 120px !important;
+            padding: 18px 12px !important;
+            gap: 0 !important;
+            margin-bottom: 12px !important;
+          }
+
+          /* 小型手機版原價區域保持原樣 */
+          .pricing-card > div:nth-child(3) > div:first-child,
+          .pricing-card > div:nth-child(4) > div:first-child {
+            margin-bottom: 14px !important;
+          }
+
+          /* 小型手機版優惠價置中並放大字體 */
+          .pricing-card > div:nth-child(3) > div:nth-child(2),
+          .pricing-card > div:nth-child(4) > div:nth-child(2) {
+            margin: 0 !important;
+            justify-content: center !important;
+          }
+
+          /* 小型手機版優惠價字體調整 */
+          .pricing-card > div:nth-child(3) > div:nth-child(2) span[style*="font-size: 36px"],
+          .pricing-card > div:nth-child(4) > div:nth-child(2) span[style*="font-size: 36px"] {
+            font-size: 26px !important;
+          }
+
+          /* 小型手機版通用字體調整（優惠價會被更具體的規則覆蓋） */
+          .pricing-card span[style*="font-size: 36px"] {
+            font-size: 24px !important;
+          }
+
+          .pricing-card span[style*="font-size: 14px"] {
+            font-size: 11px !important;
+          }
+
+          .pricing-card span[style*="font-size: 24px"] {
+            font-size: 18px !important;
           }
 
           .download-btn-row {
@@ -1178,10 +2169,35 @@ export default function Home() {
           .feature-item {
             margin-bottom: 32px !important;
           }
+
+          /* 小型手機版浮動按鈕調整 */
+          a[href*="line.me"] {
+            bottom: 12px !important;
+            right: 12px !important;
+            width: 40px !important;
+            height: 40px !important;
+            box-shadow: none !important;
+          }
+
+          a[href*="line.me"]:hover {
+            box-shadow: none !important;
+          }
+
+          a[href*="line.me"] img {
+            width: 40px !important;
+            height: 40px !important;
+          }
         }
 
         /* 超小螢幕 (360px 以下) */
         @media (max-width: 360px) {
+          /* 超小螢幕採用垂直佈局 */
+          .mobile-video-section {
+            flex-direction: column !important;
+            gap: 1rem !important;
+            padding: 1.5rem 2vw !important;
+          }
+
           .mobile-phone-container {
             width: 160px !important;
             height: 320px !important;
@@ -1190,6 +2206,19 @@ export default function Home() {
           .mobile-iphone-frame {
             width: 120px !important;
             height: 240px !important;
+            border-radius: 18px !important;
+          }
+
+          .mobile-phone-screen {
+            border-radius: 14px !important;
+          }
+
+          .mobile-video-section video {
+            border-radius: 14px !important;
+          }
+
+          .mobile-video-fallback {
+            border-radius: 14px !important;
           }
 
           .mobile-dynamic-island {
@@ -1197,16 +2226,43 @@ export default function Home() {
             height: 10px !important;
           }
 
+          /* 超小螢幕下載區調整 */
+          .mobile-download-section {
+            max-width: 100% !important;
+          }
+
+          .mobile-download-title {
+            font-size: 14px !important;
+            margin-bottom: 12px !important;
+          }
+
+          .mobile-download-btn-row {
+            flex-direction: column !important;
+            gap: 12px !important;
+          }
+
+          .mobile-download-btn img {
+            height: 34px !important;
+          }
+
+          .mobile-download-btn .overlay-text {
+            font-size: 9px !important;
+            padding: 2px 6px !important;
+            background: rgb(255, 255, 255) !important;
+            color: #0ea5e9 !important;
+            border-radius: 10px !important;
+          }
+
           .hero-content-area h1:first-of-type {
-            font-size: 18px !important;
+            font-size: 22px !important;
           }
 
           .hero-content-area h1:nth-of-type(2) {
-            font-size: 16px !important;
+            font-size: 20px !important;
           }
 
-          .hero-content-area div:nth-of-type(3) {
-            font-size: 14px !important;
+          .hero-subtitle {
+            font-size: 12px !important;
           }
         }
       `}</style>

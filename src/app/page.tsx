@@ -326,7 +326,7 @@ export default function Home() {
               border: "none",
               fontSize: 22,
               letterSpacing: 1,
-              boxShadow: "0 4px 16px #0ea5e93a",
+              boxShadow: "0 6px 20px rgba(14, 165, 233, 0.25), 0 2px 8px rgba(14, 165, 233, 0.15)",
               margin: "18px 0 0 0",
               transition: "all 0.3s ease",
               display: "inline-block",
@@ -334,11 +334,11 @@ export default function Home() {
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "translateY(-2px)";
-              e.currentTarget.style.boxShadow = "0 8px 24px #0ea5e9aa";
+              e.currentTarget.style.boxShadow = "0 10px 30px rgba(14, 165, 233, 0.35), 0 4px 12px rgba(14, 165, 233, 0.2)";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "translateY(0)";
-              e.currentTarget.style.boxShadow = "0 4px 16px #0ea5e93a";
+              e.currentTarget.style.boxShadow = "0 6px 20px rgba(14, 165, 233, 0.25), 0 2px 8px rgba(14, 165, 233, 0.15)";
             }}
           >
             開啟你的旅程
@@ -715,17 +715,7 @@ export default function Home() {
             >
               選擇您的方案
             </h2>
-            <p
-              style={{
-                color: "#cbd5e1",
-                fontSize: 20,
-                lineHeight: 1.6,
-                maxWidth: "600px",
-                margin: "0 auto",
-              }}
-            >
-              所有方案均包含完整功能，支援多種計費模式，享受精準跳錶服務。
-            </p>
+           
           </div>
 
           {/* 價格卡片區域 */}
@@ -925,68 +915,69 @@ export default function Home() {
                   padding: "24px",
                   marginBottom: "20px",
                   border: "1px solid rgba(14, 165, 233, 0.2)",
+                  position: "relative",
                 }}
               >
+                {/* 左上角：原價 */}
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "8px",
+                    left: "12px",
+                    display: "flex",
+                    alignItems: "baseline",
+                    gap: "6px",
+                  }}
+                >
+                  <span
+                    style={{
+                      color: "#ef4444",
+                      fontSize: 22,
+                      fontWeight: 500,
+                    }}
+                  >
+                    原價
+                  </span>
+                  <span
+                    style={{
+                      color: "#94a3b8",
+                      fontSize: 25,
+                      fontWeight: 700,
+                      opacity: 0.8,
+                      position: "relative",
+                      display: "inline-block",
+                    }}
+                  >
+                    280
+                    <span
+                      style={{
+                        position: "absolute",
+                        top: "50%",
+                        left: "50%",
+                        width: "120%",
+                        height: "2px",
+                        background: "#ef4444",
+                        opacity: 0.7,
+                        transform: "translate(-50%, -50%) rotate(15deg)",
+                        borderRadius: "1px",
+                      }}
+                    ></span>
+                  </span>
+                </div>
+                
                 <div
                   style={{
                     display: "flex",
                     alignItems: "baseline",
-                    justifyContent: "space-between",
+                    justifyContent: "center",
                     marginBottom: 8,
                     position: "relative",
+                    marginTop: "32px",
                   }}
                 >
-                  {/* 左邊：原價 */}
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "baseline",
-                    }}
-                  >
-                    <span
-                      style={{
-                        color: "#ef4444",
-                        fontSize: 14,
-                        marginRight: 8,
-                        marginTop: 25,
-                        fontWeight: 500,
-                      }}
-                    >
-                      原價
-                    </span>
-                    <span
-                      style={{
-                        color: "#94a3b8",
-                        fontSize: 24,
-                        fontWeight: 700,
-                        opacity: 0.8,
-                        position: "relative",
-                        display: "inline-block",
-                      }}
-                    >
-                      280
-                      <span
-                        style={{
-                          position: "absolute",
-                          top: "50%",
-                          left: "50%",
-                          width: "120%",
-                          height: "3px",
-                          background: "#ef4444",
-                          opacity: 0.7,
-                          transform: "translate(-50%, -50%) rotate(15deg)",
-                          borderRadius: "2px",
-                        }}
-                      ></span>
-                    </span>
-                  </div>
-
                   {/* 中間：優惠價格 (絕對置中) */}
                   <div
                     style={{
-                      position: "absolute",
-                      left: "50%",
-                      transform: "translateX(-50%)",
                       display: "flex",
                       alignItems: "baseline",
                     }}
@@ -994,7 +985,7 @@ export default function Home() {
                     <span
                       style={{
                         color: "#fff",
-                        fontSize: 36,
+                        fontSize: 48,
                         fontWeight: 900,
                       }}
                     >
@@ -1010,9 +1001,6 @@ export default function Home() {
                       /月
                     </span>
                   </div>
-
-                  {/* 右邊：空白區域保持平衡 */}
-                  <div style={{ width: "100px" }}></div>
                 </div>
                 <div
                   style={{
@@ -1034,68 +1022,69 @@ export default function Home() {
                   padding: "24px",
                   marginBottom: "32px",
                   border: "1px solid rgba(14, 165, 233, 0.2)",
+                  position: "relative",
                 }}
               >
+                {/* 左上角：原價 */}
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "8px",
+                    left: "12px",
+                    display: "flex",
+                    alignItems: "baseline",
+                    gap: "6px",
+                  }}
+                >
+                  <span
+                    style={{
+                      color: "#ef4444",
+                      fontSize: 22,
+                      fontWeight: 500,
+                    }}
+                  >
+                    原價
+                  </span>
+                  <span
+                    style={{
+                      color: "#94a3b8",
+                      fontSize: 25,
+                      fontWeight: 700,
+                      opacity: 0.8,
+                      position: "relative",
+                      display: "inline-block",
+                    }}
+                  >
+                    2400
+                    <span
+                      style={{
+                        position: "absolute",
+                        top: "50%",
+                        left: "50%",
+                        width: "120%",
+                        height: "2px",
+                        background: "#ef4444",
+                        opacity: 0.7,
+                        transform: "translate(-50%, -50%) rotate(15deg)",
+                        borderRadius: "1px",
+                      }}
+                    ></span>
+                  </span>
+                </div>
+                
                 <div
                   style={{
                     display: "flex",
                     alignItems: "baseline",
-                    justifyContent: "space-between",
+                    justifyContent: "center",
                     marginBottom: 8,
                     position: "relative",
+                    marginTop: "32px",
                   }}
                 >
-                  {/* 左邊：原價 */}
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "baseline",
-                    }}
-                  >
-                    <span
-                      style={{
-                        color: "#ef4444",
-                        fontSize: 14,
-                        marginRight: 8,
-                        marginTop: 25,
-                        fontWeight: 500,
-                      }}
-                    >
-                      原價
-                    </span>
-                    <span
-                      style={{
-                        color: "#94a3b8",
-                        fontSize: 24,
-                        fontWeight: 700,
-                        opacity: 0.8,
-                        position: "relative",
-                        display: "inline-block",
-                      }}
-                    >
-                      2400
-                      <span
-                        style={{
-                          position: "absolute",
-                          top: "50%",
-                          left: "50%",
-                          width: "120%",
-                          height: "3px",
-                          background: "#ef4444",
-                          opacity: 0.7,
-                          transform: "translate(-50%, -50%) rotate(15deg)",
-                          borderRadius: "2px",
-                        }}
-                      ></span>
-                    </span>
-                  </div>
-
                   {/* 中間：優惠價格 (絕對置中) */}
                   <div
                     style={{
-                      position: "absolute",
-                      left: "50%",
-                      transform: "translateX(-50%)",
                       display: "flex",
                       alignItems: "baseline",
                     }}
@@ -1103,7 +1092,7 @@ export default function Home() {
                     <span
                       style={{
                         color: "#fff",
-                        fontSize: 36,
+                        fontSize: 48,
                         fontWeight: 900,
                       }}
                     >
@@ -1119,9 +1108,6 @@ export default function Home() {
                       /年
                     </span>
                   </div>
-
-                  {/* 右邊：空白區域保持平衡 */}
-                  <div style={{ width: "100px" }}></div>
                 </div>
                 <div
                   style={{
@@ -1137,7 +1123,7 @@ export default function Home() {
                 <div
                   style={{
                     color: "#10b981",
-                    fontSize: 14,
+                    fontSize: 18,
                     textAlign: "center",
                     fontWeight: 600,
                   }}
@@ -1524,9 +1510,9 @@ export default function Home() {
           }
 
           .hero-content-area img {
-            width: 80px !important;
-            height: 80px !important;
-            border-radius: 24px !important;
+            width: 100px !important;
+            height: 100px !important;
+            border-radius: 30px !important;
             margin-bottom: 16px !important;
           }
 
@@ -1556,9 +1542,9 @@ export default function Home() {
           }
 
           .hero-content-area button {
-            font-size: 18px !important;
-            padding: 16px 40px !important;
-            border-radius: 28px !important;
+            font-size: 20px !important;
+            padding: 18px 44px !important;
+            border-radius: 30px !important;
             letter-spacing: 0.5px !important;
             margin-top: 16px !important;
           }
@@ -1585,7 +1571,7 @@ export default function Home() {
           .mobile-download-title {
             color: #fff !important;
             font-weight: 700 !important;
-            font-size: 18px !important;
+            font-size: 22px !important;
             margin-bottom: 34px !important;
           }
 
@@ -1800,12 +1786,12 @@ export default function Home() {
           }
 
           #pricing-section h2 {
-            font-size: 38px !important;
+            font-size: 44px !important;
             margin-bottom: 16px !important;
           }
 
           #pricing-section p {
-            font-size: 18px !important;
+            font-size: 20px !important;
             margin-bottom: 40px !important;
           }
 
@@ -1824,129 +1810,101 @@ export default function Home() {
           }
 
           .benefits-section h3 {
-            font-size: 28px !important;
+            font-size: 32px !important;
             margin-bottom: 24px !important;
             text-align: center !important;
           }
 
           .benefits-section > div {
-            gap: 8px !important;
+            gap: 4px !important;
           }
 
           .benefits-section > div > div {
             justify-content: flex-start !important;
             text-align: left !important;
-            padding: 12px 0 !important;
-            margin-bottom: 8px !important;
+            padding: 8px 0 !important;
+            margin-bottom: 4px !important;
           }
 
           .benefits-section span {
-            font-size: 18px !important;
-          }
-
-          .pricing-card {
-            width: 360px !important;
-            max-width: 90vw !important;
-            padding: 36px 28px !important;
-          }
-
-          .pricing-card h3 {
             font-size: 22px !important;
           }
 
-          /* 手機版價格卡片佈局優化 */
-          .pricing-card > div:nth-child(3),
-          .pricing-card > div:nth-child(4) {
-            display: flex !important;
-            flex-direction: column !important;
-            justify-content: flex-start !important;
-            align-items: stretch !important;
-            background: rgba(14, 165, 233, 0.12) !important;
-            border-radius: 18px !important;
-            margin-bottom: 20px !important;
-            padding: 24px 20px !important;
-            min-height: 150px !important;
-            gap: 0 !important;
-            position: relative !important;
+          .pricing-card {
+            width: 400px !important;
+            max-width: 92vw !important;
+            padding: 40px 32px !important;
           }
 
-          /* 手機版原價區域調整 */
-          .pricing-card > div:nth-child(3) > div:first-child,
-          .pricing-card > div:nth-child(4) > div:first-child {
-            order: 1 !important;
-            display: flex !important;
-            justify-content: flex-start !important;
-            align-items: center !important;
-            width: 100% !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            position: relative !important;
-            transform: none !important;
-            left: auto !important;
-            gap: 12px !important;
-            margin-bottom: 18px !important;
-          }
-
-          /* 手機版優惠價區域 - 置中並突出顯示 */
-          .pricing-card > div:nth-child(3) > div:nth-child(2),
-          .pricing-card > div:nth-child(4) > div:nth-child(2) {
-            order: 2 !important;
-            display: flex !important;
-            justify-content: center !important;
-            align-items: center !important;
-            width: 100% !important;
-            margin: 0 !important;
-            padding: 12px 0 !important;
-            position: static !important;
-            transform: none !important;
-            left: auto !important;
-            background: rgba(14, 165, 233, 0.1) !important;
-            border-radius: 12px !important;
-          }
-
-          /* 手機版優惠價字體放大 */
-          .pricing-card > div:nth-child(3) > div:nth-child(2) span[style*="font-size: 36px"],
-          .pricing-card > div:nth-child(4) > div:nth-child(2) span[style*="font-size: 36px"] {
-            font-size: 34px !important;
-            font-weight: 900 !important;
-          }
-
-          /* 隱藏第三個空白div */
-          .pricing-card > div:nth-child(3) > div:nth-child(3),
-          .pricing-card > div:nth-child(4) > div:nth-child(3) {
-            display: none !important;
-          }
-
-          /* 手機版原價文字調整 */
-          .pricing-card > div:nth-child(3) > div:first-child span,
-          .pricing-card > div:nth-child(4) > div:first-child span {
+          /* 官網限定優惠標籤字體 */
+          .pricing-card > div:first-child {
             font-size: 18px !important;
-            line-height: 1.2 !important;
+            padding: 12px 32px !important;
           }
 
-          /* 手機版優惠價文字間距調整 */
-          .pricing-card > div:nth-child(3) > div:nth-child(2) span,
-          .pricing-card > div:nth-child(4) > div:nth-child(2) span {
-            line-height: 1.2 !important;
+          .pricing-card h3 {
+            font-size: 30px !important;
           }
 
-          /* 手機版一般字體大小調整（會被更具體的規則覆蓋） */
-          .pricing-card span[style*="font-size: 36px"] {
-            font-size: 28px !important;
+          /* 手機版原價位置調整 */
+          .pricing-card > div[style*="position: absolute"][style*="top: 8px"] {
+            top: 4px !important;
+            left: 8px !important;
           }
 
-          .pricing-card span[style*="font-size: 14px"] {
-            font-size: 12px !important;
+          .pricing-card > div[style*="position: absolute"] span[style*="fontSize: 12"] {
+            font-size: 14px !important;
           }
 
-          .pricing-card span[style*="font-size: 24px"] {
+          .pricing-card > div[style*="position: absolute"] span[style*="fontSize: 18"] {
+            font-size: 20px !important;
+          }
+
+
+
+
+
+
+
+
+
+          
+
+
+          .pricing-card span[style*="font-size: 14px"],
+          .pricing-card span[style*="fontSize: 14"] {
+            font-size: 18px !important;
+          }
+
+          .pricing-card span[style*="font-size: 24px"],
+          .pricing-card span[style*="fontSize: 24"] {
+            font-size: 30px !important;
+          }
+
+          .pricing-card span[style*="font-size: 18px"],
+          .pricing-card span[style*="fontSize: 18"] {
+            font-size: 24px !important;
+          }
+
+          .pricing-card span[style*="font-size: 16px"],
+          .pricing-card span[style*="fontSize: 16"] {
             font-size: 20px !important;
           }
 
           .pricing-card button {
-            font-size: 16px !important;
-            padding: 14px 20px !important;
+            font-size: 18px !important;
+            padding: 18px 26px !important;
           }
+
+          /* 手機版優惠價格字體 - 最高優先級，放在最後 */
+          .pricing-card span[style*="fontSize: 48"] {
+            font-size: 42px !important;
+          }
+          .pricing-card > div:nth-child(3) span[style*="fontWeight: 900"],
+          .pricing-card > div:nth-child(4) span[style*="fontWeight: 900"] {
+            font-size: 42px !important;
+          }
+
 
           /* 浮動 Line 按鈕手機版調整 */
           a[href*="line.me"] {
@@ -1969,6 +1927,13 @@ export default function Home() {
 
         /* 小型手機 (480px 以下) */
         @media (max-width: 480px) {
+
+          .hero-content-area img {
+            width: 100px !important;
+            height: 100px !important;
+            border-radius: 27px !important;
+            margin-bottom: 16px !important;
+          }
           nav {
             padding: 10px 2vw !important;
           }
@@ -2035,7 +2000,7 @@ export default function Home() {
           }
 
           .mobile-download-title {
-            font-size: 16px !important;
+            font-size: 20px !important;
             margin-bottom: 20px !important;
           }
 
@@ -2074,8 +2039,9 @@ export default function Home() {
           }
 
           .hero-content-area button {
-            font-size: 16px !important;
-            padding: 14px 28px !important;
+            font-size: 18px !important;
+            padding: 16px 32px !important;
+            border-radius: 28px !important;
           }
 
           section:nth-of-type(4),
@@ -2090,7 +2056,7 @@ export default function Home() {
           }
 
           #pricing-section p {
-            font-size: 16px !important;
+            font-size: 18px !important;
           }
 
           .pricing-container {
@@ -2098,72 +2064,104 @@ export default function Home() {
           }
 
           .benefits-section h3 {
-            font-size: 20px !important;
+            font-size: 26px !important;
             margin-bottom: 16px !important;
           }
 
           .benefits-section > div {
-            gap: 3px !important;
+            gap: 2px !important;
+          }
+
+          .benefits-section > div > div {
+            padding: 6px 0 !important;
+            margin-bottom: 2px !important;
           }
 
           .benefits-section span {
-            font-size: 14px !important;
+            font-size: 20px !important;
           }
 
           .pricing-card {
-            width: 300px !important;
-            max-width: 90vw !important;
-            padding: 24px 20px !important;
+            width: 340px !important;
+            max-width: 92vw !important;
+            padding: 28px 24px !important;
+          }
+
+          /* 小型手機版官網限定優惠標籤 */
+          .pricing-card > div:first-child {
+            font-size: 16px !important;
+            padding: 10px 28px !important;
           }
 
           .pricing-card h3 {
+            font-size: 28px !important;
+          }
+
+          /* 小型手機版按鈕字體調整 */
+          .pricing-card button {
             font-size: 18px !important;
+            padding: 16px 24px !important;
           }
 
-          /* 小型手機版價格區域調整 */
-          .pricing-card > div:nth-child(3),
-          .pricing-card > div:nth-child(4) {
-            min-height: 120px !important;
-            padding: 18px 12px !important;
-            gap: 0 !important;
-            margin-bottom: 12px !important;
+          /* 小型手機版原價位置調整 */
+          .pricing-card > div[style*="position: absolute"][style*="top: 8px"] {
+            top: 2px !important;
+            left: 6px !important;
           }
 
-          /* 小型手機版原價區域保持原樣 */
-          .pricing-card > div:nth-child(3) > div:first-child,
-          .pricing-card > div:nth-child(4) > div:first-child {
-            margin-bottom: 14px !important;
+          .pricing-card > div[style*="position: absolute"] span[style*="fontSize: 12"] {
+            font-size: 12px !important;
           }
 
-          /* 小型手機版優惠價置中並放大字體 */
-          .pricing-card > div:nth-child(3) > div:nth-child(2),
-          .pricing-card > div:nth-child(4) > div:nth-child(2) {
-            margin: 0 !important;
-            justify-content: center !important;
+          .pricing-card > div[style*="position: absolute"] span[style*="fontSize: 18"] {
+            font-size: 16px !important;
           }
 
-          /* 小型手機版優惠價字體調整 */
-          .pricing-card > div:nth-child(3) > div:nth-child(2) span[style*="font-size: 36px"],
-          .pricing-card > div:nth-child(4) > div:nth-child(2) span[style*="font-size: 36px"] {
-            font-size: 26px !important;
+
+
+
+          
+
+
+
+          /* 小型手機版通用字體調整（但不影響主要價格） */
+          .pricing-card span[style*="font-size: 36px"]:not(.mobile-price-252):not(.mobile-price-2160),
+          .pricing-card span[style*="fontSize: 36"]:not(.mobile-price-252):not(.mobile-price-2160) {
+            font-size: 32px !important;
           }
 
-          /* 小型手機版通用字體調整（優惠價會被更具體的規則覆蓋） */
-          .pricing-card span[style*="font-size: 36px"] {
-            font-size: 24px !important;
+          .pricing-card span[style*="font-size: 14px"],
+          .pricing-card span[style*="fontSize: 14"] {
+            font-size: 14px !important;
           }
 
-          .pricing-card span[style*="font-size: 14px"] {
-            font-size: 11px !important;
+          .pricing-card span[style*="font-size: 24px"],
+          .pricing-card span[style*="fontSize: 24"] {
+            font-size: 22px !important;
           }
 
-          .pricing-card span[style*="font-size: 24px"] {
+          .pricing-card span[style*="font-size: 18px"],
+          .pricing-card span[style*="fontSize: 18"] {
+            font-size: 20px !important;
+          }
+
+          .pricing-card span[style*="font-size: 16px"],
+          .pricing-card span[style*="fontSize: 16"] {
             font-size: 18px !important;
           }
 
           .download-btn-row {
             flex-direction: column !important;
             align-items: center !important;
+          }
+
+          /* 小型手機版優惠價格字體 - 最高優先級，放在最後 */
+          .pricing-card span[style*="fontSize: 48"] {
+            font-size: 38px !important;
+          }
+          .pricing-card > div:nth-child(3) span[style*="fontWeight: 900"],
+          .pricing-card > div:nth-child(4) span[style*="fontWeight: 900"] {
+            font-size: 38px !important;
           }
 
           .feature-item {
@@ -2191,6 +2189,12 @@ export default function Home() {
 
         /* 超小螢幕 (360px 以下) */
         @media (max-width: 360px) {
+          .hero-content-area img {
+            width: 80px !important;
+            height: 80px !important;
+            border-radius: 24px !important;
+            margin-bottom: 14px !important;
+          }
           /* 超小螢幕採用垂直佈局 */
           .mobile-video-section {
             flex-direction: column !important;
@@ -2263,6 +2267,12 @@ export default function Home() {
 
           .hero-subtitle {
             font-size: 12px !important;
+          }
+
+          .hero-content-area button {
+            font-size: 16px !important;
+            padding: 14px 28px !important;
+            border-radius: 26px !important;
           }
         }
       `}</style>

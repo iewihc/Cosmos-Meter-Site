@@ -464,7 +464,7 @@ export default function Home() {
                     left: 0,
                     width: "100%",
                     height: "100%",
-                    background: "#00ff00",
+                    
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -478,13 +478,7 @@ export default function Home() {
                     borderRadius: "24px",
                   }}
                 >
-                  <div style={{ marginBottom: "8px" }}>📱</div>
-                  <div>Cosmos Meter</div>
-                  <div
-                    style={{ fontSize: "10px", opacity: 0.7, marginTop: "8px" }}
-                  >
-                    影片播放區域
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -494,7 +488,7 @@ export default function Home() {
               style={{
                 position: "absolute",
                 left: "-3px",
-                top: "90px",
+                top: "60px",
                 width: "3px",
                 height: "28px",
                 background: "#333",
@@ -506,7 +500,7 @@ export default function Home() {
               style={{
                 position: "absolute",
                 left: "-3px",
-                top: "125px",
+                top: "95px",
                 width: "3px",
                 height: "20px",
                 background: "#333",
@@ -517,7 +511,7 @@ export default function Home() {
               style={{
                 position: "absolute",
                 left: "-3px",
-                top: "150px",
+                top: "120px",
                 width: "3px",
                 height: "20px",
                 background: "#333",
@@ -529,13 +523,69 @@ export default function Home() {
               style={{
                 position: "absolute",
                 right: "-3px",
-                top: "110px",
+                top: "80px",
                 width: "3px",
                 height: "45px",
                 background: "#333",
                 borderRadius: "0 6px 6px 0",
               }}
             ></div>
+          </div>
+        </div>
+
+        {/* 手機版下載區 */}
+        <div className="mobile-download-section">
+          <div className="mobile-download-title">
+            下載連結
+          </div>
+          <div className="mobile-download-btn-row">
+            <div
+              className="mobile-download-btn"
+              style={{
+                background: "#6b7280",
+                cursor: "not-allowed",
+                position: "relative",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                src={googlePlaySvg}
+                alt="Google Play 下載"
+                style={{
+                  height: 48,
+                  width: "auto",
+                  display: "block",
+                  filter: "grayscale(80%)",
+                  opacity: 0.6,
+                }}
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  background: "rgb(255, 255, 255)",
+                  color: "#0ea5e9",
+                  padding: "2px 8px",
+                  borderRadius: 15,
+                  fontSize: 12,
+                  fontWeight: 600,
+                }}
+              >
+                聯繫Line客服
+              </div>
+            </div>
+            <a
+              href="https://apps.apple.com/tw/app/cosmos-meter/id6748606630"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mobile-download-btn"
+            >
+              <img
+                src={appStoreSvg}
+                alt="App Store 下載"
+              />
+            </a>
           </div>
         </div>
       </section>
@@ -580,22 +630,22 @@ export default function Home() {
                 height: 56,
                 width: "auto",
                 display: "block",
-                filter: "grayscale(100%)",
+                filter: "grayscale(80%)",
                 opacity: 0.6,
               }}
             />
             <div
               style={{
                 position: "absolute",
-                background: "rgba(0,0,0,0.8)",
-                color: "#fff",
+                background: "rgb(255, 255, 255)",
+                color: "#0ea5e9",
                 padding: "4px 12px",
                 borderRadius: 12,
-                fontSize: 14,
+                fontSize: 12,
                 fontWeight: 600,
               }}
             >
-              敬請期待
+              聯繫Line客服
             </div>
           </div>
           <a
@@ -1411,22 +1461,29 @@ export default function Home() {
         /* 手機版 (768px 以下) */
         @media (max-width: 768px) {
           nav {
-            padding: 16px 4vw !important;
+            padding: 18px 4vw !important;
           }
 
           nav span {
-            font-size: 16px !important;
+            font-size: 18px !important;
+            letter-spacing: 0.5px !important;
+          }
+
+          nav div:first-child img {
+            width: 44px !important;
+            height: 44px !important;
           }
 
           nav div:last-child {
-            gap: 8px !important;
+            gap: 10px !important;
           }
 
           nav a {
-            padding: 6px 16px !important;
-            font-size: 12px !important;
-            border-radius: 16px !important;
+            padding: 8px 18px !important;
+            font-size: 14px !important;
+            border-radius: 18px !important;
             border-width: 1px !important;
+            font-weight: 600 !important;
           }
 
           .hero-section {
@@ -1434,15 +1491,28 @@ export default function Home() {
             height: auto !important;
             min-height: 50vh !important;
             gap: 2rem !important;
-            padding: 1rem 4vw !important;
+            padding: 2rem 4vw 1rem 4vw !important;
           }
 
           .phone-container {
             display: none !important;
           }
 
+          /* 手機版影片區塊和下載區並排容器 */
           .mobile-video-section {
             display: flex !important;
+            flex-direction: row !important;
+            align-items: flex-start !important;
+            justify-content: center !important;
+            gap: 2rem !important;
+            padding: 2.5rem 4vw !important;
+            background: #111827 !important;
+            margin-top: 2rem !important;
+          }
+
+          /* 影片區塊保持原本大小 */
+          .mobile-phone-container {
+            flex: 0 0 auto !important;
           }
 
           .hero-content-area {
@@ -1450,6 +1520,7 @@ export default function Home() {
             max-width: 500px !important;
             text-align: center !important;
             margin-left: 0 !important;
+            margin-top: 2rem !important;
           }
 
           .hero-content-area img {
@@ -1460,68 +1531,147 @@ export default function Home() {
           }
 
           .hero-content-area h1:first-of-type {
-            font-size: 32px !important;
-            margin-bottom: 12px !important;
+            font-size: 36px !important;
+            margin-bottom: 14px !important;
             line-height: 1.2 !important;
           }
 
           .hero-content-area h1:nth-of-type(2) {
-            font-size: 28px !important;
-            margin-bottom: 16px !important;
+            font-size: 32px !important;
+            margin-bottom: 18px !important;
             line-height: 1.2 !important;
           }
 
           .hero-subtitle {
-            font-size: 20px !important;
-            margin-bottom: 20px !important;
+            font-size: 22px !important;
+            margin-bottom: 24px !important;
           }
 
           .hero-content-area div:nth-of-type(4) {
-            font-size: 14px !important;
-            padding: 8px 20px !important;
-            margin-bottom: 20px !important;
-            letter-spacing: 0.5px !important;
-            line-height: 1.3 !important;
-          }
-
-          .hero-content-area a {
             font-size: 16px !important;
-            padding: 14px 32px !important;
-            border-radius: 24px !important;
+            padding: 10px 24px !important;
+            margin-bottom: 24px !important;
             letter-spacing: 0.5px !important;
-            margin-top: 12px !important;
+            line-height: 1.4 !important;
           }
 
-          section:nth-of-type(4) {
-            padding: 32px 4vw !important;
+          .hero-content-area button {
+            font-size: 18px !important;
+            padding: 16px 40px !important;
+            border-radius: 28px !important;
+            letter-spacing: 0.5px !important;
+            margin-top: 16px !important;
           }
 
-          section:nth-of-type(4) > div:first-child {
-            font-size: 20px !important;
-            margin-bottom: 20px !important;
+          /* 手機版下載區調整 - 並排在影片旁邊 */
+          section:nth-of-type(3) {
+            display: none !important; /* 隱藏原本的下載區 */
+          }
+
+          /* 在手機版影片區塊中添加下載區 */
+          .mobile-download-section {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex: 1 !important;
+            min-width: 0 !important;
+            max-width: 280px !important;
+            text-align: center !important;
+            height: 100% !important;
+            min-height: 400px !important;
+          }
+
+          .mobile-download-title {
+            color: #fff !important;
+            font-weight: 700 !important;
+            font-size: 18px !important;
+            margin-bottom: 34px !important;
+          }
+
+          .mobile-download-btn-row {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 30px !important;
+            align-items: center !important;
+          }
+
+          .mobile-download-btn {
+            border-radius: 6px !important;
+            overflow: hidden !important;
+            box-shadow: 0 4px 16px #0ea5e966 !important;
+            background: #111 !important;
+            transition: all 0.3s ease !important;
+            position: relative !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+          }
+
+          .mobile-download-btn:hover {
+            transform: translateY(-2px) scale(1.02) !important;
+            box-shadow: 0 6px 24px #0ea5e9aa !important;
+          }
+
+          .mobile-download-btn img {
+            height: 48px !important;
+            width: auto !important;
+          }
+
+          .mobile-download-btn.disabled {
+            background: #6b7280 !important;
+            cursor: not-allowed !important;
+          }
+
+          .mobile-download-btn.disabled img {
+            filter: grayscale(100%) !important;
+            opacity: 0.6 !important;
+          }
+
+          .mobile-download-btn .overlay-text {
+            position: absolute !important;
+            background: rgb(255, 255, 255) !important;
+            color: #0ea5e9 !important;
+            padding: 2px 8px !important;
+            border-radius: 15px !important;
+            font-size: 12px !important;
+            font-weight: 600 !important;
+          }
+
+          section:nth-of-type(3) > div:first-child {
+            font-size: 24px !important;
+            margin-bottom: 28px !important;
+            font-weight: 700 !important;
           }
 
           .download-btn-row {
-            gap: 16px !important;
+            gap: 20px !important;
             flex-wrap: wrap !important;
+            justify-content: center !important;
+          }
+
+          .download-btn {
+            transition: all 0.3s ease !important;
           }
 
           .download-btn img {
-            height: 48px !important;
+            height: 52px !important;
           }
 
-          section:nth-of-type(4) > div:last-child {
-            font-size: 14px !important;
+          section:nth-of-type(3) > div:last-child {
+            font-size: 16px !important;
+            margin-top: 24px !important;
+            line-height: 1.5 !important;
           }
 
           section:nth-of-type(5) {
-            padding: 48px 4vw !important;
+            padding: 64px 4vw !important;
           }
 
           .feature-item {
             flex-direction: column !important;
-            gap: 24px !important;
-            margin-bottom: 48px !important;
+            gap: 32px !important;
+            margin-bottom: 64px !important;
             max-width: 500px !important;
           }
 
@@ -1541,34 +1691,40 @@ export default function Home() {
           .feature-text {
             text-align: center !important;
             min-width: auto !important;
+            padding: 0 16px !important;
           }
 
           .feature-text h3 {
-            font-size: 24px !important;
-            margin-bottom: 16px !important;
+            font-size: 28px !important;
+            margin-bottom: 20px !important;
             letter-spacing: 0.5px !important;
+            line-height: 1.3 !important;
           }
 
           .feature-text p {
-            font-size: 16px !important;
+            font-size: 18px !important;
             line-height: 1.6 !important;
-            margin-bottom: 16px !important;
+            margin-bottom: 20px !important;
           }
 
           .feature-text ul {
-            font-size: 14px !important;
-            line-height: 1.6 !important;
-            padding-left: 16px !important;
+            font-size: 16px !important;
+            line-height: 1.7 !important;
+            padding-left: 20px !important;
             text-align: left !important;
             display: inline-block !important;
           }
 
+          .feature-text ul li {
+            margin-bottom: 8px !important;
+          }
+
           .feature-image > div {
-            width: 200px !important;
-            height: 460px !important;
-            border-radius: 20px !important;
+            width: 240px !important;
+            height: 500px !important;
+            border-radius: 24px !important;
             font-size: 16px !important;
-            box-shadow: 0 8px 32px rgba(102, 126, 234, 0.4) !important;
+            box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4) !important;
           }
 
           .feature-image > div > div:first-child {
@@ -1620,90 +1776,106 @@ export default function Home() {
           }
 
           footer {
-            font-size: 12px !important;
-            padding: 24px 4vw !important;
-            line-height: 1.6 !important;
+            font-size: 14px !important;
+            padding: 32px 4vw !important;
+            line-height: 1.7 !important;
+          }
+
+          footer > div:first-child {
+            margin-bottom: 20px !important;
+          }
+
+          footer > div:nth-child(2) {
+            margin-top: 20px !important;
+          }
+
+          footer > div:last-child {
+            margin-top: 20px !important;
+            font-size: 13px !important;
           }
 
           /* 購買區手機版調整 */
-          section:nth-of-type(4) {
-            padding: 48px 4vw !important;
+          #pricing-section {
+            padding: 60px 4vw !important;
           }
 
-          section:nth-of-type(4) h2 {
-            font-size: 32px !important;
-            margin-bottom: 12px !important;
+          #pricing-section h2 {
+            font-size: 38px !important;
+            margin-bottom: 16px !important;
           }
 
-          section:nth-of-type(4) p {
-            font-size: 16px !important;
-            margin-bottom: 32px !important;
+          #pricing-section p {
+            font-size: 18px !important;
+            margin-bottom: 40px !important;
           }
 
           .pricing-container {
             flex-direction: column !important;
             justify-content: center !important;
             align-items: center !important;
-            gap: 48px !important;
+            gap: 40px !important;
           }
 
           .benefits-section {
             max-width: 100% !important;
             margin-right: 0 !important;
-            text-align: center !important;
+            text-align: left !important;
+            padding: 0 20px !important;
           }
 
           .benefits-section h3 {
-            font-size: 24px !important;
-            margin-bottom: 20px !important;
+            font-size: 28px !important;
+            margin-bottom: 24px !important;
+            text-align: center !important;
           }
 
           .benefits-section > div {
-            gap: 4px !important;
+            gap: 8px !important;
           }
 
           .benefits-section > div > div {
             justify-content: flex-start !important;
             text-align: left !important;
-            padding: 8px 0 !important;
+            padding: 12px 0 !important;
+            margin-bottom: 8px !important;
           }
 
           .benefits-section span {
-            font-size: 16px !important;
+            font-size: 18px !important;
           }
 
           .pricing-card {
-            width: 320px !important;
+            width: 360px !important;
             max-width: 90vw !important;
-            padding: 32px 24px !important;
+            padding: 36px 28px !important;
           }
 
           .pricing-card h3 {
-            font-size: 20px !important;
+            font-size: 22px !important;
           }
 
-          /* 手機版更好的解決方案 - 保持HTML結構，精確控制CSS */
+          /* 手機版價格卡片佈局優化 */
           .pricing-card > div:nth-child(3),
           .pricing-card > div:nth-child(4) {
             display: flex !important;
             flex-direction: column !important;
             justify-content: flex-start !important;
             align-items: stretch !important;
-            background: rgba(14, 165, 233, 0.1) !important;
-            border-radius: 16px !important;
-            margin-bottom: 16px !important;
-            padding: 20px 16px !important;
-            min-height: 140px !important;
+            background: rgba(14, 165, 233, 0.12) !important;
+            border-radius: 18px !important;
+            margin-bottom: 20px !important;
+            padding: 24px 20px !important;
+            min-height: 150px !important;
             gap: 0 !important;
             position: relative !important;
           }
 
-          /* 手機版原價區域 - 保持原始位置不變 */
+          /* 手機版原價區域調整 */
           .pricing-card > div:nth-child(3) > div:first-child,
           .pricing-card > div:nth-child(4) > div:first-child {
             order: 1 !important;
             display: flex !important;
-            justify-content: space-between !important;
+            justify-content: flex-start !important;
             align-items: center !important;
             width: 100% !important;
             margin: 0 !important;
@@ -1711,11 +1883,11 @@ export default function Home() {
             position: relative !important;
             transform: none !important;
             left: auto !important;
-            gap: 8px !important;
-            margin-bottom: 16px !important;
+            gap: 12px !important;
+            margin-bottom: 18px !important;
           }
 
-          /* 手機版優惠價區域 - 置中並移到原價下方，放大字體 */
+          /* 手機版優惠價區域 - 置中並突出顯示 */
           .pricing-card > div:nth-child(3) > div:nth-child(2),
           .pricing-card > div:nth-child(4) > div:nth-child(2) {
             order: 2 !important;
@@ -1724,16 +1896,19 @@ export default function Home() {
             align-items: center !important;
             width: 100% !important;
             margin: 0 !important;
-            padding: 0 !important;
+            padding: 12px 0 !important;
             position: static !important;
             transform: none !important;
             left: auto !important;
+            background: rgba(14, 165, 233, 0.1) !important;
+            border-radius: 12px !important;
           }
 
           /* 手機版優惠價字體放大 */
           .pricing-card > div:nth-child(3) > div:nth-child(2) span[style*="font-size: 36px"],
           .pricing-card > div:nth-child(4) > div:nth-child(2) span[style*="font-size: 36px"] {
-            font-size: 32px !important;
+            font-size: 34px !important;
+            font-weight: 900 !important;
           }
 
           /* 隱藏第三個空白div */
@@ -1742,10 +1917,10 @@ export default function Home() {
             display: none !important;
           }
 
-          /* 手機版原價文字大小調整，避免與優惠價重疊 */
+          /* 手機版原價文字調整 */
           .pricing-card > div:nth-child(3) > div:first-child span,
           .pricing-card > div:nth-child(4) > div:first-child span {
-            font-size: 16px !important;
+            font-size: 18px !important;
             line-height: 1.2 !important;
           }
 
@@ -1812,8 +1987,15 @@ export default function Home() {
           }
 
           .hero-section {
-            padding: 0.5rem 2vw !important;
+            padding: 1.5rem 2vw 0.5rem 2vw !important;
             gap: 1.5rem !important;
+          }
+
+          /* 小型手機版影片區塊和下載區並排 */
+          .mobile-video-section {
+            flex-direction: row !important;
+            gap: 1rem !important;
+            padding: 2rem 2vw !important;
           }
 
           .mobile-phone-container {
@@ -1824,6 +2006,19 @@ export default function Home() {
           .mobile-iphone-frame {
             width: 140px !important;
             height: 280px !important;
+            border-radius: 20px !important;
+          }
+
+          .mobile-phone-screen {
+            border-radius: 16px !important;
+          }
+
+          .mobile-video-section video {
+            border-radius: 16px !important;
+          }
+
+          .mobile-video-fallback {
+            border-radius: 16px !important;
           }
 
           .mobile-dynamic-island {
@@ -1832,26 +2027,55 @@ export default function Home() {
             border-radius: 6px !important;
           }
 
+          /* 小型手機版下載區調整 */
+          .mobile-download-section {
+            max-width: 200px !important;
+            align-items: center !important;
+            flex: 1 !important;
+          }
+
+          .mobile-download-title {
+            font-size: 16px !important;
+            margin-bottom: 20px !important;
+          }
+
+          .mobile-download-btn-row {
+            flex-direction: column !important;
+            gap: 26px !important;
+          }
+
+          .mobile-download-btn img {
+            height: 42px !important;
+          }
+
+          .mobile-download-btn .overlay-text {
+            font-size: 10px !important;
+            padding: 2px 6px !important;
+            background: rgb(255, 255, 255) !important;
+            color: #0ea5e9 !important;
+            border-radius: 12px !important;
+          }
+
           .hero-content-area h1:first-of-type {
-            font-size: 24px !important;
+            font-size: 28px !important;
           }
 
           .hero-content-area h1:nth-of-type(2) {
-            font-size: 22px !important;
+            font-size: 26px !important;
           }
 
           .hero-subtitle {
-            font-size: 15px !important;
+            font-size: 18px !important;
           }
 
           .hero-content-area div:nth-of-type(4) {
-            font-size: 12px !important;
-            padding: 6px 16px !important;
+            font-size: 14px !important;
+            padding: 8px 20px !important;
           }
 
-          .hero-content-area a {
-            font-size: 14px !important;
-            padding: 12px 24px !important;
+          .hero-content-area button {
+            font-size: 16px !important;
+            padding: 14px 28px !important;
           }
 
           section:nth-of-type(4),
@@ -1861,12 +2085,12 @@ export default function Home() {
           }
 
           /* 購買區小型手機版調整 */
-          section:nth-of-type(4) h2 {
-            font-size: 28px !important;
+          #pricing-section h2 {
+            font-size: 32px !important;
           }
 
-          section:nth-of-type(4) p {
-            font-size: 14px !important;
+          #pricing-section p {
+            font-size: 16px !important;
           }
 
           .pricing-container {
@@ -1967,6 +2191,13 @@ export default function Home() {
 
         /* 超小螢幕 (360px 以下) */
         @media (max-width: 360px) {
+          /* 超小螢幕採用垂直佈局 */
+          .mobile-video-section {
+            flex-direction: column !important;
+            gap: 1rem !important;
+            padding: 1.5rem 2vw !important;
+          }
+
           .mobile-phone-container {
             width: 160px !important;
             height: 320px !important;
@@ -1975,11 +2206,51 @@ export default function Home() {
           .mobile-iphone-frame {
             width: 120px !important;
             height: 240px !important;
+            border-radius: 18px !important;
+          }
+
+          .mobile-phone-screen {
+            border-radius: 14px !important;
+          }
+
+          .mobile-video-section video {
+            border-radius: 14px !important;
+          }
+
+          .mobile-video-fallback {
+            border-radius: 14px !important;
           }
 
           .mobile-dynamic-island {
             width: 35px !important;
             height: 10px !important;
+          }
+
+          /* 超小螢幕下載區調整 */
+          .mobile-download-section {
+            max-width: 100% !important;
+          }
+
+          .mobile-download-title {
+            font-size: 14px !important;
+            margin-bottom: 12px !important;
+          }
+
+          .mobile-download-btn-row {
+            flex-direction: column !important;
+            gap: 12px !important;
+          }
+
+          .mobile-download-btn img {
+            height: 34px !important;
+          }
+
+          .mobile-download-btn .overlay-text {
+            font-size: 9px !important;
+            padding: 2px 6px !important;
+            background: rgb(255, 255, 255) !important;
+            color: #0ea5e9 !important;
+            border-radius: 10px !important;
           }
 
           .hero-content-area h1:first-of-type {

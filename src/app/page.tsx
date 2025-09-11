@@ -1910,18 +1910,18 @@ export default function Home() {
           a[href*="line.me"] {
             bottom: 16px !important;
             right: 16px !important;
-            width: 40px !important;
-            height: 40px !important;
-            box-shadow: none !important;
+            width: 56px !important;
+            height: 56px !important;
+            box-shadow: 0 4px 16px rgba(6, 199, 86, 0.4) !important;
           }
 
           a[href*="line.me"]:hover {
-            box-shadow: none !important;
+            box-shadow: 0 6px 20px rgba(6, 199, 86, 0.6) !important;
           }
 
           a[href*="line.me"] img {
-            width: 40px !important;
-            height: 40px !important;
+            width: 56px !important;
+            height: 56px !important;
           }
         }
 
@@ -2172,18 +2172,18 @@ export default function Home() {
           a[href*="line.me"] {
             bottom: 12px !important;
             right: 12px !important;
-            width: 40px !important;
-            height: 40px !important;
-            box-shadow: none !important;
+            width: 55px !important;
+            height: 55px !important;
+            box-shadow: 0 3px 12px rgba(6, 199, 86, 0.35) !important;
           }
 
           a[href*="line.me"]:hover {
-            box-shadow: none !important;
+            box-shadow: 0 5px 16px rgba(6, 199, 86, 0.55) !important;
           }
 
           a[href*="line.me"] img {
-            width: 40px !important;
-            height: 40px !important;
+            width: 50px !important;
+            height: 50px !important;
           }
         }
 

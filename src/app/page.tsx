@@ -1225,7 +1225,7 @@ export default function Home() {
                 marginBottom: 24,
               }}
             >
-              跳錶精準，無誤差，支援多種車型與計費方式，讓每一趟行程都安心透明。專業的計費算法確保公平合理的收費標準。
+              跳錶精準，無誤差，支援多種計費方式，讓每一趟行程都安心透明。專業的計費算法確保公平合理的收費標準。
             </p>
             <ul
               style={{
@@ -1251,6 +1251,10 @@ export default function Home() {
                 overflow: "hidden",
                 boxShadow: "0 12px 40px rgba(102, 126, 234, 0.4)",
                 position: "relative",
+                background: "#1a1a1a",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
             >
               <Image
@@ -1261,7 +1265,7 @@ export default function Home() {
                 style={{
                   width: "100%",
                   height: "100%",
-                  objectFit: "cover",
+                  objectFit: "contain",
                 }}
               />
             </div>
@@ -1289,6 +1293,10 @@ export default function Home() {
                 overflow: "hidden",
                 boxShadow: "0 12px 40px rgba(240, 147, 251, 0.4)",
                 position: "relative",
+                background: "#1a1a1a",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
             >
               <Image
@@ -1299,7 +1307,7 @@ export default function Home() {
                 style={{
                   width: "100%",
                   height: "100%",
-                  objectFit: "cover",
+                  objectFit: "contain",
                   borderRadius: "12px",
                 }}
               />
@@ -1458,6 +1466,7 @@ export default function Home() {
           nav div:first-child img {
             width: 44px !important;
             height: 44px !important;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1) !important;
           }
 
           nav div:last-child {
@@ -1514,6 +1523,7 @@ export default function Home() {
             height: 100px !important;
             border-radius: 30px !important;
             margin-bottom: 16px !important;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15) !important;
           }
 
           .hero-content-area h1:first-of-type {
@@ -1707,10 +1717,15 @@ export default function Home() {
 
           .feature-image > div {
             width: 240px !important;
-            height: 500px !important;
+            height: auto !important;
+            min-height: 400px !important;
             border-radius: 24px !important;
             font-size: 16px !important;
             box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4) !important;
+            background: #1a1a1a !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
           }
 
           .feature-image > div > div:first-child {
@@ -1912,16 +1927,17 @@ export default function Home() {
             right: 16px !important;
             width: 56px !important;
             height: 56px !important;
-            box-shadow: 0 4px 16px rgba(6, 199, 86, 0.4) !important;
+            box-shadow: none !important;
           }
 
           a[href*="line.me"]:hover {
-            box-shadow: 0 6px 20px rgba(6, 199, 86, 0.6) !important;
+            box-shadow: none !important;
           }
 
           a[href*="line.me"] img {
             width: 56px !important;
             height: 56px !important;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
           }
         }
 
@@ -1933,6 +1949,7 @@ export default function Home() {
             height: 100px !important;
             border-radius: 27px !important;
             margin-bottom: 16px !important;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15) !important;
           }
           nav {
             padding: 10px 2vw !important;
@@ -2174,16 +2191,17 @@ export default function Home() {
             right: 12px !important;
             width: 55px !important;
             height: 55px !important;
-            box-shadow: 0 3px 12px rgba(6, 199, 86, 0.35) !important;
+            box-shadow: none !important;
           }
 
           a[href*="line.me"]:hover {
-            box-shadow: 0 5px 16px rgba(6, 199, 86, 0.55) !important;
+            box-shadow: none !important;
           }
 
           a[href*="line.me"] img {
             width: 50px !important;
             height: 50px !important;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
           }
         }
 
@@ -2194,6 +2212,7 @@ export default function Home() {
             height: 80px !important;
             border-radius: 24px !important;
             margin-bottom: 14px !important;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15) !important;
           }
           /* 超小螢幕採用垂直佈局 */
           .mobile-video-section {

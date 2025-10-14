@@ -845,33 +845,6 @@ export default function Home() {
                     padding: "12px 0",
                   }}
                 >
-                  <div
-                    style={{
-                      width: "8px",
-                      height: "8px",
-                      background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
-                      borderRadius: "50%",
-                      flexShrink: 0,
-                    }}
-                  ></div>
-                  <span
-                    style={{
-                      color: "#cbd5e1",
-                      fontSize: 20,
-                      lineHeight: 1.5,
-                    }}
-                  >
-                    自動截圖收費紀錄/截圖按鈕
-                  </span>
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "12px",
-                    padding: "12px 0",
-                  }}
-                >
                     <div
                       style={{
                         width: "8px",
@@ -1458,6 +1431,17 @@ export default function Home() {
             }}
           >
             隱私權政策
+          </Link>
+          <span style={{ margin: "0 8px", color: "#64748b" }}>｜</span>
+          <Link
+            href="/terms"
+            style={{
+              color: "#0EA5E9",
+              textDecoration: "underline",
+              fontSize: 14,
+            }}
+          >
+            使用者條款
           </Link>
         </div>
         <div style={{ marginTop: "16px", fontSize: 14, color: "#9ca3af" }}>

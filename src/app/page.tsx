@@ -550,9 +550,11 @@ export default function Home() {
                 justifyContent: "center",
               }}
             >
-              <img
+              <Image
                 src={googlePlaySvg}
                 alt="Google Play 下載"
+                width={135}
+                height={48}
                 style={{
                   height: 48,
                   width: "auto",
@@ -581,9 +583,16 @@ export default function Home() {
               rel="noopener noreferrer"
               className="mobile-download-btn"
             >
-              <img
+              <Image
                 src={appStoreSvg}
                 alt="App Store 下載"
+                width={135}
+                height={48}
+                style={{
+                  height: 48,
+                  width: "auto",
+                  display: "block",
+                }}
               />
             </a>
           </div>
@@ -623,9 +632,11 @@ export default function Home() {
               justifyContent: "center",
             }}
           >
-            <img
+            <Image
               src={googlePlaySvg}
               alt="Google Play 下載"
+              width={158}
+              height={56}
               style={{
                 height: 56,
                 width: "auto",
@@ -654,9 +665,11 @@ export default function Home() {
             rel="noopener noreferrer"
             className="download-btn"
           >
-            <img
+            <Image
               src={appStoreSvg}
               alt="App Store 下載"
+              width={158}
+              height={56}
               style={{ height: 56, width: "auto", display: "block" }}
             />
           </a>

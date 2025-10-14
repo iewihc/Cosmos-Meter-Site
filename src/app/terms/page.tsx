@@ -31,7 +31,7 @@ export default function Terms() {
           <div style={{ marginBottom: 40 }}>
             <h3 style={{ color: '#0EA5E9', fontSize: 24, fontWeight: 600, marginBottom: 20 }}>Acceptable Use</h3>
             <ul style={{ paddingLeft: 24 }}>
-              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>Do not engage in unlawful activities or infringe upon others' rights.</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>Do not engage in unlawful activities or infringe upon others&apos; rights.</li>
               <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>Do not access, modify, or distribute service content or software without authorization.</li>
               <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>You are responsible for the security of your account and device.</li>
             </ul>
@@ -40,7 +40,7 @@ export default function Terms() {
           <div style={{ marginBottom: 40 }}>
             <h3 style={{ color: '#0EA5E9', fontSize: 24, fontWeight: 600, marginBottom: 20 }}>Liability and Disclaimer</h3>
             <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 16 }}>
-              The service is provided "as is" without warranties of availability, accuracy, or fitness for a particular purpose.
+              The service is provided &quot;as is&quot; without warranties of availability, accuracy, or fitness for a particular purpose.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1' }}>
               To the extent permitted by law, we are not liable for any direct or indirect damages arising from the use of or inability to use the service.

@@ -62,7 +62,7 @@ export default function RootLayout({
   return (
     <html lang="zh-TW">
       <head>
-        <meta name="google-site-verification" content="sQXEXh0a9YW-LudPm8j3hINC67McS2E9S9AMaos3D4Q" />
+        <meta name="google-site-verification" content="Z9h0ThjTz2CjR7KzoisIROe8zhXaklCb4pX_fiW3SVk" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}

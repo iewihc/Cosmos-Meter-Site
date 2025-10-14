@@ -834,8 +834,88 @@ export default function Home() {
                       fontSize: 20,
                       lineHeight: 1.5,
                     }}
+                  >實時顯示的子母小地圖
+                  </span>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    padding: "12px 0",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "8px",
+                      height: "8px",
+                      background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                      borderRadius: "50%",
+                      flexShrink: 0,
+                    }}
+                  ></div>
+                  <span
+                    style={{
+                      color: "#cbd5e1",
+                      fontSize: 20,
+                      lineHeight: 1.5,
+                    }}
                   >
-                    擁有實時顯示的子母小地圖
+                    自動截圖收費紀錄/截圖按鈕
+                  </span>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    padding: "12px 0",
+                  }}
+                >
+                    <div
+                      style={{
+                        width: "8px",
+                        height: "8px",
+                        background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                        borderRadius: "50%",
+                        flexShrink: 0,
+                      }}
+                    ></div>
+                    <span
+                      style={{
+                        color: "#cbd5e1",
+                        fontSize: 20,
+                        lineHeight: 1.5,
+                      }}
+                    >
+                      進階錶種設定
+                    </span>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    padding: "12px 0",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "8px",
+                      height: "8px",
+                      background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                      borderRadius: "50%",
+                      flexShrink: 0,
+                    }}
+                  ></div>
+                  <span
+                    style={{
+                      color: "#cbd5e1",
+                      fontSize: 20,
+                      lineHeight: 1.5,
+                    }}
+                  >
+                    AI識圖計算費用
                   </span>
                 </div>
               </div>

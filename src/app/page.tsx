@@ -283,9 +283,9 @@ export default function Home() {
               textAlign: "center",
             }}
           >
-            跳錶新革命
+            藍錶 - 跳錶新革命
           </h1>
-          <h1
+          <h2
             style={{
               color: "#fff",
               fontSize: 45,
@@ -296,8 +296,8 @@ export default function Home() {
               textAlign: "center",
             }}
           >
-            Cosmos Meter - 藍錶
-          </h1>
+            Cosmos Meter 藍錶智慧計程車跳錶
+          </h2>
           <div
             className="hero-subtitle"
             style={{

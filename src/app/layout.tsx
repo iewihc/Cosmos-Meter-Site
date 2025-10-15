@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://cosmos-meter.netlify.app'),
   title: "Cosmos Meter 藍錶 - 最精準的計程車跳錶應用程式 | 智慧計費系統",
   description: "Cosmos Meter (藍錶) 是最精準的計程車計費跳錶應用程式。GPS 即時定位追蹤，支援距離計費、時間計費、混合計費模式，為計程車司機與車隊管理打造的智慧計費系統。",
   keywords: "藍錶, 跳錶, 計程車計費, 計程車跳錶, Cosmos Meter, 智慧跳錶, 計程車司機, 車隊管理, GPS定位, 計費系統, 計程車應用程式, 智慧計費, 台灣計程車, 出租車計費, 計程車費率",

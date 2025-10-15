@@ -14,7 +14,7 @@ Disallow: /_next/
 Disallow: /admin/
 
 # Sitemap位置
-Sitemap: https://cosmos-meter.com/sitemap.xml
+Sitemap: https://cosmos-meter.netlify.app/sitemap.xml
 
 # 特別針對搜索引擎的設定
 User-agent: Googlebot

@@ -1456,6 +1456,17 @@ export default function Home() {
           >
             使用者條款
           </Link>
+          <span style={{ margin: "0 8px", color: "#64748b" }}>｜</span>
+          <Link
+            href="/delete"
+            style={{
+              color: "#0EA5E9",
+              textDecoration: "underline",
+              fontSize: 14,
+            }}
+          >
+            刪除帳號
+          </Link>
         </div>
         <div style={{ marginTop: "16px", fontSize: 14, color: "#9ca3af" }}>
           © 2025 季先生科技@版權所有 All Rights Reserved

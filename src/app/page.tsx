@@ -539,16 +539,11 @@ export default function Home() {
             下載連結
           </div>
           <div className="mobile-download-btn-row">
-            <div
+            <a
+              href="https://play.google.com/store/apps/details?id=com.iewihc.taximeterapp&pcampaignid=web_share"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mobile-download-btn"
-              style={{
-                background: "#6b7280",
-                cursor: "not-allowed",
-                position: "relative",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
             >
               <Image
                 src={googlePlaySvg}
@@ -559,24 +554,9 @@ export default function Home() {
                   height: 48,
                   width: "auto",
                   display: "block",
-                  filter: "grayscale(80%)",
-                  opacity: 0.6,
                 }}
               />
-              <div
-                style={{
-                  position: "absolute",
-                  background: "rgb(255, 255, 255)",
-                  color: "#0ea5e9",
-                  padding: "2px 8px",
-                  borderRadius: 15,
-                  fontSize: 12,
-                  fontWeight: 600,
-                }}
-              >
-                聯繫Line客服
-              </div>
-            </div>
+            </a>
             <a
               href="https://apps.apple.com/tw/app/cosmos-meter/id6748606630"
               target="_blank"
@@ -621,16 +601,11 @@ export default function Home() {
           下載連結
         </div>
         <div className="download-btn-row">
-          <div
+          <a
+            href="https://play.google.com/store/apps/details?id=com.iewihc.taximeterapp&pcampaignid=web_share"
+            target="_blank"
+            rel="noopener noreferrer"
             className="download-btn"
-            style={{
-              background: "#6b7280",
-              cursor: "not-allowed",
-              position: "relative",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
           >
             <Image
               src={googlePlaySvg}
@@ -641,24 +616,9 @@ export default function Home() {
                 height: 56,
                 width: "auto",
                 display: "block",
-                filter: "grayscale(80%)",
-                opacity: 0.6,
               }}
             />
-            <div
-              style={{
-                position: "absolute",
-                background: "rgb(255, 255, 255)",
-                color: "#0ea5e9",
-                padding: "4px 12px",
-                borderRadius: 12,
-                fontSize: 12,
-                fontWeight: 600,
-              }}
-            >
-              聯繫Line客服
-            </div>
-          </div>
+          </a>
           <a
             href="https://apps.apple.com/tw/app/cosmos-meter/id6748606630"
             target="_blank"
@@ -1198,12 +1158,10 @@ export default function Home() {
                 </div>
               </div>
 
-              <button
-                onClick={() => {
-                  document.getElementById('pricing-section')?.scrollIntoView({ 
-                    behavior: 'smooth' 
-                  });
-                }}
+              <a
+                href="https://line.me/R/ti/p/@478umgog"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   width: "100%",
                   background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
@@ -1217,6 +1175,9 @@ export default function Home() {
                   transition: "all 0.3s ease",
                   letterSpacing: 0.5,
                   boxShadow: "0 4px 16px rgba(14, 165, 233, 0.3)",
+                  textDecoration: "none",
+                  display: "block",
+                  textAlign: "center",
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = "translateY(-2px)";
@@ -1228,7 +1189,7 @@ export default function Home() {
                 }}
               >
                 立即訂閱優惠
-              </button>
+              </a>
             </div>
           </div>
 

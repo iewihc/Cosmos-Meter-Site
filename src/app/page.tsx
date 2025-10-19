@@ -1955,9 +1955,18 @@ export default function Home() {
             font-size: 20px !important;
           }
 
-          .pricing-card button {
+          .pricing-card button,
+          .pricing-card a[href*="line.me"] {
             font-size: 18px !important;
-            padding: 18px 26px !important;
+            padding: 16px 24px !important;
+            white-space: nowrap !important;
+            text-align: center !important;
+            display: block !important;
+            background: linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%) !important;
+            border-radius: 16px !important;
+            box-shadow: 0 4px 16px rgba(14, 165, 233, 0.3) !important;
+            width: 100% !important;
+            margin: 0 auto !important;
           }
 
           /* 手機版優惠價格字體 - 最高優先級，放在最後 */
@@ -2164,9 +2173,18 @@ export default function Home() {
           }
 
           /* 小型手機版按鈕字體調整 */
-          .pricing-card button {
+          .pricing-card button,
+          .pricing-card a[href*="line.me"] {
             font-size: 18px !important;
             padding: 16px 24px !important;
+            white-space: nowrap !important;
+            text-align: center !important;
+            display: block !important;
+            background: linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%) !important;
+            border-radius: 16px !important;
+            box-shadow: 0 4px 16px rgba(14, 165, 233, 0.3) !important;
+            width: 100% !important;
+            margin: 0 auto !important;
           }
 
           /* 小型手機版原價位置調整 */

@@ -1081,7 +1081,7 @@ export default function Home() {
                       display: "inline-block",
                     }}
                   >
-                    2400
+                    2700
                     <span
                       style={{
                         position: "absolute",
@@ -1122,7 +1122,7 @@ export default function Home() {
                         fontWeight: 900,
                       }}
                     >
-                      2160
+                      2388
                     </span>
                     <span
                       style={{
@@ -1154,7 +1154,7 @@ export default function Home() {
                     fontWeight: 600,
                   }}
                 >
-                  平均 180/月
+                  平均 199/月
                 </div>
               </div>
 

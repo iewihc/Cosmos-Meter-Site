@@ -754,7 +754,7 @@ export default function Home() {
                       lineHeight: 1.5,
                     }}
                   >
-                    無插頁式廣告
+                    無廣告
                   </span>
                 </div>
                 <div
@@ -781,7 +781,34 @@ export default function Home() {
                       lineHeight: 1.5,
                     }}
                   >
-                    歷史行程記錄永久保存
+                    歷史行程保存三個月
+                  </span>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "12px",
+                    padding: "12px 0",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "8px",
+                      height: "8px",
+                      background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                      borderRadius: "50%",
+                      flexShrink: 0,
+                    }}
+                  ></div>
+                  <span
+                    style={{
+                      color: "#cbd5e1",
+                      fontSize: 20,
+                      lineHeight: 1.5,
+                    }}
+                  >
+                    代駕功能一鍵切換
                   </span>
                 </div>
                 <div

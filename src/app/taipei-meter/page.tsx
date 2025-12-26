@@ -12,7 +12,7 @@ export default function Home() {
     <div
       style={{
         minHeight: "100vh",
-        background: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)",
+        background: "linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%)",
         fontFamily: "Noto Sans TC, Segoe UI, Arial, sans-serif",
         margin: 0,
       }}
@@ -24,20 +24,20 @@ export default function Home() {
           justifyContent: "space-between",
           alignItems: "center",
           padding: "24px 5vw",
-          background: "rgba(17,24,39,0.97)",
+          background: "rgba(30,30,30,0.97)",
           position: "sticky",
           top: 0,
           zIndex: 10,
-          boxShadow: "0 2px 8px #0ea5e93a",
+          boxShadow: "0 2px 8px rgba(192, 125, 109, 0.3)",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <Image
-            src="/cosmos-meter-logo.png"
-            alt="Cosmos Meter Logo"
+            src="/Taipei-Meter icon.png"
+            alt="Taipei Meter Logo"
             width={48}
             height={48}
-            style={{ borderRadius: 12, background: "#111" }}
+            style={{ borderRadius: 12, background: "#1a1a1a" }}
           />
           <span
             style={{
@@ -47,11 +47,11 @@ export default function Home() {
               letterSpacing: 1,
             }}
           >
-            Cosmos Meter
+            Taipei Meter
           </span>
         </div>
         <Link
-          href="/taipei-meter"
+          href="/"
           style={{
             display: "flex",
             alignItems: "center",
@@ -84,7 +84,7 @@ export default function Home() {
               letterSpacing: 0.5,
             }}
           >
-            Taipei Meter
+            Cosmos Meter
           </span>
         </Link>
       </nav>
@@ -297,15 +297,15 @@ export default function Home() {
           }}
         >
           <Image
-            src="/cosmos-meter-logo.png"
-            alt="Cosmos Meter Logo"
+            src="/Taipei-Meter icon.png"
+            alt="Taipei Meter Logo"
             width={140}
             height={140}
             style={{
               borderRadius: 40,
-              background: "#111",
+              background: "#1a1a1a",
               marginBottom: 18,
-              boxShadow: "0 4px 32px #0ea5e93a",
+              boxShadow: "0 4px 32px rgba(192, 125, 109, 0.3)",
             }}
           />
           <h1
@@ -315,11 +315,11 @@ export default function Home() {
               fontWeight: 900,
               margin: "0 0 18px 0",
               letterSpacing: 2,
-              textShadow: "0 2px 12px #0ea5e980",
+              textShadow: "0 2px 12px rgba(192, 125, 109, 0.5)",
               textAlign: "center",
             }}
           >
-            藍錶 - 跳錶新革命
+            北錶 - 跳錶新革命
           </h1>
           <h2
             style={{
@@ -328,11 +328,11 @@ export default function Home() {
               fontWeight: 900,
               margin: "0 0 18px 0",
               letterSpacing: 2,
-              textShadow: "0 2px 12px #0ea5e980",
+              textShadow: "0 2px 12px rgba(192, 125, 109, 0.5)",
               textAlign: "center",
             }}
           >
-            Cosmos Meter 藍錶智慧計程車跳錶
+            Taipei Meter 智慧計程車跳錶
           </h2>
           <div
             className="hero-subtitle"
@@ -341,7 +341,7 @@ export default function Home() {
               fontSize: 30,
               marginBottom: 24,
               fontWeight: 500,
-              textShadow: "0 2px 8px #0ea5e950",
+              textShadow: "0 2px 8px rgba(192, 125, 109, 0.3)",
               textAlign: "center",
             }}
           >
@@ -354,7 +354,7 @@ export default function Home() {
               });
             }}
             style={{
-              background: "linear-gradient(90deg, #0EA5E9 60%, #38bdf8 100%)",
+              background: "linear-gradient(90deg, #C07D6D 60%, #FBCEBB 100%)",
               color: "#fff",
               fontWeight: 700,
               borderRadius: 32,
@@ -362,7 +362,7 @@ export default function Home() {
               border: "none",
               fontSize: 22,
               letterSpacing: 1,
-              boxShadow: "0 6px 20px rgba(14, 165, 233, 0.25), 0 2px 8px rgba(14, 165, 233, 0.15)",
+              boxShadow: "0 6px 20px rgba(192, 125, 109, 0.25), 0 2px 8px rgba(192, 125, 109, 0.15)",
               margin: "18px 0 0 0",
               transition: "all 0.3s ease",
               display: "inline-block",
@@ -370,11 +370,11 @@ export default function Home() {
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "translateY(-2px)";
-              e.currentTarget.style.boxShadow = "0 10px 30px rgba(14, 165, 233, 0.35), 0 4px 12px rgba(14, 165, 233, 0.2)";
+              e.currentTarget.style.boxShadow = "0 10px 30px rgba(192, 125, 109, 0.35), 0 4px 12px rgba(192, 125, 109, 0.2)";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "translateY(0)";
-              e.currentTarget.style.boxShadow = "0 6px 20px rgba(14, 165, 233, 0.25), 0 2px 8px rgba(14, 165, 233, 0.15)";
+              e.currentTarget.style.boxShadow = "0 6px 20px rgba(192, 125, 109, 0.25), 0 2px 8px rgba(192, 125, 109, 0.15)";
             }}
           >
             開啟你的旅程
@@ -391,7 +391,7 @@ export default function Home() {
           display: "none",
           alignItems: "center",
           justifyContent: "center",
-          background: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)",
+          background: "linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%)",
         }}
       >
         <div
@@ -619,7 +619,7 @@ export default function Home() {
       <section
         style={{
           width: "100%",
-          background: "#111827",
+          background: "#252525",
           padding: "48px 0",
           display: "flex",
           flexDirection: "column",
@@ -678,7 +678,7 @@ export default function Home() {
         id="pricing-section"
         style={{
           width: "100%",
-          background: "linear-gradient(135deg, #1e293b 0%, #0f172a 100%)",
+          background: "linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%)",
           padding: "80px 5vw",
           position: "relative",
           overflow: "hidden",
@@ -692,7 +692,7 @@ export default function Home() {
             left: "-50%",
             width: "200%",
             height: "200%",
-            background: "radial-gradient(circle, rgba(14, 165, 233, 0.1) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(192, 125, 109, 0.1) 0%, transparent 70%)",
             pointerEvents: "none",
           }}
         ></div>
@@ -719,7 +719,7 @@ export default function Home() {
                 fontWeight: 900,
                 marginBottom: 16,
                 letterSpacing: 1,
-                textShadow: "0 2px 12px rgba(14, 165, 233, 0.3)",
+                textShadow: "0 2px 12px rgba(192, 125, 109, 0.3)",
               }}
             >
               選擇您的方案
@@ -778,7 +778,7 @@ export default function Home() {
                     style={{
                       width: "8px",
                       height: "8px",
-                      background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                      background: "linear-gradient(90deg, #C07D6D 0%, #FBCEBB 100%)",
                       borderRadius: "50%",
                       flexShrink: 0,
                     }}
@@ -805,7 +805,7 @@ export default function Home() {
                     style={{
                       width: "8px",
                       height: "8px",
-                      background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                      background: "linear-gradient(90deg, #C07D6D 0%, #FBCEBB 100%)",
                       borderRadius: "50%",
                       flexShrink: 0,
                     }}
@@ -832,7 +832,7 @@ export default function Home() {
                     style={{
                       width: "8px",
                       height: "8px",
-                      background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                      background: "linear-gradient(90deg, #C07D6D 0%, #FBCEBB 100%)",
                       borderRadius: "50%",
                       flexShrink: 0,
                     }}
@@ -859,7 +859,7 @@ export default function Home() {
                     style={{
                       width: "8px",
                       height: "8px",
-                      background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                      background: "linear-gradient(90deg, #C07D6D 0%, #FBCEBB 100%)",
                       borderRadius: "50%",
                       flexShrink: 0,
                     }}
@@ -885,7 +885,7 @@ export default function Home() {
                       style={{
                         width: "8px",
                         height: "8px",
-                        background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                        background: "linear-gradient(90deg, #C07D6D 0%, #FBCEBB 100%)",
                         borderRadius: "50%",
                         flexShrink: 0,
                       }}
@@ -912,7 +912,7 @@ export default function Home() {
                     style={{
                       width: "8px",
                       height: "8px",
-                      background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                      background: "linear-gradient(90deg, #C07D6D 0%, #FBCEBB 100%)",
                       borderRadius: "50%",
                       flexShrink: 0,
                     }}
@@ -934,15 +934,15 @@ export default function Home() {
             <div
               className="pricing-card"
               style={{
-                background: "linear-gradient(145deg, rgba(14, 165, 233, 0.2), rgba(14, 165, 233, 0.1))",
-                border: "2px solid rgba(14, 165, 233, 0.3)",
+                background: "linear-gradient(145deg, rgba(192, 125, 109, 0.2), rgba(192, 125, 109, 0.1))",
+                border: "2px solid rgba(192, 125, 109, 0.3)",
                 borderRadius: 24,
                 padding: "40px 32px",
                 width: "450px",
                 maxWidth: "90vw",
                 position: "relative",
                 backdropFilter: "blur(10px)",
-                boxShadow: "0 8px 32px rgba(14, 165, 233, 0.2)",
+                boxShadow: "0 8px 32px rgba(192, 125, 109, 0.2)",
                 flex: "0 0 auto",
               }}
             >
@@ -953,14 +953,14 @@ export default function Home() {
                   top: "-12px",
                   left: "50%",
                   transform: "translateX(-50%)",
-                  background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                  background: "linear-gradient(90deg, #C07D6D 0%, #FBCEBB 100%)",
                   color: "#fff",
                   padding: "8px 24px",
                   borderRadius: 20,
                   fontSize: 14,
                   fontWeight: 700,
                   letterSpacing: 0.5,
-                  boxShadow: "0 4px 16px rgba(14, 165, 233, 0.3)",
+                  boxShadow: "0 4px 16px rgba(192, 125, 109, 0.3)",
                 }}
               >
                 官網限定優惠
@@ -986,7 +986,7 @@ export default function Home() {
                 </h3>
                 <div
                   style={{
-                    color: "#7dd3fc",
+                    color: "#FBCEBB",
                     fontSize: 16,
                     marginBottom: 24,
                     fontWeight: 600,
@@ -999,11 +999,11 @@ export default function Home() {
               {/* 月費方案 */}
               <div
                 style={{
-                  background: "rgba(14, 165, 233, 0.1)",
+                  background: "rgba(192, 125, 109, 0.1)",
                   borderRadius: 16,
                   padding: "24px",
                   marginBottom: "20px",
-                  border: "1px solid rgba(14, 165, 233, 0.2)",
+                  border: "1px solid rgba(192, 125, 109, 0.2)",
                   position: "relative",
                 }}
               >
@@ -1093,7 +1093,7 @@ export default function Home() {
                 </div>
                 <div
                   style={{
-                    color: "#7dd3fc",
+                    color: "#FBCEBB",
                     fontSize: 14,
                     textAlign: "center",
                     marginTop: 20,
@@ -1106,11 +1106,11 @@ export default function Home() {
               {/* 年費方案 */}
               <div
                 style={{
-                  background: "rgba(14, 165, 233, 0.1)",
+                  background: "rgba(192, 125, 109, 0.1)",
                   borderRadius: 16,
                   padding: "24px",
                   marginBottom: "32px",
-                  border: "1px solid rgba(14, 165, 233, 0.2)",
+                  border: "1px solid rgba(192, 125, 109, 0.2)",
                   position: "relative",
                 }}
               >
@@ -1200,7 +1200,7 @@ export default function Home() {
                 </div>
                 <div
                   style={{
-                    color: "#7dd3fc",
+                    color: "#FBCEBB",
                     fontSize: 14,
                     textAlign: "center",
                     marginTop: 20,
@@ -1227,7 +1227,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 style={{
                   width: "100%",
-                  background: "linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%)",
+                  background: "linear-gradient(90deg, #C07D6D 0%, #FBCEBB 100%)",
                   color: "#fff",
                   border: "none",
                   borderRadius: 16,
@@ -1237,18 +1237,18 @@ export default function Home() {
                   cursor: "pointer",
                   transition: "all 0.3s ease",
                   letterSpacing: 0.5,
-                  boxShadow: "0 4px 16px rgba(14, 165, 233, 0.3)",
+                  boxShadow: "0 4px 16px rgba(192, 125, 109, 0.3)",
                   textDecoration: "none",
                   display: "block",
                   textAlign: "center",
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = "translateY(-2px)";
-                  e.currentTarget.style.boxShadow = "0 8px 24px rgba(14, 165, 233, 0.4)";
+                  e.currentTarget.style.boxShadow = "0 8px 24px rgba(192, 125, 109, 0.4)";
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow = "0 4px 16px rgba(14, 165, 233, 0.3)";
+                  e.currentTarget.style.boxShadow = "0 4px 16px rgba(192, 125, 109, 0.3)";
                 }}
               >
                 立即訂閱優惠
@@ -1272,7 +1272,7 @@ export default function Home() {
                 margin: "0 auto",
               }}
             >
-              有任何問題請洽Cosmos Meter官方LINE，我們將竭誠為您服務。
+              有任何問題請洽Taipei Meter官方LINE，我們將竭誠為您服務。
             </p>
           </div>
         </div>
@@ -1280,7 +1280,7 @@ export default function Home() {
 
       {/* 產品特色區 */}
       <section
-        style={{ width: "100%", background: "#1e293b", padding: "80px 5vw" }}
+        style={{ width: "100%", background: "#252525", padding: "80px 5vw" }}
       >
         {/* 第一組：左側文字，右側圖片 */}
         <div
@@ -1339,9 +1339,9 @@ export default function Home() {
                 height: "600px",
                 borderRadius: 24,
                 overflow: "hidden",
-                boxShadow: "0 12px 40px rgba(102, 126, 234, 0.4)",
+                boxShadow: "0 12px 40px rgba(192, 125, 109, 0.4)",
                 position: "relative",
-                background: "#1a1a1a",
+                background: "#252525",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -1349,7 +1349,7 @@ export default function Home() {
             >
               <Image
                 src="/pic01.jpg"
-                alt="Cosmos Meter 計費界面截圖"
+                alt="Taipei Meter 計費界面截圖"
                 width={280}
                 height={500}
                 style={{
@@ -1381,9 +1381,9 @@ export default function Home() {
                 height: "600px",
                 borderRadius: 24,
                 overflow: "hidden",
-                boxShadow: "0 12px 40px rgba(240, 147, 251, 0.4)",
+                boxShadow: "0 12px 40px rgba(251, 206, 187, 0.4)",
                 position: "relative",
-                background: "#1a1a1a",
+                background: "#252525",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -1391,7 +1391,7 @@ export default function Home() {
             >
               <Image
                 src="/pic02.jpg"
-                alt="Cosmos Meter 操作界面 UI 設計截圖"
+                alt="Taipei Meter 操作界面 UI 設計截圖"
                 width={280}
                 height={500}
                 style={{
@@ -1448,7 +1448,7 @@ export default function Home() {
       <footer
         style={{
           width: "100%",
-          background: "#0f172a",
+          background: "#252525",
           color: "#cbd5e1",
           textAlign: "center",
           fontSize: 16,
@@ -1457,12 +1457,12 @@ export default function Home() {
           marginTop: 0,
         }}
       >
-        <div>聯絡我們：mr.chi.service@gmail.com ｜ <a href="https://line.me/R/ti/p/@478umgog" target="_blank" rel="noopener noreferrer" style={{ color: "#0EA5E9", textDecoration: "underline" }}>Cosmos Meter 官方 LINE</a></div>
+        <div>聯絡我們：mr.chi.service@gmail.com ｜ <a href="https://line.me/R/ti/p/@478umgog" target="_blank" rel="noopener noreferrer" style={{ color: "#C07D6D", textDecoration: "underline" }}>Taipei Meter 官方 LINE</a></div>
         <div style={{ marginTop: "16px" }}>
           <Link
             href="/privacy"
             style={{
-              color: "#0EA5E9",
+              color: "#C07D6D",
               textDecoration: "underline",
               fontSize: 14,
             }}
@@ -1473,7 +1473,7 @@ export default function Home() {
           <Link
             href="/terms"
             style={{
-              color: "#0EA5E9",
+              color: "#C07D6D",
               textDecoration: "underline",
               fontSize: 14,
             }}
@@ -1484,7 +1484,7 @@ export default function Home() {
           <Link
             href="/delete"
             style={{
-              color: "#0EA5E9",
+              color: "#C07D6D",
               textDecoration: "underline",
               fontSize: 14,
             }}
@@ -1554,14 +1554,14 @@ export default function Home() {
         .download-btn {
           border-radius: 8px;
           overflow: hidden;
-          box-shadow: 0 2px 8px #0ea5e93a;
-          background: #111;
+          box-shadow: 0 2px 8px rgba(192, 125, 109, 0.3);
+          background: #1a1a1a;
           transition: transform 0.1s, box-shadow 0.2s;
         }
 
         .download-btn:hover {
           transform: translateY(-4px) scale(1.04);
-          box-shadow: 0 8px 24px #0ea5e9cc;
+          box-shadow: 0 8px 24px rgba(192, 125, 109, 0.8);
         }
 
         /* 手機版 (768px 以下) */
@@ -1613,7 +1613,7 @@ export default function Home() {
             justify-content: center !important;
             gap: 2rem !important;
             padding: 2.5rem 4vw !important;
-            background: #111827 !important;
+            background: #252525 !important;
             margin-top: 2rem !important;
           }
 
@@ -1707,8 +1707,8 @@ export default function Home() {
           .mobile-download-btn {
             border-radius: 6px !important;
             overflow: hidden !important;
-            box-shadow: 0 4px 16px #0ea5e966 !important;
-            background: #111 !important;
+            box-shadow: 0 4px 16px rgba(192, 125, 109, 0.4) !important;
+            background: #1a1a1a !important;
             transition: all 0.3s ease !important;
             position: relative !important;
             display: flex !important;
@@ -1718,7 +1718,7 @@ export default function Home() {
 
           .mobile-download-btn:hover {
             transform: translateY(-2px) scale(1.02) !important;
-            box-shadow: 0 6px 24px #0ea5e9aa !important;
+            box-shadow: 0 6px 24px rgba(192, 125, 109, 0.7) !important;
           }
 
           .mobile-download-btn img {
@@ -1739,7 +1739,7 @@ export default function Home() {
           .mobile-download-btn .overlay-text {
             position: absolute !important;
             background: rgb(255, 255, 255) !important;
-            color: #0ea5e9 !important;
+            color: #C07D6D !important;
             padding: 2px 8px !important;
             border-radius: 15px !important;
             font-size: 12px !important;
@@ -1833,8 +1833,8 @@ export default function Home() {
             min-height: 400px !important;
             border-radius: 24px !important;
             font-size: 16px !important;
-            box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4) !important;
-            background: #1a1a1a !important;
+            box-shadow: 0 12px 40px rgba(192, 125, 109, 0.4) !important;
+            background: #252525 !important;
             display: flex !important;
             align-items: center !important;
             justify-content: center !important;
@@ -2025,9 +2025,9 @@ export default function Home() {
             white-space: nowrap !important;
             text-align: center !important;
             display: block !important;
-            background: linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%) !important;
+            background: linear-gradient(90deg, #C07D6D 0%, #FBCEBB 100%) !important;
             border-radius: 16px !important;
-            box-shadow: 0 4px 16px rgba(14, 165, 233, 0.3) !important;
+            box-shadow: 0 4px 16px rgba(192, 125, 109, 0.3) !important;
             width: 100% !important;
             margin: 0 auto !important;
           }
@@ -2155,7 +2155,7 @@ export default function Home() {
             font-size: 10px !important;
             padding: 2px 6px !important;
             background: rgb(255, 255, 255) !important;
-            color: #0ea5e9 !important;
+            color: #C07D6D !important;
             border-radius: 12px !important;
           }
 
@@ -2243,9 +2243,9 @@ export default function Home() {
             white-space: nowrap !important;
             text-align: center !important;
             display: block !important;
-            background: linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%) !important;
+            background: linear-gradient(90deg, #C07D6D 0%, #FBCEBB 100%) !important;
             border-radius: 16px !important;
-            box-shadow: 0 4px 16px rgba(14, 165, 233, 0.3) !important;
+            box-shadow: 0 4px 16px rgba(192, 125, 109, 0.3) !important;
             width: 100% !important;
             margin: 0 auto !important;
           }
@@ -2402,7 +2402,7 @@ export default function Home() {
             font-size: 9px !important;
             padding: 2px 6px !important;
             background: rgb(255, 255, 255) !important;
-            color: #0ea5e9 !important;
+            color: #C07D6D !important;
             border-radius: 10px !important;
           }
 

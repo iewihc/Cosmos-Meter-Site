@@ -50,43 +50,7 @@ export default function Home() {
             Taipei Meter
           </span>
         </div>
-        <Link
-          href="/"
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 12,
-            textDecoration: "none",
-            padding: "8px 16px",
-            borderRadius: 12,
-            background: "rgba(255, 255, 255, 0.1)",
-            transition: "all 0.3s ease",
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.background = "rgba(255, 255, 255, 0.2)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.background = "rgba(255, 255, 255, 0.1)";
-          }}
-        >
-          <Image
-            src="/Taipei-Meter icon.png"
-            alt="Taipei Meter Logo"
-            width={32}
-            height={32}
-            style={{ borderRadius: 8 }}
-          />
-          <span
-            style={{
-              color: "#fff",
-              fontWeight: 600,
-              fontSize: 16,
-              letterSpacing: 0.5,
-            }}
-          >
-            Cosmos Meter
-          </span>
-        </Link>
+       
       </nav>
 
       {/* Hero 區塊 */}
@@ -146,21 +110,7 @@ export default function Home() {
                 border: "2px solid #1a1a1a",
               }}
             >
-              {/* Dynamic Island */}
-              <div
-                style={{
-                  position: "absolute",
-                  top: "20px",
-                  left: "50%",
-                  transform: "translateX(-50%)",
-                  width: "100px",
-                  height: "28px",
-                  background: "#000",
-                  borderRadius: "14px",
-                  zIndex: 10,
-                  border: "1px solid #333",
-                }}
-              ></div>
+              
 
               {/* 影片播放區域 */}
               <div
@@ -199,7 +149,7 @@ export default function Home() {
                     if (fallback) fallback.style.display = "none";
                   }}
                 >
-                  <source src="/demo-video.MP4" type="video/MP4" />
+                  <source src="/Taipei-Meter-video.mp4" type="video/mp4" />
                 </video>
 
                 {/* 影片載入失敗時的備用圖片 */}
@@ -220,7 +170,7 @@ export default function Home() {
                   }}
                 >
                   <Image
-                    src="/Backup-for-video.png"
+                    src="/Taipei-Meter1.png"
                     alt="Cosmos Meter 備用圖片"
                     fill
                     style={{
@@ -332,7 +282,7 @@ export default function Home() {
               textAlign: "center",
             }}
           >
-            Taipei Meter 智慧計程車跳錶
+            Taipei Meter 北錶<br />智慧計程車跳錶
           </h2>
           <div
             className="hero-subtitle"
@@ -345,7 +295,7 @@ export default function Home() {
               textAlign: "center",
             }}
           >
-            精準里程 • 安心收費
+            精準計費 • 輕鬆上路
           </div>
           <button
             onClick={() => {
@@ -575,24 +525,46 @@ export default function Home() {
             下載連結
           </div>
           <div className="mobile-download-btn-row">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.iewihc.taximeterapp&pcampaignid=web_share"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mobile-download-btn"
-            >
-              <Image
-                src={googlePlaySvg}
-                alt="Google Play 下載"
-                width={135}
-                height={48}
+            <div style={{ position: "relative", display: "inline-block" }}>
+              <div
+                className="mobile-download-btn"
                 style={{
-                  height: 48,
-                  width: "auto",
-                  display: "block",
+                  opacity: 0.5,
+                  filter: "grayscale(100%)",
+                  cursor: "not-allowed",
+                  pointerEvents: "none",
                 }}
-              />
-            </a>
+              >
+                <Image
+                  src={googlePlaySvg}
+                  alt="Google Play 下載（暫不可用）"
+                  width={135}
+                  height={48}
+                  style={{
+                    height: 48,
+                    width: "auto",
+                    display: "block",
+                  }}
+                />
+              </div>
+              <div
+                style={{
+                  position: "absolute",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  color: "#fff",
+                  fontSize: 11,
+                  fontWeight: 600,
+                  textAlign: "center",
+                  whiteSpace: "nowrap",
+                  textShadow: "0 2px 4px rgba(0, 0, 0, 0.8)",
+                  zIndex: 10,
+                }}
+              >
+                暫無預計發行安卓版
+              </div>
+            </div>
             <a
               href="https://apps.apple.com/tw/app/cosmos-meter/id6748606630"
               target="_blank"
@@ -637,24 +609,46 @@ export default function Home() {
           下載連結
         </div>
         <div className="download-btn-row">
-          <a
-            href="https://play.google.com/store/apps/details?id=com.iewihc.taximeterapp&pcampaignid=web_share"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="download-btn"
-          >
-            <Image
-              src={googlePlaySvg}
-              alt="Google Play 下載"
-              width={158}
-              height={56}
+          <div style={{ position: "relative", display: "inline-block" }}>
+            <div
+              className="download-btn"
               style={{
-                height: 56,
-                width: "auto",
-                display: "block",
+                opacity: 0.5,
+                filter: "grayscale(100%)",
+                cursor: "not-allowed",
+                pointerEvents: "none",
               }}
-            />
-          </a>
+            >
+              <Image
+                src={googlePlaySvg}
+                alt="Google Play 下載（暫不可用）"
+                width={158}
+                height={56}
+                style={{
+                  height: 56,
+                  width: "auto",
+                  display: "block",
+                }}
+              />
+            </div>
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                color: "#fff",
+                fontSize: 14,
+                fontWeight: 600,
+                textAlign: "center",
+                whiteSpace: "nowrap",
+                textShadow: "0 2px 4px rgba(0, 0, 0, 0.8)",
+                zIndex: 10,
+              }}
+            >
+              暫無預計發行安卓版
+            </div>
+          </div>
           <a
             href="https://apps.apple.com/tw/app/cosmos-meter/id6748606630"
             target="_blank"
@@ -1078,7 +1072,7 @@ export default function Home() {
                         fontWeight: 900,
                       }}
                     >
-                      252
+                      200
                     </span>
                     <span
                       style={{
@@ -1127,38 +1121,15 @@ export default function Home() {
                 >
                   <span
                     style={{
-                      color: "#ef4444",
-                      fontSize: 22,
+                      color: "#fff",
+                      fontSize: 30,
                       fontWeight: 500,
                     }}
                   >
-                    原價
+                    團購價
                   </span>
-                  <span
-                    style={{
-                      color: "#94a3b8",
-                      fontSize: 25,
-                      fontWeight: 700,
-                      opacity: 0.8,
-                      position: "relative",
-                      display: "inline-block",
-                    }}
-                  >
-                    2700
-                    <span
-                      style={{
-                        position: "absolute",
-                        top: "50%",
-                        left: "50%",
-                        width: "120%",
-                        height: "2px",
-                        background: "#ef4444",
-                        opacity: 0.7,
-                        transform: "translate(-50%, -50%) rotate(15deg)",
-                        borderRadius: "1px",
-                      }}
-                    ></span>
-                  </span>
+                 
+                 
                 </div>
                 
                 <div
@@ -1185,7 +1156,7 @@ export default function Home() {
                         fontWeight: 900,
                       }}
                     >
-                      2388
+                      150
                     </span>
                     <span
                       style={{
@@ -1194,7 +1165,7 @@ export default function Home() {
                         marginLeft: 4,
                       }}
                     >
-                      /年
+                      /月
                     </span>
                   </div>
                 </div>
@@ -1207,7 +1178,7 @@ export default function Home() {
                     marginBottom: 8,
                   }}
                 >
-                  年繳方案
+                  團購月繳方案，或一次多月也可討論
                 </div>
                 <div
                   style={{
@@ -1217,12 +1188,12 @@ export default function Home() {
                     fontWeight: 600,
                   }}
                 >
-                  平均 199/月
+                  團購需滿50人，請車隊負責人與我們聯繫
                 </div>
               </div>
 
               <a
-                href="https://line.me/R/ti/p/@478umgog"
+                href="https://page.line.me/158naoyg"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -1305,7 +1276,7 @@ export default function Home() {
                 letterSpacing: 1,
               }}
             >
-              計費準確度業界領先
+              免計算，計費全自動
             </h3>
             <p
               style={{
@@ -1315,7 +1286,7 @@ export default function Home() {
                 marginBottom: 24,
               }}
             >
-              跳錶精準，無誤差，支援多種計費方式，讓每一趟行程都安心透明。專業的計費算法確保公平合理的收費標準。
+              即時里程與時間自動計算，跳錶精準穩定，無需人工換算，降低錯誤風險，讓司機專心駕駛、安心收費。
             </p>
             <ul
               style={{
@@ -1325,9 +1296,9 @@ export default function Home() {
                 paddingLeft: 20,
               }}
             >
-              <li>精準GPS定位追蹤</li>
-              <li>多種計費模式支援</li>
-              <li>透明化收費明細</li>
+              <li>高精準 GPS 即時定位</li>
+              <li>支援多種跳錶與計費模式</li>
+              <li>收費明細清楚好對帳</li>
             </ul>
           </div>
 
@@ -1348,7 +1319,7 @@ export default function Home() {
               }}
             >
               <Image
-                src="/pic01.jpg"
+                src="/Taipei-Meter1.png"
                 alt="Taipei Meter 計費界面截圖"
                 width={280}
                 height={500}
@@ -1390,7 +1361,7 @@ export default function Home() {
               }}
             >
               <Image
-                src="/pic02.jpg"
+                src="/Taipei-Meter2.png"
                 alt="Taipei Meter 操作界面 UI 設計截圖"
                 width={280}
                 height={500}
@@ -1457,10 +1428,10 @@ export default function Home() {
           marginTop: 0,
         }}
       >
-        <div>聯絡我們：mr.chi.service@gmail.com ｜ <a href="https://line.me/R/ti/p/@478umgog" target="_blank" rel="noopener noreferrer" style={{ color: "#C07D6D", textDecoration: "underline" }}>Taipei Meter 官方 LINE</a></div>
+        <div>聯絡我們：mr.chi.service@gmail.com ｜ <a href="https://page.line.me/158naoyg" target="_blank" rel="noopener noreferrer" style={{ color: "#C07D6D", textDecoration: "underline" }}>Taipei Meter 官方 LINE</a></div>
         <div style={{ marginTop: "16px" }}>
           <Link
-            href="/privacy"
+            href="/taipei-meter/privacy"
             style={{
               color: "#C07D6D",
               textDecoration: "underline",
@@ -1471,7 +1442,7 @@ export default function Home() {
           </Link>
           <span style={{ margin: "0 8px", color: "#64748b" }}>｜</span>
           <Link
-            href="/terms"
+            href="/taipei-meter/terms"
             style={{
               color: "#C07D6D",
               textDecoration: "underline",
@@ -1482,7 +1453,7 @@ export default function Home() {
           </Link>
           <span style={{ margin: "0 8px", color: "#64748b" }}>｜</span>
           <Link
-            href="/delete"
+            href="/taipei-meter/delete"
             style={{
               color: "#C07D6D",
               textDecoration: "underline",
@@ -1499,7 +1470,7 @@ export default function Home() {
 
       {/* 浮動 Line 聯絡按鈕 */}
       <a
-        href="https://line.me/R/ti/p/@478umgog"
+        href="https://page.line.me/158naoyg"
         target="_blank"
         rel="noopener noreferrer"
         style={{

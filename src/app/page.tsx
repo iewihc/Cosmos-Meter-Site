@@ -1067,7 +1067,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* 年費方案 */}
+              {/* 大團購方案 */}
               <div
                 style={{
                   background: "rgba(14, 165, 233, 0.1)",
@@ -1091,37 +1091,12 @@ export default function Home() {
                 >
                   <span
                     style={{
-                      color: "#ef4444",
-                      fontSize: 22,
+                      color: "#fff",
+                      fontSize: 28,
                       fontWeight: 500,
                     }}
                   >
-                    原價
-                  </span>
-                  <span
-                    style={{
-                      color: "#94a3b8",
-                      fontSize: 25,
-                      fontWeight: 700,
-                      opacity: 0.8,
-                      position: "relative",
-                      display: "inline-block",
-                    }}
-                  >
-                    2700
-                    <span
-                      style={{
-                        position: "absolute",
-                        top: "50%",
-                        left: "50%",
-                        width: "120%",
-                        height: "2px",
-                        background: "#ef4444",
-                        opacity: 0.7,
-                        transform: "translate(-50%, -50%) rotate(15deg)",
-                        borderRadius: "1px",
-                      }}
-                    ></span>
+                    大團購
                   </span>
                 </div>
                 
@@ -1149,7 +1124,7 @@ export default function Home() {
                         fontWeight: 900,
                       }}
                     >
-                      2388
+                        185
                     </span>
                     <span
                       style={{
@@ -1158,7 +1133,7 @@ export default function Home() {
                         marginLeft: 4,
                       }}
                     >
-                      /年
+                      /月
                     </span>
                   </div>
                 </div>
@@ -1171,20 +1146,111 @@ export default function Home() {
                     marginBottom: 8,
                   }}
                 >
-                  年繳方案
+                  團購月繳方案，或一次多月也可討論
                 </div>
                 <div
                   style={{
                     color: "#10b981",
-                    fontSize: 18,
+                    fontSize: 17,
                     textAlign: "center",
                     fontWeight: 600,
                   }}
                 >
-                  平均 199/月
+                  團購需滿100人，請車隊負責人與我們聯繫
                 </div>
               </div>
-
+              {/* 小團購方案 */}
+            <div
+                style={{
+                  background: "rgba(14, 165, 233, 0.1)",
+                  borderRadius: 16,
+                  padding: "24px",
+                  marginBottom: "32px",
+                  border: "1px solid rgba(14, 165, 233, 0.2)",
+                  position: "relative",
+                }}
+              >
+                {/* 左上角：原價 */}
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "8px",
+                    left: "12px",
+                    display: "flex",
+                    alignItems: "baseline",
+                    gap: "6px",
+                  }}
+                >
+                  <span
+                    style={{
+                      color: "#fff",
+                      fontSize: 28,
+                      fontWeight: 500,
+                    }}
+                  >
+                    小團購
+                  </span>
+                </div>
+                
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "baseline",
+                    justifyContent: "center",
+                    marginBottom: 8,
+                    position: "relative",
+                    marginTop: "32px",
+                  }}
+                >
+                  {/* 中間：優惠價格 (絕對置中) */}
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "baseline",
+                    }}
+                  >
+                    <span
+                      style={{
+                        color: "#fff",
+                        fontSize: 48,
+                        fontWeight: 900,
+                      }}
+                    >
+                        220
+                    </span>
+                    <span
+                      style={{
+                        color: "#cbd5e1",
+                        fontSize: 18,
+                        marginLeft: 4,
+                      }}
+                    >
+                      /月
+                    </span>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    color: "#7dd3fc",
+                    fontSize: 14,
+                    textAlign: "center",
+                    marginTop: 20,
+                    marginBottom: 8,
+                  }}
+                >
+                  團購月繳方案，或一次多月也可討論
+                </div>
+                <div
+                  style={{
+                    color: "#10b981",
+                    fontSize: 17,
+                    textAlign: "center",
+                    fontWeight: 600,
+                  }}
+                >
+                  團購需滿50人，請車隊負責人與我們聯繫
+                </div>
+              </div>
               <a
                 href="https://line.me/R/ti/p/@478umgog"
                 target="_blank"

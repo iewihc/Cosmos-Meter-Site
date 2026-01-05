@@ -384,22 +384,7 @@ export default function Home() {
                 border: "1px solid #1a1a1a",
               }}
             >
-              {/* Dynamic Island - 手機版較小 */}
-              <div
-                className="mobile-dynamic-island"
-                style={{
-                  position: "absolute",
-                  top: "12px",
-                  left: "50%",
-                  transform: "translateX(-50%)",
-                  width: "50px",
-                  height: "16px",
-                  background: "#000",
-                  borderRadius: "8px",
-                  zIndex: 10,
-                  border: "1px solid #333",
-                }}
-              ></div>
+              
 
               {/* 影片播放區域 */}
               <div
@@ -438,7 +423,7 @@ export default function Home() {
                     if (fallback) fallback.style.display = "none";
                   }}
                 >
-                  <source src="/demo-video.MP4" type="video/MP4" />
+                  <source src="/Taipei-Meter-video.mp4" type="video/MP4" />
                 </video>
 
                 {/* 影片載入失敗時的備用內容 */}
@@ -566,7 +551,7 @@ export default function Home() {
               </div>
             </div>
             <a
-              href="https://apps.apple.com/tw/app/cosmos-meter/id6748606630"
+              href="https://apps.apple.com/tw/app/taipei-meter-%E5%8C%97%E9%8C%B6/id6757011937?l=en-GB"
               target="_blank"
               rel="noopener noreferrer"
               className="mobile-download-btn"
@@ -650,7 +635,7 @@ export default function Home() {
             </div>
           </div>
           <a
-            href="https://apps.apple.com/tw/app/cosmos-meter/id6748606630"
+            href="https://apps.apple.com/tw/app/taipei-meter-%E5%8C%97%E9%8C%B6/id6757011937?l=en-GB"
             target="_blank"
             rel="noopener noreferrer"
             className="download-btn"

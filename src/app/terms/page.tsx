@@ -76,6 +76,9 @@ export default function Terms() {
               <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>
                 <strong style={{ color: '#f0f9ff' }}>退款政策：</strong>所有退款均依照 Apple 退款政策處理。如需申請退款，請前往 <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer" style={{ color: '#0EA5E9', textDecoration: 'underline' }}>reportaproblem.apple.com</a>。All refunds are handled according to Apple&apos;s refund policy.
               </li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>
+                <strong style={{ color: '#f0f9ff' }}>Apple 標準使用者授權合約（EULA）：</strong>本應用程式之使用亦受 Apple 標準終端使用者授權合約約束，詳情請參閱 <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer" style={{ color: '#0EA5E9', textDecoration: 'underline' }}>Apple Standard EULA</a>。This app is also subject to Apple&apos;s Standard End User License Agreement (EULA).
+              </li>
             </ul>
           </div>
 

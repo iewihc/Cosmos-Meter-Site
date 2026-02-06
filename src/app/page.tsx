@@ -1001,7 +1001,7 @@ export default function Home() {
                       display: "inline-block",
                     }}
                   >
-                    280
+                    350
                     <span
                       style={{
                         position: "absolute",
@@ -1017,7 +1017,7 @@ export default function Home() {
                     ></span>
                   </span>
                 </div>
-                
+
                 <div
                   style={{
                     display: "flex",

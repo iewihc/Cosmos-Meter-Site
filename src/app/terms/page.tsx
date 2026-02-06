@@ -48,6 +48,38 @@ export default function Terms() {
           </div>
 
           <div style={{ marginBottom: 40 }}>
+            <h2 style={{ color: '#38bdf8', fontSize: 32, fontWeight: 700, marginBottom: 24, letterSpacing: 1 }}>Subscription Terms（訂閱條款）</h2>
+
+            <h3 style={{ color: '#0EA5E9', fontSize: 24, fontWeight: 600, marginBottom: 20 }}>白金會員（Platinum Membership）</h3>
+            <ul style={{ paddingLeft: 24 }}>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>
+                <strong style={{ color: '#f0f9ff' }}>訂閱名稱：</strong>白金會員（Platinum Membership）
+              </li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>
+                <strong style={{ color: '#f0f9ff' }}>訂閱價格：</strong>NT$350／月
+              </li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>
+                <strong style={{ color: '#f0f9ff' }}>訂閱週期：</strong>每月自動續訂（Monthly auto-renewal）
+              </li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>
+                <strong style={{ color: '#f0f9ff' }}>付款方式：</strong>透過您的 Apple ID 帳戶進行扣款。確認購買後，費用將從您的 iTunes 帳戶中扣除。Payment will be charged to your Apple ID account upon confirmation of purchase.
+              </li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>
+                <strong style={{ color: '#f0f9ff' }}>自動續訂：</strong>訂閱將於每個計費週期結束前 24 小時內自動續訂，届時將從您的帳戶收取相同金額，除非您在當前週期結束前至少 24 小時關閉自動續訂。Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period.
+              </li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>
+                <strong style={{ color: '#f0f9ff' }}>取消訂閱：</strong>您可以隨時透過 iPhone「設定」&gt;「Apple ID」&gt;「訂閱項目」管理或取消訂閱。取消將於當前計費週期結束後生效，您仍可在剩餘期間內享有會員權益。You can manage or cancel your subscription in iPhone Settings &gt; Apple ID &gt; Subscriptions.
+              </li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>
+                <strong style={{ color: '#f0f9ff' }}>免費試用：</strong>若提供免費試用期，未使用的部分將在購買訂閱後失效。Any unused portion of a free trial period will be forfeited when purchasing a subscription.
+              </li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>
+                <strong style={{ color: '#f0f9ff' }}>退款政策：</strong>所有退款均依照 Apple 退款政策處理。如需申請退款，請前往 <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer" style={{ color: '#0EA5E9', textDecoration: 'underline' }}>reportaproblem.apple.com</a>。All refunds are handled according to Apple&apos;s refund policy.
+              </li>
+            </ul>
+          </div>
+
+          <div style={{ marginBottom: 40 }}>
             <h3 style={{ color: '#0EA5E9', fontSize: 24, fontWeight: 600, marginBottom: 20 }}>Changes to These Terms</h3>
             <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1' }}>
               We may update these terms from time to time. Material changes will be announced on this page. Please review periodically for the latest information.

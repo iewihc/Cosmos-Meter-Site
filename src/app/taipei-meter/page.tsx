@@ -961,7 +961,7 @@ export default function Home() {
                     letterSpacing: 0.5,
                   }}
                 >
-                  官網價 9折
+                  官網價 6.6折
                 </h3>
                 <div
                   style={{
@@ -981,7 +981,7 @@ export default function Home() {
                   background: "rgba(192, 125, 109, 0.1)",
                   borderRadius: 16,
                   padding: "24px",
-                  marginBottom: "20px",
+                  marginBottom: "32px",
                   border: "1px solid rgba(192, 125, 109, 0.2)",
                   position: "relative",
                 }}
@@ -1016,7 +1016,7 @@ export default function Home() {
                       display: "inline-block",
                     }}
                   >
-                    280
+                    150
                     <span
                       style={{
                         position: "absolute",
@@ -1057,7 +1057,7 @@ export default function Home() {
                         fontWeight: 900,
                       }}
                     >
-                      200
+                      99
                     </span>
                     <span
                       style={{
@@ -1079,101 +1079,6 @@ export default function Home() {
                   }}
                 >
                   月繳方案
-                </div>
-              </div>
-
-              {/* 年費方案 */}
-              <div
-                style={{
-                  background: "rgba(192, 125, 109, 0.1)",
-                  borderRadius: 16,
-                  padding: "24px",
-                  marginBottom: "32px",
-                  border: "1px solid rgba(192, 125, 109, 0.2)",
-                  position: "relative",
-                }}
-              >
-                {/* 左上角：原價 */}
-                <div
-                  style={{
-                    position: "absolute",
-                    top: "8px",
-                    left: "12px",
-                    display: "flex",
-                    alignItems: "baseline",
-                    gap: "6px",
-                  }}
-                >
-                  <span
-                    style={{
-                      color: "#fff",
-                      fontSize: 30,
-                      fontWeight: 500,
-                    }}
-                  >
-                    團購價
-                  </span>
-                 
-                 
-                </div>
-                
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "baseline",
-                    justifyContent: "center",
-                    marginBottom: 8,
-                    position: "relative",
-                    marginTop: "32px",
-                  }}
-                >
-                  {/* 中間：優惠價格 (絕對置中) */}
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "baseline",
-                    }}
-                  >
-                    <span
-                      style={{
-                        color: "#fff",
-                        fontSize: 48,
-                        fontWeight: 900,
-                      }}
-                    >
-                      150
-                    </span>
-                    <span
-                      style={{
-                        color: "#cbd5e1",
-                        fontSize: 18,
-                        marginLeft: 4,
-                      }}
-                    >
-                      /月
-                    </span>
-                  </div>
-                </div>
-                <div
-                  style={{
-                    color: "#FBCEBB",
-                    fontSize: 14,
-                    textAlign: "center",
-                    marginTop: 20,
-                    marginBottom: 8,
-                  }}
-                >
-                  團購月繳方案，或一次多月也可討論
-                </div>
-                <div
-                  style={{
-                    color: "#10b981",
-                    fontSize: 18,
-                    textAlign: "center",
-                    fontWeight: 600,
-                  }}
-                >
-                  團購需滿50人，請車隊負責人與我們聯繫
                 </div>
               </div>
 

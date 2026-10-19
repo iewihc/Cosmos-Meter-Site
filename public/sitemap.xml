@@ -3,15 +3,31 @@
   <!-- 主頁 -->
   <url>
     <loc>https://cosmos-meter.netlify.app/</loc>
-    <lastmod>2024-12-14</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- Taipei Meter 頁面 -->
+  <url>
+    <loc>https://cosmos-meter.netlify.app/taipei-meter</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 報分鍵盤（加價購）頁面 -->
+  <url>
+    <loc>https://cosmos-meter.netlify.app/keyboard-addon</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <!-- 隱私權政策頁面 -->
   <url>
     <loc>https://cosmos-meter.netlify.app/privacy</loc>
-    <lastmod>2024-12-14</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { KeyboardTeaserSection } from "@/components/home/KeyboardTeaserSection";
+import { KEYBOARD_ADDON_PATH } from "@/content/keyboard-addon";
 
 const googlePlaySvg =
   "https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg";
@@ -50,7 +52,22 @@ export default function Home() {
             Cosmos Meter
           </span>
         </div>
-       
+        <Link
+          href={KEYBOARD_ADDON_PATH}
+          className="nav-addon-link"
+          style={{
+            color: "#7dd3fc",
+            fontWeight: 700,
+            fontSize: 16,
+            padding: "8px 16px",
+            borderRadius: 999,
+            border: "1px solid rgba(14, 165, 233, 0.35)",
+            background: "rgba(14, 165, 233, 0.12)",
+            whiteSpace: "nowrap",
+          }}
+        >
+          報分鍵盤 · 加價購
+        </Link>
       </nav>
 
       {/* Hero 區塊 */}
@@ -1067,190 +1084,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* 大團購方案 */}
-              <div
-                style={{
-                  background: "rgba(14, 165, 233, 0.1)",
-                  borderRadius: 16,
-                  padding: "24px",
-                  marginBottom: "32px",
-                  border: "1px solid rgba(14, 165, 233, 0.2)",
-                  position: "relative",
-                }}
-              >
-                {/* 左上角：原價 */}
-                <div
-                  style={{
-                    position: "absolute",
-                    top: "8px",
-                    left: "12px",
-                    display: "flex",
-                    alignItems: "baseline",
-                    gap: "6px",
-                  }}
-                >
-                  <span
-                    style={{
-                      color: "#fff",
-                      fontSize: 28,
-                      fontWeight: 500,
-                    }}
-                  >
-                    大團購
-                  </span>
-                </div>
-                
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "baseline",
-                    justifyContent: "center",
-                    marginBottom: 8,
-                    position: "relative",
-                    marginTop: "32px",
-                  }}
-                >
-                  {/* 中間：優惠價格 (絕對置中) */}
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "baseline",
-                    }}
-                  >
-                    <span
-                      style={{
-                        color: "#fff",
-                        fontSize: 48,
-                        fontWeight: 900,
-                      }}
-                    >
-                        185
-                    </span>
-                    <span
-                      style={{
-                        color: "#cbd5e1",
-                        fontSize: 18,
-                        marginLeft: 4,
-                      }}
-                    >
-                      /月
-                    </span>
-                  </div>
-                </div>
-                <div
-                  style={{
-                    color: "#7dd3fc",
-                    fontSize: 14,
-                    textAlign: "center",
-                    marginTop: 20,
-                    marginBottom: 8,
-                  }}
-                >
-                  團購月繳方案，或一次多月也可討論
-                </div>
-                <div
-                  style={{
-                    color: "#10b981",
-                    fontSize: 17,
-                    textAlign: "center",
-                    fontWeight: 600,
-                  }}
-                >
-                  團購需滿100人，請車隊負責人與我們聯繫
-                </div>
-              </div>
-              {/* 小團購方案 */}
-            <div
-                style={{
-                  background: "rgba(14, 165, 233, 0.1)",
-                  borderRadius: 16,
-                  padding: "24px",
-                  marginBottom: "32px",
-                  border: "1px solid rgba(14, 165, 233, 0.2)",
-                  position: "relative",
-                }}
-              >
-                {/* 左上角：原價 */}
-                <div
-                  style={{
-                    position: "absolute",
-                    top: "8px",
-                    left: "12px",
-                    display: "flex",
-                    alignItems: "baseline",
-                    gap: "6px",
-                  }}
-                >
-                  <span
-                    style={{
-                      color: "#fff",
-                      fontSize: 28,
-                      fontWeight: 500,
-                    }}
-                  >
-                    小團購
-                  </span>
-                </div>
-                
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "baseline",
-                    justifyContent: "center",
-                    marginBottom: 8,
-                    position: "relative",
-                    marginTop: "32px",
-                  }}
-                >
-                  {/* 中間：優惠價格 (絕對置中) */}
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "baseline",
-                    }}
-                  >
-                    <span
-                      style={{
-                        color: "#fff",
-                        fontSize: 48,
-                        fontWeight: 900,
-                      }}
-                    >
-                        220
-                    </span>
-                    <span
-                      style={{
-                        color: "#cbd5e1",
-                        fontSize: 18,
-                        marginLeft: 4,
-                      }}
-                    >
-                      /月
-                    </span>
-                  </div>
-                </div>
-                <div
-                  style={{
-                    color: "#7dd3fc",
-                    fontSize: 14,
-                    textAlign: "center",
-                    marginTop: 20,
-                    marginBottom: 8,
-                  }}
-                >
-                  團購月繳方案，或一次多月也可討論
-                </div>
-                <div
-                  style={{
-                    color: "#10b981",
-                    fontSize: 17,
-                    textAlign: "center",
-                    fontWeight: 600,
-                  }}
-                >
-                  團購需滿50人，請車隊負責人與我們聯繫
-                </div>
-              </div>
               <a
                 href="https://line.me/R/ti/p/@478umgog"
                 target="_blank"
@@ -1474,6 +1307,9 @@ export default function Home() {
       </section>
 
 
+      {/* 報分鍵盤加價購導流區 */}
+      <KeyboardTeaserSection />
+
       {/* 底部聯絡資訊 */}
       <footer
         style={{
@@ -1521,6 +1357,17 @@ export default function Home() {
           >
             刪除帳號
           </Link>
+          <span style={{ margin: "0 8px", color: "#64748b" }}>｜</span>
+          <Link
+            href={KEYBOARD_ADDON_PATH}
+            style={{
+              color: "#0EA5E9",
+              textDecoration: "underline",
+              fontSize: 14,
+            }}
+          >
+            報分鍵盤（加價購）
+          </Link>
         </div>
         <div style={{ marginTop: "16px", fontSize: 14, color: "#9ca3af" }}>
           © 2025 季先生科技@版權所有 All Rights Reserved
@@ -1529,6 +1376,7 @@ export default function Home() {
 
       {/* 浮動 Line 聯絡按鈕 */}
       <a
+        className="line-float"
         href="https://line.me/R/ti/p/@478umgog"
         target="_blank"
         rel="noopener noreferrer"
@@ -2073,7 +1921,7 @@ export default function Home() {
 
 
           /* 浮動 Line 按鈕手機版調整 */
-          a[href*="line.me"] {
+          a.line-float {
             bottom: 16px !important;
             right: 16px !important;
             width: 56px !important;
@@ -2081,11 +1929,11 @@ export default function Home() {
             box-shadow: none !important;
           }
 
-          a[href*="line.me"]:hover {
+          a.line-float:hover {
             box-shadow: none !important;
           }
 
-          a[href*="line.me"] img {
+          a.line-float img {
             width: 56px !important;
             height: 56px !important;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
@@ -2346,7 +2194,7 @@ export default function Home() {
           }
 
           /* 小型手機版浮動按鈕調整 */
-          a[href*="line.me"] {
+          a.line-float {
             bottom: 12px !important;
             right: 12px !important;
             width: 55px !important;
@@ -2354,11 +2202,11 @@ export default function Home() {
             box-shadow: none !important;
           }
 
-          a[href*="line.me"]:hover {
+          a.line-float:hover {
             box-shadow: none !important;
           }
 
-          a[href*="line.me"] img {
+          a.line-float img {
             width: 50px !important;
             height: 50px !important;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;

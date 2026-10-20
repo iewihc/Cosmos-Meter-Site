@@ -7,8 +7,7 @@ export function KeyboardAddonHeader() {
     <header className={styles.header}>
       <div className={styles.navInner}>
         <Link href={KEYBOARD_ADDON_PATH} className={styles.brand}>
-          <span className={styles.brandMark}>{brand.mark}</span>
-          <span>{brand.name}</span>
+          <span>{brand.headerTitle}</span>
         </Link>
 
         <nav className={styles.navLinks} aria-label="頁面導覽">

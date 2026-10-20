@@ -13,7 +13,6 @@ export function KeyboardAddonFooter() {
               {footer.titleLine1}
               <span>{footer.titleLine2}</span>
             </p>
-            <div className={styles.footerFlow}>{footer.flowLine}</div>
           </div>
           <a
             className={styles.primaryButton}

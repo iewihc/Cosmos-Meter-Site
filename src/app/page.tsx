@@ -313,7 +313,7 @@ export default function Home() {
               textAlign: "center",
             }}
           >
-            Cosmos Meter 藍錶智慧計程車跳錶
+            Cosmos Meter 藍錶 智慧計程車跳表 App
           </h2>
           <div
             className="hero-subtitle"
@@ -326,7 +326,7 @@ export default function Home() {
               textAlign: "center",
             }}
           >
-            精準里程 • 安心收費
+            精準跳錶計費 • 安心收費 • 派單接單報分一鍵完成
           </div>
           <button
             onClick={() => {

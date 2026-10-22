@@ -14,16 +14,17 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://cosmos-meter.netlify.app'),
-  title: "Cosmos Meter 藍錶 - 最精準的計程車跳錶應用程式 | 智慧計費系統",
-  description: "Cosmos Meter (藍錶) 是最精準的計程車計費跳錶應用程式。GPS 即時定位追蹤，支援距離計費、時間計費、混合計費模式，為計程車司機與車隊管理打造的智慧計費系統。",
-  keywords: "藍錶, 跳錶, 計程車計費, 計程車跳錶, Cosmos Meter, 智慧跳錶, 計程車司機, 車隊管理, GPS定位, 計費系統, 計程車應用程式, 智慧計費, 台灣計程車, 出租車計費, 計程車費率",
+  title: "Cosmos Meter 藍錶｜計程車跳表／跳錶 App、派單接單報分鍵盤",
+  description: "Cosmos Meter（藍錶）是計程車司機的跳表 App：GPS 跳錶計費、距離／時間／混合計費、行程記錄，另有 iPhone 報分鍵盤，派單接單時貼上單就自動算車程、排好報分格式。",
+  keywords: "藍錶, 跳表, 跳錶, 跳表app, 計程車跳表, 計程車跳錶, 計程車計費, Cosmos Meter, 智慧跳錶, 報分, 報分鍵盤, 派單鍵盤, 鍵盤, 接單, 派單接單, 接單報分, 車程估算, 計程車司機, 車隊管理, GPS定位, 計費系統, 計程車應用程式, 台灣計程車, 計程車費率",
   authors: [{ name: "季先生科技" }],
   creator: "季先生科技",
   publisher: "季先生科技",
   robots: "index, follow",
+  alternates: { canonical: "https://cosmos-meter.netlify.app" },
   openGraph: {
-    title: "Cosmos Meter 藍錶 - 最精準的計程車跳錶應用程式",
-    description: "專為計程車司機與車隊管理打造的智慧計費系統，GPS 精準定位與智慧化計算引擎，讓每一公里、每一秒鐘的計費都精確無誤。",
+    title: "Cosmos Meter 藍錶｜計程車跳表 App、派單接單報分鍵盤",
+    description: "GPS 跳錶計費、行程記錄，加上 iPhone 報分鍵盤：派單接單貼上單就自動算車程、排好報分格式。專為計程車司機與車隊打造。",
     url: "https://cosmos-meter.netlify.app",
     siteName: "Cosmos Meter 藍錶",
     images: [
@@ -39,8 +40,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cosmos Meter 藍錶 - 最精準的計程車跳錶應用程式",
-    description: "專為計程車司機與車隊管理打造的智慧計費系統",
+    title: "Cosmos Meter 藍錶｜計程車跳表 App、派單接單報分鍵盤",
+    description: "GPS 跳錶計費＋iPhone 派單接單報分鍵盤，專為計程車司機打造",
     images: ["/cosmos-meter-logo.png"],
   },
   icons: {
@@ -66,7 +67,8 @@ export default function RootLayout({
     "name": "Cosmos Meter 藍錶",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "iOS, Android",
-    "description": "Cosmos Meter (藍錶) 是最精準的計程車計費跳錶應用程式。GPS 即時定位追蹤，支援距離計費、時間計費、混合計費模式，為計程車司機與車隊管理打造的智慧計費系統。",
+    "description": "Cosmos Meter（藍錶）是計程車司機的跳表 App：GPS 跳錶計費、距離／時間／混合計費、行程記錄，另有 iPhone 報分鍵盤，派單接單時貼上單就自動算車程、排好報分格式。",
+    "keywords": "跳表, 跳錶, 計程車跳表, 報分鍵盤, 派單接單, 報分",
     "offers": {
       "@type": "Offer",
       "price": "252",

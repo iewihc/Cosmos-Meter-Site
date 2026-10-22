@@ -1,3 +1,4 @@
+import { FaLocationArrow } from "react-icons/fa";
 import type { PhoneMockContent } from "@/content/keyboard-addon";
 import styles from "./KeyboardAddon.module.css";
 
@@ -38,8 +39,18 @@ export function PhoneMock({ content }: PhoneMockProps) {
               <p>{content.detectedAddress}</p>
               <div className={styles.detectMeta}>
                 <span>{content.eta}</span>
-                <strong>{content.distance}</strong>
-                <button type="button">{content.sendLabel}</button>
+                <div className={styles.detectActions}>
+                  <button
+                    className={styles.navIconButton}
+                    type="button"
+                    aria-label={content.navLabel}
+                  >
+                    <FaLocationArrow aria-hidden="true" />
+                  </button>
+                  <button className={styles.sendButton} type="button">
+                    {content.sendLabel}
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -56,17 +67,6 @@ export function PhoneMock({ content }: PhoneMockProps) {
                   {key}
                 </button>
               ))}
-            </div>
-            <div className={styles.bottomKeys}>
-              <button className={styles.keycap} type="button">
-                {content.plateKey}
-              </button>
-              <button className={styles.keycap} type="button">
-                {content.colorKey}
-              </button>
-              <button className={styles.navKey} type="button">
-                {content.navKey}
-              </button>
             </div>
           </div>
         </div>

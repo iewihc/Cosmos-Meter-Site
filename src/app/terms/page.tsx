@@ -83,6 +83,18 @@ export default function Terms() {
           </div>
 
           <div style={{ marginBottom: 40 }}>
+            <h3 style={{ color: '#0EA5E9', fontSize: 24, fontWeight: 600, marginBottom: 20 }}>輔助工具聲明（Assistive Tool Disclaimer）</h3>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 16 }}>
+              本服務所提供之各項功能，包括但不限於跳錶、報分鍵盤，旨在協助使用者提升作業便利性，相關資訊與計算結果僅供參考，實際使用時仍請依現場情況及專業判斷進行確認。
+            </p>
+            <ul style={{ paddingLeft: 24 }}>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>各項計算與辨識結果可能受到 GPS 訊號、網路狀況、地圖資料、裝置效能或第三方服務等因素影響，偶有誤差、延遲或中斷。</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>為確保資訊正確，建議使用者於使用相關功能時，適時確認地址、車程及回報內容等資訊。</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>行車期間請遵守道路交通安全相關法規，並以安全駕駛為優先；為維護行車安全，請避免於駕駛中操作裝置。</li>
+            </ul>
+          </div>
+
+          <div style={{ marginBottom: 40 }}>
             <h3 style={{ color: '#0EA5E9', fontSize: 24, fontWeight: 600, marginBottom: 20 }}>Changes to These Terms</h3>
             <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1' }}>
               We may update these terms from time to time. Material changes will be announced on this page. Please review periodically for the latest information.

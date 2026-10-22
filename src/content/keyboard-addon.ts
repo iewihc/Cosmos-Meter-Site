@@ -34,20 +34,17 @@ export interface PhoneMockContent {
   detectedLabel: string;
   detectedAddress: string;
   eta: string;
-  distance: string;
   sendLabel: string;
+  navLabel: string;
   quickKeys: string[];
   minuteKeys: string[];
-  plateKey: string;
-  colorKey: string;
-  navKey: string;
 }
 
 export const KEYBOARD_ADDON_PATH = "/keyboard-addon";
 
 export const brand = {
   name: "報分鍵盤",
-  mark: "報",
+  headerTitle: "Cosmos Meter - 報分鍵盤",
   tagline: "派單回報，交給我算。",
   parentApp: "Cosmos Meter 藍錶",
 };
@@ -60,7 +57,7 @@ export const nav: NavItem[] = [
 ];
 
 export const hero = {
-  eyebrow: "專為 iPhone 派單司機打造",
+  eyebrow: "專為 iPhone 打造",
   titleLine1: "派單回報，",
   titleLine2: "交給我算。",
   body: "跑單的人都知道——差個幾秒，單可能就不是你的了。報分鍵盤幫你抓地址、算車程、排格式，看到單的那一刻，少浪費每一秒。",
@@ -72,18 +69,15 @@ export const hero = {
 export const phoneMock: PhoneMockContent = {
   time: "21:14",
   battery: "84%",
-  incomingMessage: "🍿／台中超級巨星公園店 🤣回20",
-  outgoingMessage: "9999白 7",
+  incomingMessage: "🚕／台中超級巨星公園店 回20",
+  outgoingMessage: "🚕／台中超級巨星公園店 回20\n9999 白\n7",
   detectedLabel: "已辨識地點",
-  detectedAddress: "台中市西區公園路 12 號",
+  detectedAddress: "台中市北區公園路195號",
   eta: "7 min",
-  distance: "2.4 km",
   sendLabel: "送出",
+  navLabel: "導航",
   quickKeys: ["到", "上", "準", "過5", "過10", "過15", "客指", "未結"],
   minuteKeys: ["3", "5", "7", "9", "10", "15", "20", "25"],
-  plateKey: "車牌 9999",
-  colorKey: "車色 白",
-  navKey: "導航",
 };
 
 export const flow = {
@@ -91,8 +85,8 @@ export const flow = {
   title: "少切幾次畫面，就可能快別人好幾秒",
   before: {
     label: "以前",
-    steps: ["開地圖", "貼地址", "看車程", "切回群組", "打車牌", "打分鐘", "檢查格式"],
-    note: "七個步驟，每一步都在流失秒數。",
+    steps: ["打開 LINE", "複製單號", "刪除前綴跟備註", "打開 Map", "貼上地址", "回到 LINE", "打車牌", "打分鐘數", "送出"],
+    note: "九個步驟，每一步都在流失秒數。",
   },
   after: {
     label: "用報分鍵盤",
@@ -193,9 +187,8 @@ export const faq: FaqItem[] = [
 ];
 
 export const footer = {
-  titleLine1: "iPhone 跑單，",
+  titleLine1: "iPhone 報分，",
   titleLine2: "也可以很快。",
-  flowLine: "貼派單 → 找地點 → 算車程 → 帶車牌 → 排格式 → 回報 → 導航",
   cta: { label: "官方 LINE 洽詢" },
   disclaimer: "報分鍵盤並非自動搶單程式，不會操作你的聊天帳號。",
   year: 2026,

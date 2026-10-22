@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   keywords: "北錶, 跳表, 跳錶, 台北計程車跳表, 計程車跳錶, 跳表app, 計程車計費, Taipei Meter, 計程車司機",
-  alternates: { canonical: `${SITE_URL}/taipei-meter` },
+  alternates: { canonical: `${SITE_URL}/taipei-meter/` },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
-    url: `${SITE_URL}/taipei-meter`,
+    url: `${SITE_URL}/taipei-meter/`,
     siteName: "Cosmos Meter 藍錶",
     locale: "zh_TW",
     type: "website",

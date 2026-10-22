@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   creator: "季先生科技",
   publisher: "季先生科技",
   robots: "index, follow",
-  alternates: { canonical: "https://cosmos-meter.netlify.app" },
+  alternates: { canonical: "https://cosmos-meter.netlify.app/" },
   openGraph: {
     title: "Cosmos Meter 藍錶｜計程車跳表 App、派單接單報分鍵盤",
     description: "GPS 跳錶計費、行程記錄，加上 iPhone 報分鍵盤：派單接單貼上單就自動算車程、排好報分格式。專為計程車司機與車隊打造。",

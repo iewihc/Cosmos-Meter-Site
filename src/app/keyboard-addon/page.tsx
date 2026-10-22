@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   keywords:
     "報分鍵盤, 報分, 接單, 派單接單, 接單報分, 派單鍵盤, 接單鍵盤, 鍵盤, iPhone鍵盤, 派單回報, 車程估算, 派單司機, 計程車司機, 藍錶, 跳表, 藍錶加價購, Cosmos Meter",
-  alternates: { canonical: `${SITE_URL}${KEYBOARD_ADDON_PATH}` },
+  alternates: { canonical: `${SITE_URL}${KEYBOARD_ADDON_PATH}/` },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
-    url: `${SITE_URL}${KEYBOARD_ADDON_PATH}`,
+    url: `${SITE_URL}${KEYBOARD_ADDON_PATH}/`,
     siteName: "Cosmos Meter 藍錶",
     locale: "zh_TW",
     type: "website",

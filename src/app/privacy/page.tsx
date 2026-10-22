@@ -63,6 +63,58 @@ export default function Privacy() {
           </div>
 
           <div style={{ marginBottom: 40 }}>
+            <h3 style={{ color: '#0EA5E9', fontSize: 24, fontWeight: 600, marginBottom: 20 }}>Dispatch Keyboard (Keyboard Extension)</h3>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 16 }}>
+              Cosmos Meter includes an optional custom keyboard, <strong style={{ color: '#fff' }}>藍錶派單鍵盤 (Dispatch Keyboard)</strong>, that helps drivers reply to dispatch messages with an estimated travel time. It only works after you enable it in iOS Settings and is designed to keep your data on your iPhone.
+            </p>
+            <h4 style={{ color: '#38bdf8', fontSize: 18, fontWeight: 600, marginBottom: 12 }}>Why the keyboard asks for &quot;Allow Full Access&quot;</h4>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 16 }}>
+              iOS requires Full Access for a keyboard to read the clipboard, use location and share settings with its main app. The Dispatch Keyboard uses Full Access only to:
+            </p>
+            <ul style={{ paddingLeft: 24, marginBottom: 16 }}>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>Read the dispatch message you copied or pasted, so it can find the destination address.</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>Read the settings you saved in the Cosmos Meter app (vehicle plate and color, report templates, quick replies and membership status) from a shared container on your device.</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>Use your current location (with the permission you granted to the Cosmos Meter app) to estimate travel time to the destination.</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>Save the dispatch you replied to into the app&apos;s local trip list on your device.</li>
+            </ul>
+            <h4 style={{ color: '#38bdf8', fontSize: 18, fontWeight: 600, marginBottom: 12 }}>What the keyboard does not do</h4>
+            <ul style={{ paddingLeft: 24, marginBottom: 16 }}>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>It does <strong style={{ color: '#fff' }}>not</strong> record, log or transmit your keystrokes.</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>It does <strong style={{ color: '#fff' }}>not</strong> send the messages you type, the clipboard contents or your location to our servers.</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>It does <strong style={{ color: '#fff' }}>not</strong> show ads or track you across other apps.</li>
+            </ul>
+            <h4 style={{ color: '#38bdf8', fontSize: 18, fontWeight: 600, marginBottom: 12 }}>Apple services used for travel-time estimates</h4>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 16 }}>
+              To estimate travel time, the destination text from the dispatch message and your current coordinates are sent to <strong style={{ color: '#fff' }}>Apple Maps</strong> (address lookup and route calculation). This is handled by Apple under <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer" style={{ color: '#0EA5E9', textDecoration: 'underline' }}>Apple&apos;s Privacy Policy</a>; we do not receive this data. Where available, address extraction uses Apple&apos;s on-device language model and never leaves your iPhone.
+            </p>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 16 }}>
+              The keyboard uses local notifications to let you return to the Cosmos Meter app (for example to start navigation). It never opens other apps on its own.
+            </p>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1' }}>
+              You can turn off Full Access or remove the keyboard at any time in iOS Settings &gt; General &gt; Keyboard &gt; Keyboards. Data stored in the shared container is deleted when you uninstall the Cosmos Meter app.
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 40 }}>
+            <h3 style={{ color: '#0EA5E9', fontSize: 24, fontWeight: 600, marginBottom: 20 }}>報分鍵盤（鍵盤擴充功能）</h3>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 16 }}>
+              藍錶提供選用的自訂鍵盤「藍錶派單鍵盤」，協助司機快速回覆派單車程。鍵盤需要在 iOS 設定中手動啟用，並以「資料留在你的 iPhone 上」為設計原則。
+            </p>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 16 }}>
+              <strong style={{ color: '#fff' }}>為什麼需要「允許完整取用」：</strong>iOS 規定鍵盤必須開啟完整取用才能讀取剪貼簿、使用定位、以及與主 App 共用設定。報分鍵盤只用完整取用來做這些事：讀取你複製或貼上的派單文字以找出目的地；讀取你在藍錶 App 設定的車牌車色、報分模板、快捷按鍵與會員狀態；使用你授權給藍錶的定位計算車程；把回覆過的派單存進 App 本機的行程清單。
+            </p>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 16 }}>
+              <strong style={{ color: '#fff' }}>鍵盤不會做的事：</strong>不記錄、不上傳你的按鍵內容；不會把你輸入的訊息、剪貼簿內容或位置傳到我們的伺服器；不顯示廣告、不做跨 App 追蹤。
+            </p>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 16 }}>
+              <strong style={{ color: '#fff' }}>車程估算使用的 Apple 服務：</strong>估算車程時，派單中的目的地文字與你目前的座標會送交 Apple 地圖進行地址查詢與路線計算，由 Apple 依其隱私權政策處理，我們不會取得這些資料。地址擷取在支援的裝置上使用 Apple 裝置端語言模型，資料不會離開你的 iPhone。
+            </p>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1' }}>
+              鍵盤以本機通知提醒你回到藍錶 App（例如開始導航），不會自行開啟其他 App。你隨時可以在 iOS 設定 &gt; 一般 &gt; 鍵盤 &gt; 鍵盤 關閉完整取用或移除鍵盤；解除安裝藍錶 App 時，共用容器中的資料會一併刪除。
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 40 }}>
             <h3 style={{ color: '#0EA5E9', fontSize: 24, fontWeight: 600, marginBottom: 20 }}>Contact Us</h3>
             <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1' }}>
               If you have any questions about our privacy practices, feel free to contact us at: <a href="mailto:mr.chi.service@gmail.com" style={{ color: '#0EA5E9', textDecoration: 'underline' }}>mr.chi.service@gmail.com</a>
@@ -71,7 +123,7 @@ export default function Privacy() {
 
           <div style={{ textAlign: 'center', padding: '24px 0', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
             <p style={{ fontSize: 14, color: '#94a3b8' }}>
-              Effective Date: [2025-07-10]
+              Effective Date: [2025-07-10] · Last updated: 2026-10-23
             </p>
           </div>
         </div>

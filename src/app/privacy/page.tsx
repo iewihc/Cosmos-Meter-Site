@@ -30,35 +30,59 @@ export default function Privacy() {
 
           <div style={{ marginBottom: 40 }}>
             <h3 style={{ color: '#0EA5E9', fontSize: 24, fontWeight: 600, marginBottom: 20 }}>What information we collect</h3>
-            <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 16 }}>
-              We collect <strong style={{ color: '#fff' }}>location data</strong> in order to provide core functionality such as:
-            </p>
             <ul style={{ paddingLeft: 24, marginBottom: 16 }}>
-              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>Real-time tracking</li>
-              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>Accurate distance and fare calculation</li>
-              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>Navigation-related services</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}><strong style={{ color: '#fff' }}>Account information.</strong> When you sign in with Apple or Google, we receive your email address (and the name you choose to share). It identifies your account, your membership and your synced data.</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}><strong style={{ color: '#fff' }}>Location.</strong> Precise and coarse location while a trip is running, including in the background, so the meter can measure distance and time, record the route and calculate the fare accurately.</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}><strong style={{ color: '#fff' }}>Trip records.</strong> Start and end points, route, duration and fare of each trip, plus any receipt or dispatch details you add. They are stored on your device and, when you are signed in, on our servers linked to your account so you can view history and keep data across devices.</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}><strong style={{ color: '#fff' }}>Content you choose to upload.</strong> If you use AI fare estimation or receipt recognition, the photo or text you submit is sent to our servers to be processed and returned to you.</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}><strong style={{ color: '#fff' }}>Voice input.</strong> AI bookkeeping and dispatch entry can use speech recognition. Audio is handled by Apple&apos;s speech service under Apple&apos;s privacy policy; we only receive the resulting text.</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}><strong style={{ color: '#fff' }}>Purchases.</strong> Subscriptions and add-ons are processed by Apple and RevenueCat. We receive purchase status, not your payment details.</li>
             </ul>
             <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 16 }}>
-              This location data is used <strong style={{ color: '#fff' }}>only while the app is running</strong> and is <strong style={{ color: '#fff' }}>never shared</strong> with third parties.
-            </p>
-            <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1' }}>
-              We do <strong style={{ color: '#fff' }}>not collect or store</strong> any personal information such as names, emails, or phone numbers.
+              We do not collect contacts, messages or your photo library beyond the images you explicitly choose to save or upload.
             </p>
           </div>
 
           <div style={{ marginBottom: 40 }}>
             <h3 style={{ color: '#0EA5E9', fontSize: 24, fontWeight: 600, marginBottom: 20 }}>How your data is used</h3>
-            <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 16 }}>Location data is:</p>
-            <ul style={{ paddingLeft: 24 }}>
-              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>Used solely for in-app features</li>
-              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>Not stored on external servers</li>
+            <ul style={{ paddingLeft: 24, marginBottom: 16 }}>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>Running the meter, recording trips and calculating fares.</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>Keeping your trip history, bookkeeping and settings available when you sign in on another device.</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>Providing membership features and verifying purchases.</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>Sending notifications you have enabled, such as trip or dispatch reminders.</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}>Showing ads in the free version (see below).</li>
             </ul>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 16 }}>
+              We do not sell your personal data.
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 40 }}>
+            <h3 style={{ color: '#0EA5E9', fontSize: 24, fontWeight: 600, marginBottom: 20 }}>Advertising and tracking</h3>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 16 }}>
+              The free version shows ads served by <strong style={{ color: '#fff' }}>Google AdMob</strong>. AdMob may use your device&apos;s advertising identifier and coarse location to show relevant ads and to measure them, which Apple classifies as data used to track you. On iOS you decide this through the App Tracking Transparency prompt and can change it any time in Settings &gt; Privacy &amp; Security &gt; Tracking. Declining does not limit any feature. Paid members do not see ads.
+            </p>
           </div>
 
           <div style={{ marginBottom: 40 }}>
             <h3 style={{ color: '#0EA5E9', fontSize: 24, fontWeight: 600, marginBottom: 20 }}>Data Sharing</h3>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 16 }}>
+              We share data only with the service providers needed to run the app, and only for the purposes above:
+            </p>
+            <ul style={{ paddingLeft: 24, marginBottom: 16 }}>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}><strong style={{ color: '#fff' }}>Apple</strong> and <strong style={{ color: '#fff' }}>Google</strong> for sign-in, maps, speech recognition and push notifications.</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}><strong style={{ color: '#fff' }}>Google AdMob</strong> for advertising in the free version.</li>
+              <li style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1', marginBottom: 8 }}><strong style={{ color: '#fff' }}>RevenueCat</strong> for subscription and add-on management.</li>
+            </ul>
             <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1' }}>
-              We do <strong style={{ color: '#fff' }}>not</strong> share any user data with third-party services or partners.
+              We never share your data with other third parties, and we do not sell it.
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 40 }}>
+            <h3 style={{ color: '#0EA5E9', fontSize: 24, fontWeight: 600, marginBottom: 20 }}>Retention and deletion</h3>
+            <p style={{ fontSize: 16, lineHeight: 1.7, color: '#cbd5e1' }}>
+              Trip records and account data are kept while your account exists. You can delete trips in the app, and you can delete your account and all data linked to it from the app or by following the steps on our <Link href="/delete" style={{ color: '#0EA5E9', textDecoration: 'underline' }}>account deletion page</Link>. Data stored only on your device is removed when you uninstall the app.
             </p>
           </div>
 

@@ -129,6 +129,34 @@ export default function DeleteAccountPage() {
             How to Delete Your Account and Related Data
           </p>
 
+          {/* 適用實體（Google Play 帳戶刪除規定要求頁面載明 App 與開發者名稱） */}
+          <p
+            style={{
+              color: "#cbd5e1",
+              fontSize: 17,
+              lineHeight: 1.8,
+              marginBottom: 24,
+              padding: "16px 20px",
+              background: "rgba(148, 163, 184, 0.08)",
+              borderRadius: 12,
+              border: "1px solid rgba(148, 163, 184, 0.2)",
+            }}
+          >
+            本頁適用於由{" "}
+            <strong style={{ color: "#fff" }}>Mr. Chi Technology（季先生科技）</strong>
+            {" "}開發之{" "}
+            <strong style={{ color: "#fff" }}>Cosmos Meter (藍錶)</strong>{" "}
+            應用程式（Android 套件名稱{" "}
+            <code style={{ color: "#0EA5E9" }}>com.iewihc.taximeterapp</code>
+            ）。
+            <br />
+            <span style={{ color: "#94a3b8", fontSize: 15 }}>
+              This page applies to the <strong>Cosmos Meter (藍錶)</strong> app
+              (Android package <code>com.iewihc.taximeterapp</code>) developed by{" "}
+              <strong>Mr. Chi Technology</strong>.
+            </span>
+          </p>
+
           <p
             style={{
               color: "#cbd5e1",
@@ -137,7 +165,12 @@ export default function DeleteAccountPage() {
               marginBottom: 32,
             }}
           >
-            若要請求刪除您的帳號及所有相關資料：
+            若要請求刪除您的帳號及所有相關資料，請在 App 內操作：
+            <br />
+            <span style={{ color: "#94a3b8", fontSize: 16 }}>
+              To delete your account and all related data, follow these steps in
+              the app:
+            </span>
           </p>
 
           {/* 步驟列表 */}
@@ -295,7 +328,21 @@ export default function DeleteAccountPage() {
                 marginBottom: 12,
               }}
             >
-              如果您遇到任何問題，請聯絡我們：
+              <strong style={{ color: "#fff" }}>無法登入 App？</strong>
+              您也可以直接以電子郵件向我們提出刪除帳號申請。請使用您註冊 Cosmos
+              Meter (藍錶) 的 Email 寄信至下方信箱，主旨註明「刪除帳號」，我們會在
+              7 個工作天內完成刪除並回信確認。
+              <br />
+              <span style={{ fontSize: 15, color: "#94a3b8" }}>
+                <strong>Can&apos;t sign in to the app?</strong> You can also
+                request account deletion by email. Send a message from the email
+                address registered with Cosmos Meter (藍錶) to the address below
+                with the subject &quot;Delete Account&quot;. We will process the
+                request and confirm by reply within 7 business days.
+              </span>
+              <br />
+              <br />
+              如果您遇到任何問題，也歡迎聯絡我們：
               <br />
               <span style={{ fontSize: 15, color: "#94a3b8" }}>
                 If you encounter any issues, please contact us at:
